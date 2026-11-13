@@ -52,7 +52,8 @@ function dropBlankUrlFields(data: Record<string, any>): Record<string, any> {
     const blank =
       value === '' || value === null || value === undefined ||
       (Array.isArray(value) && value.length === 0);
-    if (URL_FIELD.test(key) && blank) continue;
+    // The project photo gallery is a list the admin edits directly: an empty list is intentional.
+    if (URL_FIELD.test(key) && blank && key !== 'galleryImages') continue;
     out[key] = value;
   }
   return out;

@@ -16,12 +16,19 @@ import { execFile } from 'child_process';
  *      pushes to GitHub `main`, which makes Vercel rebuild the live site.
  *
  * Nothing else in the working tree is ever committed.
+ *
+ * Overwrite protection: each computer records (in data-store/, never in Git)
+ * which version of the live content it last published. If GitHub has a
+ * different version, someone else published since; this computer then stops
+ * and asks for confirmation ("Publish anyway") instead of silently replacing
+ * the live site with its own, possibly older, copy.
  */
 
 const ROOT = process.cwd();
 export const SNAPSHOT_REL = 'src/content/published-store.json';
 const SNAPSHOT_FILE = path.join(ROOT, SNAPSHOT_REL);
 const UPLOADS_DIR = path.join(ROOT, 'public', 'uploads');
+const PUBLISH_RECORD = path.join(ROOT, 'data-store', '.publish-record.json');
 const PUBLISH_DELAY_MS = 15_000;
 const LIVE_BRANCH = 'main';
 
@@ -32,7 +39,7 @@ const PUBLIC_COLLECTIONS = [
 const HIDDEN_STATUSES = new Set(['archived', 'archive', 'draft']);
 const PRIVATE_FIELDS = ['archiveRemark', 'archivedAt'];
 
-export type PublishState = 'disabled' | 'idle' | 'pending' | 'publishing' | 'published' | 'failed';
+export type PublishState = 'disabled' | 'idle' | 'pending' | 'publishing' | 'published' | 'failed' | 'blocked';
 
 export interface PublishStatus {
   state: PublishState;
@@ -105,6 +112,8 @@ export function schedulePublish(store: Record<string, any>) {
   const next = JSON.stringify(buildPublicSnapshot(store));
   // Saves that don't touch public content (logins, enquiries, ...) do nothing.
   if (next === readCurrentSnapshotJson() && state.status.state !== 'failed') return;
+  // Waiting for the admin to confirm "Publish anyway": keep the latest content, don't auto-publish.
+  if (state.status.state === 'blocked') return;
   if (state.status.state !== 'pending') {
     state.status = { ...state.status, state: 'pending', pendingSince: new Date().toISOString(), error: undefined };
   }
@@ -124,6 +133,33 @@ function git(args: string[]): Promise<{ stdout: string; stderr: string }> {
   });
 }
 
+/** Version (Git blob id) of the live content this computer last published. */
+function readPublishRecord(): { blob?: string; publishedAt?: string } {
+  try {
+    return JSON.parse(fs.readFileSync(PUBLISH_RECORD, 'utf8'));
+  } catch {
+    return {};
+  }
+}
+
+function writePublishRecord(blob: string) {
+  try {
+    fs.mkdirSync(path.dirname(PUBLISH_RECORD), { recursive: true });
+    fs.writeFileSync(PUBLISH_RECORD, JSON.stringify({ blob, publishedAt: new Date().toISOString() }, null, 2), 'utf8');
+  } catch {
+    // not fatal: the next publish will just ask for confirmation
+  }
+}
+
+async function liveSnapshotBlob(): Promise<string | null> {
+  await git(['fetch', 'origin', LIVE_BRANCH]);
+  try {
+    return (await git(['rev-parse', `origin/${LIVE_BRANCH}:${SNAPSHOT_REL}`])).stdout.trim() || null;
+  } catch {
+    return null; // no snapshot on GitHub yet
+  }
+}
+
 function referencedUploads(json: string): string[] {
   const names = new Set<string>();
   for (const m of json.matchAll(/\/uploads\/([A-Za-z0-9][A-Za-z0-9_.-]{0,200})/g)) names.add(m[1]);
@@ -133,7 +169,10 @@ function referencedUploads(json: string): string[] {
 }
 
 /** Write the snapshot, commit only the published files, push to GitHub. */
-export async function publishNow(store?: Record<string, any>): Promise<PublishStatus> {
+export async function publishNow(
+  store?: Record<string, any>,
+  options: { force?: boolean } = {}
+): Promise<PublishStatus> {
   if (!autoPublishEnabled()) return getPublishStatus();
   if (store) state.latest = store;
   if (!state.latest) {
@@ -155,6 +194,20 @@ export async function publishNow(store?: Record<string, any>): Promise<PublishSt
     const branch = (await git(['rev-parse', '--abbrev-ref', 'HEAD'])).stdout.trim();
     if (branch !== LIVE_BRANCH) {
       throw new Error(`The project is on branch "${branch}". Switch to "${LIVE_BRANCH}" to publish.`);
+    }
+
+    // Overwrite protection (see the note at the top of this file).
+    const liveBlob = await liveSnapshotBlob();
+    const record = readPublishRecord();
+    if (!options.force && liveBlob && liveBlob !== record.blob) {
+      state.status = {
+        ...state.status,
+        state: 'blocked',
+        error: record.blob
+          ? 'The live site has content that was published from another computer after this computer last published. Publishing was paused so it is not overwritten. Check the live site, then choose "Publish anyway" to replace it with the content on this computer.'
+          : 'This computer has not published with overwrite protection yet. Check that the live site does not have newer content from another computer, then choose "Publish anyway" once.',
+      };
+      return getPublishStatus();
     }
 
     const snapshot = buildPublicSnapshot(state.latest);
@@ -191,6 +244,7 @@ export async function publishNow(store?: Record<string, any>): Promise<PublishSt
     }
 
     const commit = (await git(['rev-parse', '--short', 'HEAD'])).stdout.trim();
+    writePublishRecord((await git(['rev-parse', `HEAD:${SNAPSHOT_REL}`])).stdout.trim());
     state.status = { state: 'published', lastPublishedAt: new Date().toISOString(), lastCommit: commit };
   } catch (e: any) {
     state.status = {
@@ -204,7 +258,7 @@ export async function publishNow(store?: Record<string, any>): Promise<PublishSt
 
   if (state.rerun) {
     state.rerun = false;
-    return publishNow();
+    return publishNow(undefined, options);
   }
   return getPublishStatus();
 }

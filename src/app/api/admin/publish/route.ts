@@ -22,6 +22,9 @@ export async function POST(req: NextRequest) {
   const user = await authorize(req);
   if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   if (!CAN_PUBLISH.includes(user.role)) return NextResponse.json({ error: 'Forbidden' }, { status: 403 });
-  const status = await publishNow((await getCMSStore()) as unknown as Record<string, any>);
+  const body = await req.json().catch(() => ({}));
+  const status = await publishNow((await getCMSStore()) as unknown as Record<string, any>, {
+    force: body?.force === true,
+  });
   return NextResponse.json(status, { headers: { 'Cache-Control': 'no-store' } });
 }

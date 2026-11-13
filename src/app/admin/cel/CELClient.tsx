@@ -65,8 +65,8 @@ export default function CELClient({ initialServices }: CELClientProps) {
 
   const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!title || !description) {
-      alert('Please fill out service title and description.');
+    if (!title.trim()) {
+      alert('Please enter the service name.');
       return;
     }
 
@@ -75,7 +75,8 @@ export default function CELClient({ initialServices }: CELClientProps) {
       .map((p) => p.trim())
       .filter((p) => p.length > 0);
 
-    const paramsPayload = parameters.length > 0 ? parameters : ['General Analytical Testing'];
+    // Only what the admin typed: no placeholder parameters are added.
+    const paramsPayload = parameters;
 
     setLoading(true);
     try {
@@ -245,7 +246,7 @@ export default function CELClient({ initialServices }: CELClientProps) {
               <h3 className="text-base font-serif font-bold text-[#24272B]">{service.title}</h3>
               <p className="text-xs text-[#6B7280] mt-2 leading-relaxed">{service.description}</p>
 
-              {service.parameters && (
+              {service.parameters && service.parameters.length > 0 && (
                 <div className="mt-4 pt-3 border-t border-[#E5E7EB] space-y-1.5">
                   <div className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">
                     Tested Parameters:
@@ -328,12 +329,11 @@ export default function CELClient({ initialServices }: CELClientProps) {
 
               <div>
                 <label className="block text-slate-700 font-semibold mb-1">
-                  Description / Methodologies <span className="text-red-500">*</span>
+                  Description <span className="text-slate-400 font-normal">(optional)</span>
                 </label>
                 <textarea
                   rows={2}
-                  required
-                  placeholder="Comprehensive testing according to standard methods..."
+                  placeholder="Shown on the card. Leave empty to show the general CEL service text."
                   value={description}
                   onChange={(e) => setDescription(e.target.value)}
                   className="w-full px-3 py-2 rounded-xl border border-[#E5E7EB] focus:ring-2 focus:ring-[#BBD6EA] outline-none text-xs"

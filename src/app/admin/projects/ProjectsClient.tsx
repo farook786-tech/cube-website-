@@ -11,6 +11,25 @@ import {
 import { createProjectAction, updateProjectAction, archiveProjectAction } from '@/app/admin/actions/cms';
 import { useRouter } from 'next/navigation';
 
+// Multi-value fields are edited as plain text: one item per line.
+const linesToList = (text: string) =>
+  text.split(/\r?\n/).map((l) => l.trim()).filter(Boolean);
+const listToLines = (list: unknown) => (Array.isArray(list) ? list.join('\n') : '');
+// "Facts and Figures" (as on the original project pages): one "Label: Value" per line.
+const factsToLines = (facts: unknown) =>
+  Array.isArray(facts)
+    ? facts.filter((f: any) => f && f.label).map((f: any) => `${f.label}: ${f.value ?? ''}`).join('\n')
+    : '';
+const linesToFacts = (text: string) =>
+  linesToList(text)
+    .map((line) => {
+      const i = line.indexOf(':');
+      return i > 0
+        ? { label: line.slice(0, i).trim(), value: line.slice(i + 1).trim() }
+        : { label: line, value: '' };
+    })
+    .filter((f) => f.label && f.value);
+
 export default function ProjectsManagerClient({ initialProjects }: { initialProjects: any[] }) {
   const router = useRouter();
   const [projectList, setProjectList] = useState<any[]>(initialProjects);
@@ -33,6 +52,15 @@ export default function ProjectsManagerClient({ initialProjects }: { initialProj
   const [description, setDescription] = useState('');
   const [heroImage, setHeroImage] = useState('/images/hero/slides_iit-tirupathi.jpg');
   const [featured, setFeatured] = useState(false);
+  const [projectStatus, setProjectStatus] = useState('');
+  const [startDate, setStartDate] = useState('');
+  const [endDate, setEndDate] = useState('');
+  const [highlightsText, setHighlightsText] = useState('');
+  const [servicesText, setServicesText] = useState('');
+  const [scopeText, setScopeText] = useState('');
+  const [factsText, setFactsText] = useState('');
+  const [galleryImages, setGalleryImages] = useState<string[]>([]);
+  const [newGalleryImage, setNewGalleryImage] = useState('');
 
   const openAddModal = () => {
     setEditingProject(null);
@@ -43,6 +71,15 @@ export default function ProjectsManagerClient({ initialProjects }: { initialProj
     setDescription('');
     setHeroImage('/images/hero/slides_iit-tirupathi.jpg');
     setFeatured(false);
+    setProjectStatus('');
+    setStartDate('');
+    setEndDate('');
+    setHighlightsText('');
+    setServicesText('');
+    setScopeText('');
+    setFactsText('');
+    setGalleryImages([]);
+    setNewGalleryImage('');
     setIsModalOpen(true);
   };
 
@@ -55,6 +92,15 @@ export default function ProjectsManagerClient({ initialProjects }: { initialProj
     setDescription(proj.description || '');
     setHeroImage(proj.heroImage || '/images/hero/slides_iit-tirupathi.jpg');
     setFeatured(!!proj.featured);
+    setProjectStatus(proj.projectStatus || '');
+    setStartDate(proj.startDate || '');
+    setEndDate(proj.endDate || '');
+    setHighlightsText(listToLines(proj.keyHighlights));
+    setServicesText(listToLines(proj.services));
+    setScopeText(listToLines(proj.scopeOfWork));
+    setFactsText(factsToLines(proj.facts));
+    setGalleryImages(Array.isArray(proj.galleryImages) ? proj.galleryImages.filter(Boolean) : []);
+    setNewGalleryImage('');
     setIsModalOpen(true);
   };
 
@@ -82,6 +128,14 @@ export default function ProjectsManagerClient({ initialProjects }: { initialProj
       heroImage: heroImage || '/images/hero/slides_iit-tirupathi.jpg',
       featured,
       status: 'published',
+      projectStatus,
+      startDate: startDate.trim(),
+      endDate: endDate.trim(),
+      keyHighlights: linesToList(highlightsText),
+      services: linesToList(servicesText),
+      scopeOfWork: linesToList(scopeText),
+      facts: linesToFacts(factsText),
+      galleryImages,
     };
 
     if (editingProject) {
@@ -266,7 +320,7 @@ export default function ProjectsManagerClient({ initialProjects }: { initialProj
       {/* Add / Edit Project Modal */}
       {isModalOpen && (
         <div className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm flex items-center justify-center p-4">
-          <div className="bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 shadow-2xl border border-slate-200 max-h-[90vh] overflow-y-auto">
+          <div className="bg-white rounded-3xl max-w-3xl w-full p-6 sm:p-8 shadow-2xl border border-slate-200 max-h-[90vh] overflow-y-auto">
             <div className="flex items-center justify-between pb-3 border-b border-slate-100 mb-4">
               <div>
                 <h2 className="text-xl font-bold font-display text-[#24272B]">
@@ -315,11 +369,10 @@ export default function ProjectsManagerClient({ initialProjects }: { initialProj
 
                 <div>
                   <label className="block text-xs font-bold text-slate-700 uppercase mb-1">
-                    Location *
+                    Location
                   </label>
                   <input
                     type="text"
-                    required
                     value={location}
                     onChange={(e) => setLocation(e.target.value)}
                     placeholder="e.g. Chennai, Tamil Nadu"
@@ -330,11 +383,10 @@ export default function ProjectsManagerClient({ initialProjects }: { initialProj
 
               <div>
                 <label className="block text-xs font-bold text-slate-700 uppercase mb-1">
-                  Client / Authority Name *
+                  Client / Authority Name
                 </label>
                 <input
                   type="text"
-                  required
                   value={client}
                   onChange={(e) => setClient(e.target.value)}
                   placeholder="e.g. Tamil Nadu Urban Habitat Development Board (TNUHDB)"
@@ -344,24 +396,109 @@ export default function ProjectsManagerClient({ initialProjects }: { initialProj
 
               <div>
                 <label className="block text-xs font-bold text-slate-700 uppercase mb-1">
-                  Project Overview &amp; Mandate Summary *
+                  Project Description
                 </label>
                 <textarea
-                  required
-                  rows={3}
+                  rows={6}
                   value={description}
                   onChange={(e) => setDescription(e.target.value)}
-                  placeholder="Detailed engineering summary, scope of mandate, structural proof checking, etc..."
+                  placeholder="Project description. Leave a blank line between paragraphs."
                   className="w-full p-2.5 text-xs rounded-xl border border-slate-300 focus:outline-none focus:border-[#070E5C]"
                 />
               </div>
 
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div>
+                  <label className="block text-xs font-bold text-slate-700 uppercase mb-1">Status</label>
+                  <select
+                    value={projectStatus}
+                    onChange={(e) => setProjectStatus(e.target.value)}
+                    className="w-full p-2.5 text-xs rounded-xl border border-slate-300 focus:outline-none focus:border-[#070E5C] bg-white font-medium"
+                  >
+                    <option value="">Not shown</option>
+                    <option value="Ongoing">Ongoing</option>
+                    <option value="Completed">Completed</option>
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-xs font-bold text-slate-700 uppercase mb-1">Start Date</label>
+                  <input type="text" value={startDate} onChange={(e) => setStartDate(e.target.value)} placeholder="e.g. 10/06/2020" className="w-full p-2.5 text-xs rounded-xl border border-slate-300 focus:outline-none focus:border-[#070E5C]" />
+                </div>
+                <div>
+                  <label className="block text-xs font-bold text-slate-700 uppercase mb-1">End Date</label>
+                  <input type="text" value={endDate} onChange={(e) => setEndDate(e.target.value)} placeholder="e.g. Ongoing" className="w-full p-2.5 text-xs rounded-xl border border-slate-300 focus:outline-none focus:border-[#070E5C]" />
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-xs font-bold text-slate-700 uppercase mb-1">Key Highlights <span className="normal-case font-normal text-slate-400">(one per line)</span></label>
+                <textarea rows={4} value={highlightsText} onChange={(e) => setHighlightsText(e.target.value)} className="w-full p-2.5 text-xs rounded-xl border border-slate-300 focus:outline-none focus:border-[#070E5C]" />
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-xs font-bold text-slate-700 uppercase mb-1">Services <span className="normal-case font-normal text-slate-400">(one per line)</span></label>
+                  <textarea rows={4} value={servicesText} onChange={(e) => setServicesText(e.target.value)} className="w-full p-2.5 text-xs rounded-xl border border-slate-300 focus:outline-none focus:border-[#070E5C]" />
+                </div>
+                <div>
+                  <label className="block text-xs font-bold text-slate-700 uppercase mb-1">Scope of the Project <span className="normal-case font-normal text-slate-400">(one per line)</span></label>
+                  <textarea rows={4} value={scopeText} onChange={(e) => setScopeText(e.target.value)} className="w-full p-2.5 text-xs rounded-xl border border-slate-300 focus:outline-none focus:border-[#070E5C]" />
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-xs font-bold text-slate-700 uppercase mb-1">
+                  Facts and Figures <span className="normal-case font-normal text-slate-400">(one &ldquo;Label: Value&rdquo; per line)</span>
+                </label>
+                <textarea
+                  rows={5}
+                  value={factsText}
+                  onChange={(e) => setFactsText(e.target.value)}
+                  placeholder={'Client: TNUHDB\nLocation: Chennai\nScope of work: Third party Quality Monitoring'}
+                  className="w-full p-2.5 text-xs font-mono rounded-xl border border-slate-300 focus:outline-none focus:border-[#070E5C]"
+                />
+              </div>
+
               <ImageUploadField
-                label="Hero Image"
+                label="Cover Image"
                 value={heroImage}
                 onChange={setHeroImage}
                 labelClassName="block text-xs font-bold text-slate-700 uppercase mb-1"
               />
+
+              <div>
+                <label className="block text-xs font-bold text-slate-700 uppercase mb-1">
+                  Image Gallery <span className="normal-case font-normal text-slate-400">({galleryImages.length} photos)</span>
+                </label>
+                {galleryImages.length > 0 && (
+                  <div className="grid grid-cols-3 sm:grid-cols-5 gap-2 mb-3">
+                    {galleryImages.map((src, i) => (
+                      <div key={`${src}-${i}`} className="relative h-20 rounded-lg overflow-hidden border border-slate-200 bg-slate-50">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img src={src} alt={`Gallery photo ${i + 1}`} className="w-full h-full object-cover" />
+                        <button
+                          type="button"
+                          onClick={() => setGalleryImages(galleryImages.filter((_, j) => j !== i))}
+                          aria-label={`Remove photo ${i + 1}`}
+                          className="absolute top-1 right-1 p-1 rounded-full bg-white/90 text-red-600 shadow hover:bg-white"
+                        >
+                          <X className="w-3 h-3" />
+                        </button>
+                      </div>
+                    ))}
+                  </div>
+                )}
+                <ImageUploadField
+                  label="Add a photo"
+                  value={newGalleryImage}
+                  onChange={(url) => {
+                    if (url) setGalleryImages((list) => (list.includes(url) ? list : [...list, url]));
+                    setNewGalleryImage('');
+                  }}
+                  previewClassName="h-24"
+                  labelClassName="block text-[11px] font-semibold text-slate-500 mb-1"
+                />
+              </div>
 
               <div className="flex items-center space-x-2 pt-2">
                 <input
