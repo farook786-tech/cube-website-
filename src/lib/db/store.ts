@@ -1,4 +1,5 @@
 import fs from 'fs';
+import { sealAuditLogs } from '@/lib/audit';
 import path from 'path';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
@@ -377,6 +378,11 @@ export const saveCMSStore = async (store: CMSStore): Promise<void> => {
   // Strip rich-text/font markup from every content collection before writing so
   // admin input can never alter the public site's typography or inject markup.
   sanitizeStoreContent(store);
+
+  // Classify, stamp (IP / browser) and hash-chain new audit entries.
+  await sealAuditLogs(store.auditLogs, {
+    archiveDir: getCMSBackend() === 'file' ? path.join(DATA_DIR, 'audit-trail') : undefined,
+  });
 
   // Keep the audit trail bounded so every save (which rewrites the whole file)
   // stays fast as the site ages.

@@ -33,6 +33,9 @@ Create `/var/www/cube/.env.local`:
 # Unique per server. Generate with:
 #   node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
 ADMIN_JWT_SECRET=<paste generated value>
+# Signs the audit log. Generate a second, different value the same way.
+# Keep a copy with your backups and never change it.
+AUDIT_LOG_KEY=<paste another generated value>
 NEXT_PUBLIC_SITE_URL=https://cubeiitm.org
 # Used only if no data-store/ exists yet (first start creates this admin).
 DEFAULT_ADMIN_EMAIL=admin@cubeiitm.org
@@ -91,7 +94,34 @@ crontab -e
 Keeps 30 days in `/var/www/cube/backups/`. Also copy that folder off the server
 regularly (another machine or cloud storage).
 
-## 7. After going live
+## 7. Audit log protection
+
+The admin's Security & Audit Logs page records every sign-in, failed attempt,
+content change and publish. Three layers make tampering detectable:
+
+1. **Signed entries** – each entry is signed with `AUDIT_LOG_KEY` (kept in
+   `.env.local`, not with the data). The page shows "Integrity verified".
+2. **Append-only archive** – every entry is also appended to
+   `data-store/audit-trail/audit-YYYY-MM.jsonl` and kept forever (the admin
+   page shows the newest 5,000). Make the archive append-only at the OS level
+   so even a server user cannot rewrite it without first removing the flag
+   (which itself requires root):
+
+   ```bash
+   sudo chattr +a /var/www/cube/data-store/audit-trail/*.jsonl
+   # new monthly files: run again at the start of each month, e.g. cron:
+   # 5 0 1 * * chattr +a /var/www/cube/data-store/audit-trail/*.jsonl
+   ```
+
+3. **Off-server checkpoints** – on the audit page, click **Checkpoint**
+   (e.g. weekly) and store the file somewhere other than the server (email,
+   cloud drive). **Verify checkpoint** later proves the history up to that
+   point is unchanged.
+
+The nightly backup (`deploy/backup.sh`) includes the archive because it is
+inside `data-store/`.
+
+## 8. After going live
 
 1. Open `https://cubeiitm.org/admin`, sign in, and change the password
    (Settings → Change Your Password).

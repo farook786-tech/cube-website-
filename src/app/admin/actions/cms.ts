@@ -107,6 +107,21 @@ async function assertPermission(allowedRoles: UserRole[] = ['super_admin', 'admi
   const session = await resolveAdminSession(token);
   if (!session) throw new Error('Unauthorized: Session expired or signed out');
   if (!allowedRoles.includes(session.role)) {
+    // Security event: a signed-in account tried an action its role does not allow.
+    try {
+      const store = await getCMSStore();
+      store.auditLogs.unshift({
+        id: `log_${Date.now()}`,
+        userId: session.userId,
+        userEmail: session.email,
+        action: 'ACCESS_DENIED',
+        resourceType: 'permission',
+        resourceId: session.role,
+        details: `Required role: ${allowedRoles.join(', ')}`,
+        timestamp: new Date().toISOString(),
+      });
+      await saveCMSStore(store);
+    } catch {}
     throw new Error(`Forbidden: Insufficient privileges. Required: ${allowedRoles.join(', ')}`);
   }
   return session;

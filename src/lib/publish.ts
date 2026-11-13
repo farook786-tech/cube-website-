@@ -245,6 +245,23 @@ export async function publishNow(
 
     const commit = (await git(['rev-parse', '--short', 'HEAD'])).stdout.trim();
     writePublishRecord((await git(['rev-parse', `HEAD:${SNAPSHOT_REL}`])).stdout.trim());
+
+    // Audit trail entry (lazy import: store.ts imports this module).
+    try {
+      const { getCMSStore, saveCMSStore } = await import('@/lib/db/store');
+      const store = await getCMSStore();
+      store.auditLogs.unshift({
+        id: `log_${Date.now()}`,
+        userId: 'system',
+        userEmail: 'system',
+        action: options.force ? 'PUBLISH_LIVE_OVERRIDE' : 'PUBLISH_LIVE',
+        resourceType: 'website',
+        resourceId: commit,
+        details: options.force ? 'Published with "Publish anyway" (replaced newer live content)' : undefined,
+        timestamp: new Date().toISOString(),
+      });
+      await saveCMSStore(store);
+    } catch {}
     state.status = { state: 'published', lastPublishedAt: new Date().toISOString(), lastCommit: commit };
   } catch (e: any) {
     state.status = {

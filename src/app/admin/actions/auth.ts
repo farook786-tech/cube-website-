@@ -16,6 +16,36 @@ import { clearRateLimit, consumeRateLimit } from '@/lib/rate-limit';
 const MAX_ATTEMPTS = 5;
 const WINDOW_MS = 15 * 60 * 1000; // 15 minutes
 
+/**
+ * Record a security event (failed / blocked sign-in, wrong current password).
+ * Blocked attempts are recorded once per key per window so a flood of
+ * requests cannot fill the log.
+ */
+const blockedLogged = new Map<string, number>();
+async function logSecurityEvent(action: string, email: string, userId?: string, details?: string) {
+  if (action === 'ADMIN_LOGIN_BLOCKED') {
+    const last = blockedLogged.get(email.toLowerCase()) || 0;
+    if (Date.now() - last < WINDOW_MS) return;
+    blockedLogged.set(email.toLowerCase(), Date.now());
+  }
+  try {
+    const store = await getCMSStore();
+    store.auditLogs.unshift({
+      id: `log_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`,
+      userId: userId || '',
+      userEmail: email.slice(0, 120),
+      action,
+      resourceType: 'auth',
+      resourceId: userId || '',
+      details,
+      timestamp: new Date().toISOString(),
+    });
+    await saveCMSStore(store);
+  } catch {
+    // never block sign-in because the log could not be written
+  }
+}
+
 // Used to equalize timing when the email does not exist.
 const DUMMY_HASH = '$2b$10$CwTycUXWue0Thq9StjUM0uJ8D7Qb1s6N5pQn8wXq0cJ5hVQ8G1pW';
 
@@ -65,6 +95,7 @@ export async function loginAdminAction(formData: FormData) {
   const { allowed, retryAfterMs } = await consumeRateLimit(rateKey, MAX_ATTEMPTS, WINDOW_MS);
   if (!allowed) {
     const minutes = Math.ceil(retryAfterMs / 60000);
+    await logSecurityEvent('ADMIN_LOGIN_BLOCKED', email, undefined, `${MAX_ATTEMPTS} failed attempts within 15 minutes`);
     return {
       success: false,
       error: `Too many failed attempts. Try again in ${minutes} minute(s).`,
@@ -79,11 +110,13 @@ export async function loginAdminAction(formData: FormData) {
   if (!user || !user.isActive) {
     // Perform a dummy comparison so response timing does not reveal account existence.
     await bcrypt.compare(password, DUMMY_HASH);
+    await logSecurityEvent('ADMIN_LOGIN_FAILED', email, undefined, user ? 'Account is disabled' : 'Unknown account');
     return { success: false, error: 'Invalid institutional administrator credentials' };
   }
 
   const match = await bcrypt.compare(password, user.passwordHash);
   if (!match) {
+    await logSecurityEvent('ADMIN_LOGIN_FAILED', user.email, user.id, 'Wrong password');
     return { success: false, error: 'Invalid institutional administrator credentials' };
   }
 
@@ -196,6 +229,7 @@ export async function changePasswordAction(formData: FormData) {
 
   const user = (await getCMSStore()).users.find((u) => u.id === session.userId);
   if (!user || !(await bcrypt.compare(current, user.passwordHash))) {
+    await logSecurityEvent('ADMIN_PASSWORD_CHANGE_FAILED', session.email, session.userId, 'Wrong current password');
     return { success: false, error: 'The current password is incorrect.' };
   }
   await clearRateLimit(rateKey);
@@ -226,5 +260,37 @@ export async function changePasswordAction(formData: FormData) {
   );
   cookieStore.set('cube_admin_session', token, await sessionCookieOptions());
 
+  return { success: true };
+}
+
+/**
+ * Sign out every other device for the signed-in administrator (e.g. after
+ * using a shared computer). This browser stays signed in.
+ */
+export async function revokeOtherSessionsAction() {
+  const cookieStore = await cookies();
+  const session = await resolveAdminSession(cookieStore.get('cube_admin_session')?.value);
+  if (!session) return { success: false, error: 'Your session has expired. Please sign in again.' };
+
+  const store = await getCMSStore();
+  const target = store.users.find((u) => u.id === session.userId);
+  if (!target) return { success: false, error: 'Account not found.' };
+  target.sessionVersion = (target.sessionVersion ?? 0) + 1;
+  store.auditLogs.unshift({
+    id: `log_${Date.now()}`,
+    userId: target.id,
+    userEmail: target.email,
+    action: 'ADMIN_SESSIONS_REVOKED',
+    resourceType: 'auth',
+    resourceId: target.id,
+    timestamp: new Date().toISOString(),
+  });
+  await saveCMSStore(store);
+
+  const token = signAdminToken(
+    { userId: target.id, email: target.email, fullName: target.fullName, role: target.role },
+    target.sessionVersion
+  );
+  cookieStore.set('cube_admin_session', token, await sessionCookieOptions());
   return { success: true };
 }
