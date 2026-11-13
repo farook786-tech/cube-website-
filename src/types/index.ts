@@ -47,6 +47,14 @@ export interface Project {
   methodology?: string[];
   outcomes?: string[];
   featured?: boolean;
+  /** Fields taken from the original cubeiitm.org project pages */
+  startDate?: string;
+  endDate?: string;
+  projectStatus?: string;
+  keyHighlights?: string[];
+  services?: string[];
+  facts?: { label: string; value: string }[];
+  bannerImage?: string;
 }
 
 export interface Leader {

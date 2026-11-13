@@ -65,88 +65,59 @@ export interface CareersPageContent {
   };
 }
 
+// Wording from the original CUBE careers page (https://cubeiitm.org/career.html).
 export const DEFAULT_CAREERS_PAGE: CareersPageContent = {
   header: {
-    badge: 'Careers & Professional Development',
-    title: 'Engineering Careers & Talent Portal',
+    badge: 'Career',
+    title: 'Career',
     description:
-      'Explore marquee state engineering openings or upload your CV to the CUBE Talent Network for direct IIT Madras faculty and project advisory consideration.',
+      'What sets us apart is what brings us together – a shared passion for solving business challenges through strategy, design, and engineering. We are the sum total of our team, their unique perspectives, capabilities, and our ability to collaborate from ideation to deployment.',
   },
-  contactEmail: 'careers@cubeiitm.org',
-  contactLabel: 'Direct Recruitment Liaison',
+  contactEmail: 'office@cubeiitm.org',
+  contactLabel: 'Email',
   tabs: {
-    openingsLabel: 'Active Openings',
-    portalLabel: 'Upload Resume & Talent Network',
+    openingsLabel: 'Openings',
+    portalLabel: 'Apply',
   },
   emptyState: {
-    title: 'No Direct Vacancies Advertised Currently',
-    description:
-      'New mandates for structural QA, hydrodynamic modeling, and precast inspection open quarterly. You can submit your CV directly to our Talent Network.',
-    buttonLabel: 'Upload Resume for Future Openings',
+    title: 'No openings at present',
+    description: '',
+    buttonLabel: 'Send Your Resume',
   },
   talentCallout: {
-    badge: 'Join CUBE Talent Network',
-    heading: "Didn't find a matching job role? Drop your resume.",
-    description:
-      'We maintain an active resume bank for senior civil advisors, environmental chemists, hydrologists, and GIS planners. Whenever state projects launch, our faculty committee reviews matching profiles directly.',
-    buttonLabel: 'Upload Your Resume Now',
+    badge: '',
+    heading: '',
+    description: '',
+    buttonLabel: '',
   },
   jobDetail: {
     howToApplyTitle: 'How to Apply',
     howToApplySteps: [
-      'Click "Apply & Upload CV" below to open the application form.',
+      'Click "Apply" below to open the application form.',
       'Fill in your details and upload your resume (PDF or DOCX, max 10MB).',
-      'Our recruitment team and faculty committee will review your profile and contact shortlisted candidates.',
     ],
   },
   applicationForm: {
-    badge: 'Candidate Application & CV Submission',
-    heading: 'Submit Your Profile to CUBE Engineering',
-    defaultJobTitle: 'General Engineering Talent Pool',
-    experienceOptions: [
-      '0-2 Years (Graduate / Junior)',
-      '3-5 Years (Mid-Level Engineer)',
-      '6-10 Years (Senior Engineer / Specialist)',
-      '10+ Years (Principal / Project Director)',
-    ],
+    badge: 'Apply',
+    heading: 'Apply to CUBE',
+    defaultJobTitle: 'General Application',
+    experienceOptions: ['0-2 Years', '3-5 Years', '6-10 Years', '10+ Years'],
     domainOptions: [
-      'Building & Structural Engineering (PMC / TPQA)',
-      'Environment & Sustainable Hydrology (CEL)',
-      'Smart Cities & Urban IoT Telemetry',
-      'Urban Planning & Multimodal Mobility',
-      'CEL Testing & Chemical Diagnostics',
+      'Building & Construction',
+      'Environment & Sustainability',
+      'Smart Cities',
+      'Urban Planning & Transportation',
+      'CUBE Environmental Laboratory (CEL)',
     ],
-    coverNotePlaceholder:
-      'Highlight your key achievements, state project experience, and software skills (e.g. ETABS, STAAD.Pro, Arc-GIS, HEC-RAS)...',
-    submitLabel: 'Submit Profile & Resume',
-    successTitle: 'Application & Resume Received!',
-    successMessage:
-      'Thank you for submitting your engineering profile to CUBE. Our recruitment team and faculty committee will review your qualifications against active project requirements.',
+    coverNotePlaceholder: 'Cover note (optional)',
+    submitLabel: 'Submit Application',
+    successTitle: 'Application Received',
+    successMessage: 'Thank you for applying to CUBE.',
   },
   benefits: {
-    heading: 'Career Growth & Institutional Mentorship',
-    subheading:
-      "Join Tamil Nadu's apex Centre of Excellence bridging academia and state infrastructure delivery.",
-    items: [
-      {
-        icon: 'award',
-        title: 'IIT Madras Faculty Direct Access',
-        description:
-          'Work closely with distinguished professors on state proof checking and applied research methodologies.',
-      },
-      {
-        icon: 'building',
-        title: 'Marquee State Projects',
-        description:
-          'Lead independent TPQA on multi-thousand unit housing, high-speed corridors, and river rejuvenation.',
-      },
-      {
-        icon: 'globe',
-        title: 'Advanced CEL Laboratories',
-        description:
-          'Access precision ICP-OES, non-destructive concrete diagnostics, and specialized testing at IITM Research Park.',
-      },
-    ],
+    heading: '',
+    subheading: '',
+    items: [],
   },
 };
 

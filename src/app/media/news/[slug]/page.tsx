@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const item = await getNewsBySlug(slug);
   return {
     title: item ? `${item.title} | CUBE News` : 'News | CUBE',
-    description: item?.excerpt || 'Official CUBE press release.',
+    description: item?.excerpt || 'News from CUBE.',
   };
 }
 
@@ -40,7 +40,7 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ slu
   return (
     <div className="bg-[#FFFFFF] min-h-screen">
       <PageHeader
-        badge="Press Release"
+        badge="News"
         title={item.title}
         description={item.excerpt}
         breadcrumbs={[{ label: 'Media', href: '/media' }, { label: 'News', href: '/media/news' }]}
@@ -63,7 +63,7 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ slu
             </span>
             <span className="flex items-center">
               <User className="w-3.5 h-3.5 mr-1" />
-              {item.author || 'CUBE Editorial'}
+              {item.author || 'CUBE'}
             </span>
             <span className="px-2.5 py-0.5 rounded-full bg-[#EAF2F8] text-[#070E5C] font-semibold">
               {item.category}

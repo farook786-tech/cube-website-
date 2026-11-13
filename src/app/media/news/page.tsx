@@ -6,8 +6,8 @@ import { getPublishedNews } from '@/lib/db/queries';
 import { Newspaper, Calendar, User, ArrowRight } from 'lucide-react';
 
 export const metadata = {
-  title: 'Media & News | CUBE IIT Madras',
-  description: 'Latest institutional updates, press releases, research milestones, and project completions from CUBE.',
+  title: 'News | CUBE IIT Madras',
+  description: 'News from the Centre for Urbanization, Buildings & Environment (CUBE).',
 };
 
 export const dynamic = 'force-dynamic';
@@ -18,9 +18,9 @@ export default async function NewsPage() {
   return (
     <div className="bg-[#FFFFFF] min-h-screen">
       <PageHeader
-        badge="Institutional Media"
-        title="News, Articles &amp; Press Releases"
-        description="Official press communications, announcements, and coverage of CUBE's applied research and field engineering across Tamil Nadu."
+        badge="Media"
+        title="News"
+        description="News from the Centre for Urbanization, Buildings & Environment (CUBE)."
         breadcrumbs={[{ label: 'Media' }, { label: 'News' }]}
       />
 
@@ -30,7 +30,7 @@ export default async function NewsPage() {
             {newsList.map((item) => (
               <article
                 key={item.id}
-                className="group rounded-2xl bg-white border border-[#E5E7EB] overflow-hidden shadow-2xs hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
+                className="group rounded-2xl bg-white cube-glass border border-[#E5E7EB] overflow-hidden shadow-2xs hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
               >
                 <div>
                   <div className="relative h-48 w-full bg-[#F7F7F4] overflow-hidden">
@@ -56,7 +56,7 @@ export default async function NewsPage() {
                       <span>&bull;</span>
                       <span className="flex items-center">
                         <User className="w-3.5 h-3.5 mr-1 text-[#747B83]" />
-                        {item.author || 'CUBE Editorial'}
+                        {item.author || 'CUBE'}
                       </span>
                     </div>
 
@@ -76,7 +76,7 @@ export default async function NewsPage() {
                       href={`/media/news/${item.slug || item.id}`}
                       className="text-xs font-semibold text-[#070E5C] group-hover:text-[#D99A42] group-hover:translate-x-0.5 transition-all flex items-center"
                     >
-                      <span>Read Full Press Release</span>
+                      <span>Read More</span>
                       <ArrowRight className="w-3.5 h-3.5 ml-1" />
                     </Link>
                   </div>

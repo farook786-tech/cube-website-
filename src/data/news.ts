@@ -64,7 +64,7 @@ export const newsItems: NewsItem[] = [
     title: "CUBE Expert Team Visits Villupuram Govt. Medical College Hospital",
     date: "12/05/2023",
     category: "Environment & Sustainability",
-    summary: "CUBE's expert team visits Villupuram Govt.",
+    summary: "CUBE's expert team visits Villupuram Govt. Medical College Hospital to kickstart the prestigious project \"Conducting adequacy audit of existing liquid waste management facilities at 6 healthcare facilities in Tamil Nadu\".",
     image: "/images/media/news/original/2-.jpg",
     content: [
       "CUBE's expert team visits Villupuram Govt. Medical College Hospital to kickstart the prestigious project \"Conducting adequacy audit of existing liquid waste management facilities at 6 healthcare facilities in Tamil Nadu\" which was awarded by TNHSRP, a World Bank supported project implemented by Department of Health and Family Welfare of Tamil Nadu Government."

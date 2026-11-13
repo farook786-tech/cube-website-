@@ -2,30 +2,23 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import PageHeader from '@/components/common/PageHeader';
-import ProjectCard from '@/components/cards/ProjectCard';
-import { Cpu, Wifi, CheckCircle2, ArrowRight, ShieldCheck, Activity } from 'lucide-react';
+import { CheckCircle2, ArrowRight } from 'lucide-react';
 import { verticals } from '@/data/verticals';
-import { getPublishedProjects } from '@/lib/db/queries';
-
-// Always render with live CMS data (archived projects disappear instantly).
-export const dynamic = 'force-dynamic';
 
 export const metadata = {
-  title: 'Smart Cities & Urban Tech | CUBE IIT Madras',
-  description: 'Smart urban infrastructure, IoT telemetry, SCADA systems, digital twins, and intelligent city solutions by CUBE.',
+  title: 'Smart Cities Vertical | CUBE IIT Madras',
+  description: 'The SMART vertical at CUBE develops solutions that are holistic socio culturally, technologically and environmentally, employing design thinking & analytics for urban development.',
 };
 
-export default async function SmartCitiesPage() {
-  const projects = await getPublishedProjects();
+export default function SmartCitiesPage() {
   const vertical = verticals.find((v) => v.id === 'smart-cities')!;
-  const verticalProjects = projects.filter((p: any) => p.category === 'Smart Cities');
 
   return (
     <div>
       <PageHeader
         badge="Core Vertical"
         title={vertical.title}
-        description={vertical.longDescription}
+        description={vertical.description}
         breadcrumbs={[
           { label: 'Verticals' },
           { label: 'Smart Cities' },
@@ -34,18 +27,21 @@ export default async function SmartCitiesPage() {
 
       <section className="py-20 bg-white border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-7 space-y-6">
               <span className="text-xs font-bold uppercase tracking-wider text-cyan-700 bg-cyan-50 px-3 py-1 rounded-full border border-cyan-200">
-                Urban Technology &amp; Telemetry
+                Smart Cities
               </span>
               <h2 className="text-3xl font-display font-extrabold text-navy-950">
-                {vertical.tagline}
+                {vertical.title}
               </h2>
-              <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                {vertical.longDescription}
-              </p>
+              {vertical.longDescription.split('\n\n').map((para, i) => (
+                <p key={i} className="text-sm sm:text-base text-slate-700 leading-relaxed">
+                  {para}
+                </p>
+              ))}
 
+              {vertical.capabilities.length > 0 && (
               <div className="pt-2 grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {vertical.capabilities.map((cap, i) => (
                   <div key={i} className="flex items-center text-xs font-semibold text-slate-800">
@@ -54,6 +50,7 @@ export default async function SmartCitiesPage() {
                   </div>
                 ))}
               </div>
+              )}
             </div>
 
             <div className="lg:col-span-5 relative h-80 sm:h-96 rounded-3xl overflow-hidden shadow-cube border border-slate-200">
@@ -66,48 +63,6 @@ export default async function SmartCitiesPage() {
               />
             </div>
           </div>
-
-          <div className="mt-12">
-            <h3 className="text-2xl font-bold font-display text-navy-950 mb-8 text-center">
-              Smart Urban Technology Offerings
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {vertical.keyServices.map((srv, i) => (
-                <div key={i} className="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-cyan-300 transition-all">
-                  <h4 className="text-base font-bold text-navy-950 mb-2 flex items-center">
-                    <Activity className="w-4 h-4 text-cyan-600 mr-2" />
-                    {srv.title}
-                  </h4>
-                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    {srv.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Real Projects Grid */}
-      <section className="py-20 bg-slate-50 border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="text-xs font-bold uppercase tracking-wider text-cyan-700 bg-cyan-50 px-3 py-1 rounded-full border border-cyan-200">
-              Field Execution
-            </span>
-            <h2 className="text-3xl font-display font-extrabold text-navy-950 mt-3">
-              Smart Cities &amp; Urban Tech Projects ({verticalProjects.length})
-            </h2>
-            <p className="text-sm text-slate-600 mt-2">
-              Verified high-tech industrial park advisory, sensor networks, TIDEL Park infrastructure, and smart municipal utilities.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {verticalProjects.map((proj) => (
-              <ProjectCard key={proj.slug} project={proj} />
-            ))}
-          </div>
         </div>
       </section>
 
@@ -115,11 +70,8 @@ export default async function SmartCitiesPage() {
       <section className="py-16 bg-gradient-to-b from-[#FFFFFF] via-[#F6FAFD] to-[#EAF2F8] border-t border-[#BDD7E8]/60 text-[#24272B] text-center">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-2xl sm:text-3xl font-display font-bold">
-            Accelerating Data-Driven Urban Infrastructure
+            Connect with the Smart Cities Vertical
           </h2>
-          <p className="mt-3 text-xs sm:text-sm text-[#747B83]">
-            Collaborate with CUBE for telemetry validation, smart command centers, and digital urban twin roadmaps.
-          </p>
           <div className="mt-6">
             <Link
               href="/contact"

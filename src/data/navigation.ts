@@ -98,10 +98,6 @@ export const navigationItems: NavigationItem[] = [
         title: 'Life at CUBE',
         href: '/media#life-at-cube',
       },
-      {
-        title: 'Reports & Publications',
-        href: '/media#publications',
-      },
     ],
   },
   {

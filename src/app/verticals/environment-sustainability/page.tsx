@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import PageHeader from '@/components/common/PageHeader';
 import ProjectCard from '@/components/cards/ProjectCard';
-import { Leaf, Droplets, CheckCircle2, ArrowRight, FlaskConical, Waves, ShieldCheck } from 'lucide-react';
+import { Leaf, CheckCircle2, ArrowRight } from 'lucide-react';
 import { verticals } from '@/data/verticals';
 import { getPublishedProjects } from '@/lib/db/queries';
 
@@ -12,7 +12,7 @@ export const dynamic = 'force-dynamic';
 
 export const metadata = {
   title: 'Environment & Sustainability Vertical | CUBE IIT Madras',
-  description: 'Water resources, STP/ETP design, 2D flood hydrodynamic modeling, lake rejuvenation, and sustainability advisory by CUBE.',
+  description: 'The E&S vertical at CUBE, with its state of the art laboratory is involved in efforts to develop innovative and cost-effective solutions to treating effluents, managing solid waste, purifying air and recycling water.',
 };
 
 export default async function EnvironmentSustainabilityPage() {
@@ -25,7 +25,7 @@ export default async function EnvironmentSustainabilityPage() {
       <PageHeader
         badge="Core Vertical"
         title={vertical.title}
-        description={vertical.longDescription}
+        description={vertical.description}
         breadcrumbs={[
           { label: 'Verticals', href: '/verticals' },
           { label: 'Environment & Sustainability' },
@@ -42,18 +42,20 @@ export default async function EnvironmentSustainabilityPage() {
             <div className="lg:col-span-7 space-y-6">
               <div className="inline-flex items-center space-x-2 text-xs font-bold uppercase tracking-wider text-teal-700 bg-teal-50 px-3 py-1.5 rounded-full border border-teal-200">
                 <Leaf className="w-3.5 h-3.5 text-teal-600" />
-                <span>Water &amp; Ecological Engineering</span>
+                <span>Environment &amp; Sustainability</span>
               </div>
 
               <h2 className="text-2xl sm:text-3xl font-display font-extrabold text-navy-950 leading-tight">
-                {vertical.tagline}
+                {vertical.title}
               </h2>
 
-              <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                {vertical.longDescription}
-              </p>
+              {vertical.longDescription.split('\n\n').map((para, i) => (
+                <p key={i} className="text-sm sm:text-base text-slate-700 leading-relaxed">
+                  {para}
+                </p>
+              ))}
 
-              {/* Verified Capabilities Checklist */}
+              {/* Services Checklist */}
               <div className="pt-2 grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {vertical.capabilities.map((cap, i) => (
                   <div key={i} className="flex items-start text-xs sm:text-sm font-semibold text-slate-800 bg-slate-50 p-2.5 rounded-xl border border-slate-200/80">
@@ -75,49 +77,23 @@ export default async function EnvironmentSustainabilityPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#070E5C]/60 via-transparent to-transparent" />
               <div className="absolute bottom-4 left-4 right-4 text-white text-xs font-medium bg-white/90 text-[#24272B] backdrop-blur-md p-3 rounded-xl border border-[#BDD7E8]">
-                Ecological Restoration &amp; Urban Watershed Management
+                {vertical.title}
               </div>
             </div>
 
-          </div>
-
-          {/* Key Environmental Services */}
-          <div className="mt-12 pt-12 border-t border-slate-200">
-            <div className="text-center max-w-3xl mx-auto mb-10">
-              <span className="text-xs font-bold uppercase tracking-wider text-teal-700 bg-teal-50 px-3 py-1 rounded-full border border-teal-200">
-                Specialized Mandates
-              </span>
-              <h3 className="text-2xl sm:text-3xl font-bold font-display text-navy-950 mt-2">
-                Key Environmental Services &amp; Advisory
-              </h3>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {vertical.keyServices.map((srv, i) => (
-                <div key={i} className="p-6 rounded-2xl bg-slate-50 hover:bg-white border border-slate-200 hover:border-teal-400/60 hover:shadow-lg transition-all duration-300">
-                  <h4 className="text-base font-bold text-navy-950 mb-2 flex items-center">
-                    <Waves className="w-4 h-4 text-teal-600 mr-2 flex-shrink-0" />
-                    <span>{srv.title}</span>
-                  </h4>
-                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    {srv.description}
-                  </p>
-                </div>
-              ))}
-            </div>
           </div>
 
           {/* Connected CEL Environmental Laboratory Banner */}
           <div className="mt-16 p-8 rounded-3xl bg-gradient-to-r from-[#060F1E] to-[#0A1A33] text-white border border-teal-500/30 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
             <div className="space-y-2 text-center md:text-left">
               <span className="text-[11px] uppercase tracking-wider font-bold text-teal-300 bg-teal-900/60 px-3 py-1 rounded-full border border-teal-400/30">
-                Co-Located Testing Laboratory
+                CEL
               </span>
               <h4 className="text-xl sm:text-2xl font-bold font-display">
                 CUBE Environmental Laboratory (CEL)
               </h4>
               <p className="text-xs sm:text-sm text-slate-300 max-w-xl">
-                Providing comprehensive water quality, wastewater analysis, and solid waste characterization with state-of-the-art analytical equipment.
+                CEL is an environmental testing laboratory equipped with state-of-the-art equipment, offering a wide range of analytical, testing and consultancy services across water, wastewater and solid waste domains.
               </p>
             </div>
             <Link
@@ -130,21 +106,22 @@ export default async function EnvironmentSustainabilityPage() {
           </div>
 
           {/* Landmark Projects in this Vertical */}
+          {verticalProjects.length > 0 && (
           <div className="mt-16 pt-12 border-t border-slate-200">
             <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
               <div>
                 <span className="text-xs font-bold uppercase tracking-wider text-teal-700 bg-teal-50 px-3 py-1 rounded-full border border-teal-200">
-                  Applied Track Record
+                  Our Projects
                 </span>
                 <h3 className="text-2xl font-bold font-display text-navy-950 mt-2">
-                  Featured Environmental Projects
+                  Environment &amp; Sustainability Projects
                 </h3>
               </div>
               <Link
-                href="/projects"
+                href="/projects?category=Environment%20%26%20Sustainability"
                 className="text-xs font-bold text-teal-700 hover:text-teal-900 flex items-center"
               >
-                <span>View All 40+ Projects</span>
+                <span>View All Projects</span>
                 <ArrowRight className="w-3.5 h-3.5 ml-1" />
               </Link>
             </div>
@@ -155,6 +132,7 @@ export default async function EnvironmentSustainabilityPage() {
               ))}
             </div>
           </div>
+          )}
 
         </div>
       </section>

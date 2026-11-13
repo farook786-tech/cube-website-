@@ -3,12 +3,18 @@ import Image from 'next/image';
 import PageHeader from '@/components/common/PageHeader';
 import { Award, BookOpen } from 'lucide-react';
 import { getPublishedTeamMembers } from '@/lib/db/queries';
+import { advisoryPanel as advisoryReference } from '@/data/leadership';
+
+// Department headings from the original IIT Advisory Panel page, by member name.
+const ADVISORY_DEPARTMENTS: Record<string, string> = Object.fromEntries(
+  advisoryReference.map((m) => [m.name, m.department || '']),
+);
 
 export const dynamic = 'force-dynamic';
 
 export const metadata = {
-  title: 'IIT Madras Advisory Panel | CUBE',
-  description: 'Distinguished faculty panel from IIT Madras providing technical advisory across CUBE engineering verticals.',
+  title: 'IIT Advisory Panel | CUBE',
+  description: 'IIT Advisory Panel of CUBE – Centre for Urbanization, Buildings & Environment.',
 };
 
 export default async function AdvisoryPanelPage() {
@@ -18,7 +24,7 @@ export default async function AdvisoryPanelPage() {
     .map((m: any) => ({
       ...m,
       role: m.designation || m.role || '',
-      organization: m.organization || m.department || 'IIT Madras',
+      department: m.department || ADVISORY_DEPARTMENTS[m.name] || 'IIT Madras',
     }));
   // CMS is the source of truth: archived members must not reappear via a fallback.
   const advisoryPanel = advisory;
@@ -26,9 +32,9 @@ export default async function AdvisoryPanelPage() {
   return (
     <div>
       <PageHeader
-        badge="Academic Rigor"
-        title="IIT Madras Faculty Advisory Panel"
-        description="Over 25 distinguished professors and subject-matter experts from the Indian Institute of Technology Madras guiding CUBE's applied engineering consultancy."
+        badge="About CUBE"
+        title="IIT Advisory Panel"
+        description="Centre for Urbanization, Buildings & Environment (CUBE)"
         breadcrumbs={[
           { label: 'About CUBE', href: '/about' },
           { label: 'IIT Advisory Panel' },
@@ -58,13 +64,8 @@ export default async function AdvisoryPanelPage() {
                   {member.role}
                 </p>
                 <p className="text-[10px] text-slate-500 mt-1 line-clamp-1">
-                  IIT Madras
+                  {member.department}
                 </p>
-                <div className="mt-auto pt-4">
-                  <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-teal-50 text-teal-700 border border-teal-200">
-                    Faculty Advisor
-                  </span>
-                </div>
               </div>
             ))}
           </div>

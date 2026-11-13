@@ -7,20 +7,20 @@ import { clientLogoAlt } from '@/lib/content';
 import { partners } from '@/data/partners';
 
 export const metadata = {
-  title: 'Our Clients & Partners | CUBE IIT Madras',
-  description: 'Government departments, municipal bodies, and industrial partners collaborating with CUBE.',
+  title: 'Our Clients | CUBE IIT Madras',
+  description: 'Clients of CUBE – Centre for Urbanization, Buildings & Environment.',
 };
 
 export default function ClientsPage() {
   return (
     <div>
       <PageHeader
-        badge="Collaborative Network"
-        title="Institutional Clients & Partners"
-        description="Over 50 government departments, state agencies, and industrial leaders who trust CUBE for applied engineering consultancy and quality assurance."
+        badge="About CUBE"
+        title="Our Clients"
+        description="Centre for Urbanization, Buildings & Environment (CUBE)"
         breadcrumbs={[
           { label: 'About CUBE', href: '/about' },
-          { label: 'Our Clients & Partners' },
+          { label: 'Our Clients' },
         ]}
       />
 
@@ -28,14 +28,11 @@ export default function ClientsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <span className="text-xs font-bold uppercase tracking-wider text-teal-700 bg-teal-50 px-3 py-1 rounded-full border border-teal-200">
-              Government &amp; Public Sector
+              Our Clients
             </span>
             <h2 className="text-3xl font-display font-extrabold text-navy-950 mt-3">
-              Valued Clients
+              Our Clients
             </h2>
-            <p className="text-sm text-slate-600 mt-2">
-              All logos represent verified relationships across Tamil Nadu development authorities, metro rail, housing boards, and industrial corporations.
-            </p>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
@@ -63,14 +60,11 @@ export default function ClientsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <span className="text-xs font-bold uppercase tracking-wider text-teal-700 bg-teal-50 px-3 py-1 rounded-full border border-teal-200">
-              Strategic Ecosystem
+              Partners
             </span>
             <h2 className="text-3xl font-display font-extrabold text-navy-950 mt-3">
-              Institutional Partners
+              Partners
             </h2>
-            <p className="text-sm text-slate-600 mt-2">
-              Collaborating research foundations, academic institutions, and technology partners.
-            </p>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-4xl mx-auto">

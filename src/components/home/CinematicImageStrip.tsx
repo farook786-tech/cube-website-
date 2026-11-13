@@ -15,54 +15,47 @@ interface StripItem {
   link: string;
 }
 
+// Projects shown on the original CUBE homepage (https://cubeiitm.org/), with their original titles.
 const STRIP_ITEMS: StripItem[] = [
   {
     id: 's1',
-    title: 'IIT Tirupati Academic Complex',
-    subtitle: 'Institutional Masterplanning & PMC',
+    title: "Third Party Quality Assurance (TPQA) Service for Construction of Permanent Campus for Indian Institute of Technology Tirupati, Andhra Pradesh.",
+    subtitle: '',
     image: '/images/hero/slides_iit-tirupathi.jpg',
-    category: 'Institutional',
+    category: "Building and Construction",
     link: '/projects/iit-tirupathi',
   },
   {
     id: 's2',
-    title: 'CPCL Industrial Housing',
-    subtitle: 'Precast Durability & TPQA',
-    image: '/images/hero/slides_cpcl-arc.jpg',
-    category: 'Buildings',
-    link: '/projects/cpcl-arhc',
+    title: "Re-evaluation of Structural Vulnerability, Destress Mapping & Residual Life Assessment of thirty-three dilapidated tenements across Chennai.",
+    subtitle: '',
+    image: '/images/hero/slides_revaluation.jpg',
+    category: "Building and Construction",
+    link: '/projects',
   },
   {
     id: 's3',
-    title: 'PMAY Affordable Housing Assurance',
-    subtitle: 'Structural Proof Checking across 40+ Schemes',
-    image: '/images/hero/slides_design-engineering-consultancy.jpg',
-    category: 'Urban Living',
+    title: "Feasibility Study on Identification of Alternate Location for Parayan Kuttai Water Body & Surface Water Optimization Plan for Caterpillar India Private Limited, Thiruvallur",
+    subtitle: '',
+    image: '/images/hero/slides_07-cat.jpg',
+    category: "Environment & Sustainability",
     link: '/projects',
   },
   {
     id: 's4',
-    title: 'CUBE Environmental Testing Facility',
-    subtitle: 'Water, Wastewater & Material Durability',
-    image: '/images/cel/about_cel.jpg',
-    category: 'CEL Lab',
-    link: '/cel',
-  },
-  {
-    id: 's5',
-    title: 'NICHE Industrial Park',
-    subtitle: 'Stormwater & Environmental Engineering',
+    title: "NICHE Industrial Park, SIPCOT Irungattukottai",
+    subtitle: '',
     image: '/images/hero/slides_niche.jpg',
-    category: 'Infrastructure',
+    category: "Urban Planning & Transportation",
     link: '/projects/upt2',
   },
   {
-    id: 's6',
-    title: 'Engineers Capacity Building Center',
-    subtitle: 'IIT Madras Applied Research & Knowledge Sharing',
-    image: '/images/hero/slides_building-training-team.jpg',
-    category: 'Academia',
-    link: '/about',
+    id: 's5',
+    title: "Feasibility Study on the Relocation of Two Waterbodies within the Origins - Mahindra World City, Ponneri, Tamil Nadu",
+    subtitle: '',
+    image: '/images/hero/slides_mahindra.jpg',
+    category: "Environment & Sustainability",
+    link: '/projects',
   },
 ];
 
@@ -79,15 +72,12 @@ export default function CinematicImageStrip() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div className="space-y-2">
             <span className="text-xs uppercase tracking-widest text-[#D99A42] font-bold">
-              Engineering Panorama
+              Our Projects
             </span>
             <h2 className="font-serif text-3xl sm:text-5xl font-light text-[#24272B] tracking-tight">
-              Cinematic Portfolio Sequence
+              Projects
             </h2>
           </div>
-          <p className="text-xs sm:text-sm text-[#747B83] max-w-md">
-            Continuously advancing civil engineering research into enduring public infrastructure across Tamil Nadu and South India. Hover or tap any case study to inspect.
-          </p>
         </div>
       </div>
 
@@ -119,7 +109,7 @@ export default function CinematicImageStrip() {
               {/* The whole card opens the project (previously only the small arrow did). */}
               <Link
                 href={item.link}
-                aria-label={`${item.title}: ${item.subtitle}`}
+                aria-label={item.title}
                 tabIndex={idx >= STRIP_ITEMS.length ? -1 : undefined}
                 aria-hidden={idx >= STRIP_ITEMS.length ? true : undefined}
                 className="block focus:outline-none focus-visible:ring-2 focus-visible:ring-[#070E5C] rounded-3xl"
@@ -145,12 +135,14 @@ export default function CinematicImageStrip() {
               {/* Content Bottom */}
               <div className="p-6 flex items-start justify-between gap-4">
                 <div>
-                  <h3 className="font-serif text-lg font-medium text-[#24272B] group-hover:text-[#070E5C] transition-colors line-clamp-1">
+                  <h3 className="font-serif text-lg font-medium text-[#24272B] group-hover:text-[#070E5C] transition-colors line-clamp-2">
                     {item.title}
                   </h3>
-                  <p className="text-xs text-[#747B83] mt-1 line-clamp-1">
-                    {item.subtitle}
-                  </p>
+                  {item.subtitle && (
+                    <p className="text-xs text-[#747B83] mt-1 line-clamp-1">
+                      {item.subtitle}
+                    </p>
+                  )}
                 </div>
 
                 <span

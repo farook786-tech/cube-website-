@@ -21,37 +21,37 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="flex items-start space-x-4">
-              <div className="p-3 bg-white rounded-2xl text-[#070E5C] border border-[#BDD7E8] shadow-sm shrink-0">
+              <div className="p-3 bg-white cube-glass rounded-2xl text-[#070E5C] border border-[#BDD7E8] shadow-sm shrink-0">
                 <ShieldCheck className="w-5 h-5 text-[#D99A42]" />
               </div>
               <div>
                 <h4 className="font-serif text-base font-medium text-[#24272B]">Centre of Excellence</h4>
                 <p className="text-xs text-[#747B83] mt-0.5 leading-relaxed">
-                  Established jointly by the Government of Tamil Nadu &amp; Indian Institute of Technology Madras.
+                  Raised by IIT Madras and the Government of Tamil Nadu.
                 </p>
               </div>
             </div>
 
             <div className="flex items-start space-x-4">
-              <div className="p-3 bg-white rounded-2xl text-[#070E5C] border border-[#BDD7E8] shadow-sm shrink-0">
+              <div className="p-3 bg-white cube-glass rounded-2xl text-[#070E5C] border border-[#BDD7E8] shadow-sm shrink-0">
                 <Building2 className="w-5 h-5 text-[#D99A42]" />
               </div>
               <div>
-                <h4 className="font-serif text-base font-medium text-[#24272B]">Engineering Consultancy</h4>
+                <h4 className="font-serif text-base font-medium text-[#24272B]">Applied Technology &amp; Consultancy</h4>
                 <p className="text-xs text-[#747B83] mt-0.5 leading-relaxed">
-                  Independent Third Party Quality Assurance (TPQA) &amp; structural proof checking for 40+ schemes.
+                  An Applied Technology, Consultancy, Advisory and Research Centre.
                 </p>
               </div>
             </div>
 
             <div className="flex items-start space-x-4">
-              <div className="p-3 bg-white rounded-2xl text-[#070E5C] border border-[#BDD7E8] shadow-sm shrink-0">
+              <div className="p-3 bg-white cube-glass rounded-2xl text-[#070E5C] border border-[#BDD7E8] shadow-sm shrink-0">
                 <Leaf className="w-5 h-5 text-[#D99A42]" />
               </div>
               <div>
-                <h4 className="font-serif text-base font-medium text-[#24272B]">CUBE Environmental Lab (CEL)</h4>
+                <h4 className="font-serif text-base font-medium text-[#24272B]">CUBE Environmental Laboratory (CEL)</h4>
                 <p className="text-xs text-[#747B83] mt-0.5 leading-relaxed">
-                  Advanced water, wastewater, soil, and building materials testing facility at IITM Research Park.
+                  Analytical, testing and consultancy services across water, wastewater and solid waste domains.
                 </p>
               </div>
             </div>
@@ -77,16 +77,16 @@ export default function Footer() {
             </Link>
 
             <p className="text-xs text-[#747B83] leading-relaxed max-w-sm">
-              An autonomous Centre of Excellence translating cutting-edge academic research from IIT Madras into resilient public infrastructure, sustainable water systems, and smart urban environments.
+              Centre for Urbanization, Buildings &amp; Environment (CUBE) has been raised by IIT Madras and the Government of Tamil Nadu as an Applied Technology, Consultancy, Advisory and Research Centre.
             </p>
 
             <div className="pt-2">
               <div className="text-[11px] uppercase tracking-wider font-bold text-[#24272B] mb-3">
-                Connect With CUBE
+                Follow Us
               </div>
               <div className="flex items-center space-x-2">
                 <a
-                  href="https://linkedin.com"
+                  href={contactInfo.socialLinks.linkedin}
                   target="_blank"
                   rel="noreferrer"
                   className="p-2.5 rounded-full bg-[#EAF2F8]/70 hover:bg-[#EAF2F8] text-[#24272B] hover:text-[#070E5C] transition-colors border border-[#E5E7EB]"
@@ -95,7 +95,7 @@ export default function Footer() {
                   <Linkedin className="w-4 h-4" />
                 </a>
                 <a
-                  href="https://twitter.com"
+                  href={contactInfo.socialLinks.twitter}
                   target="_blank"
                   rel="noreferrer"
                   className="p-2.5 rounded-full bg-[#EAF2F8]/70 hover:bg-[#EAF2F8] text-[#24272B] hover:text-[#070E5C] transition-colors border border-[#E5E7EB]"
@@ -104,7 +104,7 @@ export default function Footer() {
                   <Twitter className="w-4 h-4" />
                 </a>
                 <a
-                  href="https://facebook.com"
+                  href={contactInfo.socialLinks.facebook}
                   target="_blank"
                   rel="noreferrer"
                   className="p-2.5 rounded-full bg-[#EAF2F8]/70 hover:bg-[#EAF2F8] text-[#24272B] hover:text-[#070E5C] transition-colors border border-[#E5E7EB]"
@@ -119,7 +119,7 @@ export default function Footer() {
           {/* Col 2: Core Verticals (3 cols) */}
           <div className="lg:col-span-3 space-y-4">
             <h4 className="font-serif text-base font-semibold text-[#24272B]">
-              Core Verticals
+              Verticals
             </h4>
             <ul className="space-y-2.5 text-xs text-[#747B83]">
               <li>
@@ -134,7 +134,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/verticals/smart-cities" className="hover:text-[#070E5C] transition-colors flex items-center gap-1.5">
-                  <span className="text-[#D99A42]">&rsaquo;</span> Smart Cities &amp; IoT
+                  <span className="text-[#D99A42]">&rsaquo;</span> Smart Cities
                 </Link>
               </li>
               <li>
@@ -144,7 +144,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/cel" className="hover:text-[#070E5C] transition-colors flex items-center gap-1.5">
-                  <span className="text-[#D99A42]">&rsaquo;</span> CEL Laboratory Testing
+                  <span className="text-[#D99A42]">&rsaquo;</span> CEL
                 </Link>
               </li>
             </ul>
@@ -153,12 +153,12 @@ export default function Footer() {
           {/* Col 3: About & Governance (2 cols) */}
           <div className="lg:col-span-2 space-y-4">
             <h4 className="font-serif text-base font-semibold text-[#24272B]">
-              Governance
+              About
             </h4>
             <ul className="space-y-2.5 text-xs text-[#747B83]">
               <li>
                 <Link href="/about" className="hover:text-[#070E5C] transition-colors">
-                  About Overview
+                  About CUBE
                 </Link>
               </li>
               <li>
@@ -173,7 +173,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/about#governing-board" className="hover:text-[#070E5C] transition-colors">
-                  Governing Board
+                  Board Members
                 </Link>
               </li>
               <li>
@@ -183,7 +183,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/about/team" className="hover:text-[#070E5C] transition-colors">
-                  Our Team (80+)
+                  Our Team
                 </Link>
               </li>
             </ul>
@@ -192,34 +192,29 @@ export default function Footer() {
           {/* Col 4: Institutional Contact (3 cols) */}
           <div className="lg:col-span-3 space-y-4">
             <h4 className="font-serif text-base font-semibold text-[#24272B]">
-              Institutional Office
+              Contact Us
             </h4>
             
             <div className="space-y-3 text-xs text-[#747B83]">
               <div className="flex items-start space-x-2.5">
                 <MapPin className="w-4 h-4 text-[#D99A42] shrink-0 mt-0.5" />
                 <span>
-                  First Floor, IIT Madras Research Park, Kanagam Road, Taramani, Chennai, Tamil Nadu 600113, India
+                  {contactInfo.address}
                 </span>
               </div>
 
               <div className="flex items-center space-x-2.5">
                 <Mail className="w-4 h-4 text-[#D99A42] shrink-0" />
-                <a href="mailto:contact@cubeiitm.org" className="text-[#24272B] font-medium hover:text-[#070E5C] transition-colors">
-                  contact@cubeiitm.org
+                <a href={`mailto:${contactInfo.email}`} className="text-[#24272B] font-medium hover:text-[#070E5C] transition-colors">
+                  {contactInfo.email}
                 </a>
               </div>
 
               <div className="flex items-center space-x-2.5">
                 <Phone className="w-4 h-4 text-[#D99A42] shrink-0" />
-                <a href="tel:+914466469800" className="text-[#24272B] font-medium hover:text-[#070E5C] transition-colors">
-                  +91 44 6646 9800
+                <a href={contactInfo.phoneHref} className="text-[#24272B] font-medium hover:text-[#070E5C] transition-colors">
+                  {contactInfo.phone}
                 </a>
-              </div>
-
-              <div className="flex items-center space-x-2.5">
-                <Clock className="w-4 h-4 text-[#D99A42] shrink-0" />
-                <span>Monday &ndash; Friday: 9:00 AM &ndash; 5:30 PM (IST)</span>
               </div>
             </div>
 
@@ -228,7 +223,7 @@ export default function Footer() {
                 href="/contact"
                 className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full bg-[#EAF2F8] text-[#070E5C] border border-[#BBD6EA] hover:bg-[#D99A42] hover:text-[#24272B] text-xs font-semibold transition-all shadow-sm"
               >
-                <span>Submit Technical Query</span>
+                <span>Get in Touch</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
             </div>
@@ -243,7 +238,7 @@ export default function Footer() {
           <div>
             &copy; {currentYear} Centre for Urbanization, Buildings &amp; Environment (CUBE). All rights reserved.
             <span className="block sm:inline sm:ml-2 text-[11px] text-[#747B83]/70">
-              Autonomous Centre of Excellence &bull; Govt of Tamil Nadu &amp; IIT Madras.
+              IIT Madras &amp; Government of Tamil Nadu.
             </span>
           </div>
 
@@ -257,7 +252,7 @@ export default function Footer() {
             </Link>
             <span>&bull;</span>
             <Link href="/media" className="hover:text-[#070E5C] transition-colors">
-              Media Center
+              Media
             </Link>
             <span>&bull;</span>
             <Link href="/contact" className="hover:text-[#070E5C] transition-colors">

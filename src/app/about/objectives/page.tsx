@@ -5,16 +5,16 @@ import { aboutContent } from '@/data/about';
 
 export const metadata = {
   title: 'Objectives | CUBE IIT Madras',
-  description: '10 Core institutional objectives of CUBE – Centre for Urbanization, Buildings & Environment.',
+  description: 'Objectives of CUBE – Centre for Urbanization, Buildings & Environment.',
 };
 
 export default function ObjectivesPage() {
   return (
     <div>
       <PageHeader
-        badge="Institutional Mandate"
-        title="Core Objectives"
-        description="The foundational mandates established to guide CUBE's applied engineering consultancy, capacity building, and applied research."
+        badge="About CUBE"
+        title="Objectives"
+        description="Centre for Urbanization, Buildings & Environment (CUBE)"
         breadcrumbs={[
           { label: 'About CUBE', href: '/about' },
           { label: 'Objectives' },

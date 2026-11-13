@@ -99,21 +99,24 @@ export const advisoryPanel: Leader[] = [
     "role": "Professor, Building Technology and Construction Management",
     "category": "IIT Advisory Panel",
     "image": "/images/leadership/advisory_panel_meher-prasad.jpg",
-    "organization": "Indian Institute of Technology Madras"
+    "organization": "Indian Institute of Technology Madras",
+    "department": "Department Of Civil Engineering"
   },
   {
     "name": "Amlan Kumar Sengupta",
     "role": "Professor, Structural Engineering",
     "category": "IIT Advisory Panel",
     "image": "/images/leadership/advisory_panel_amlan-kumar.jpg",
-    "organization": "Indian Institute of Technology Madras"
+    "organization": "Indian Institute of Technology Madras",
+    "department": "Department Of Civil Engineering"
   },
   {
     "name": "Arun Menon",
     "role": "Associate Professor, Structural Engineering",
     "category": "IIT Advisory Panel",
     "image": "/images/leadership/advisory_panel_arun-menon.jpg",
-    "organization": "Indian Institute of Technology Madras"
+    "organization": "Indian Institute of Technology Madras",
+    "department": "Department Of Civil Engineering"
   },
   {
     "name": "Ashwin Mahalingam",
@@ -121,42 +124,48 @@ export const advisoryPanel: Leader[] = [
     "role": "Associate Professor, Building Technology & Construction Management",
     "category": "IIT Advisory Panel",
     "image": "/images/leadership/board_member_ashwin.jpg",
-    "organization": "Indian Institute of Technology Madras"
+    "organization": "Indian Institute of Technology Madras",
+    "department": "Department Of Civil Engineering"
   },
   {
     "name": "Arul Narayan SP",
     "role": "Associate Professor, Transportation Engineering",
     "category": "IIT Advisory Panel",
     "image": "/images/leadership/advisory_panel_arul-narayanan.jpg",
-    "organization": "Indian Institute of Technology Madras"
+    "organization": "Indian Institute of Technology Madras",
+    "department": "Department Of Civil Engineering"
   },
   {
     "name": "Balaji Narasimhan",
     "role": "Professor, Environmental and Water Resources Engineering",
     "category": "IIT Advisory Panel",
     "image": "/images/leadership/advisory_panel_balaji-narasiman.jpg",
-    "organization": "Indian Institute of Technology Madras"
+    "organization": "Indian Institute of Technology Madras",
+    "department": "Department Of Civil Engineering"
   },
   {
     "name": "Boominathan A",
     "role": "Professor, Geotechnical Engineering",
     "category": "IIT Advisory Panel",
     "image": "/images/leadership/advisory_panel_boominathan.jpg",
-    "organization": "Indian Institute of Technology Madras"
+    "organization": "Indian Institute of Technology Madras",
+    "department": "Department Of Civil Engineering"
   },
   {
     "name": "Devdas Menon",
     "role": "Professor, Structural Engineering",
     "category": "IIT Advisory Panel",
     "image": "/images/leadership/advisory_panel_devdas-menon.jpg",
-    "organization": "Indian Institute of Technology Madras"
+    "organization": "Indian Institute of Technology Madras",
+    "department": "Department Of Civil Engineering"
   },
   {
     "name": "Gitakrishnan Ramadurai",
     "role": "Associate Professor, Transportation Engineering",
     "category": "IIT Advisory Panel",
     "image": "/images/leadership/advisory_panel_gitakrishnan.jpg",
-    "organization": "Indian Institute of Technology Madras"
+    "organization": "Indian Institute of Technology Madras",
+    "department": "Department Of Civil Engineering"
   },
   {
     "name": "Indumathi M Nambi",
@@ -164,112 +173,128 @@ export const advisoryPanel: Leader[] = [
     "role": "Professor, Environmental and Water Resources Engineering",
     "category": "IIT Advisory Panel",
     "image": "/images/leadership/board_member_indumathi.jpg",
-    "organization": "Indian Institute of Technology Madras"
+    "organization": "Indian Institute of Technology Madras",
+    "department": "Department Of Civil Engineering"
   },
   {
     "name": "Ligy Philip",
     "role": "Professor, Environmental and Water Resources Engineering",
     "category": "IIT Advisory Panel",
     "image": "/images/leadership/advisory_panel_ligy-philip.jpg",
-    "organization": "Indian Institute of Technology Madras"
+    "organization": "Indian Institute of Technology Madras",
+    "department": "Department Of Civil Engineering"
   },
   {
     "name": "Murali Krishnan J",
     "role": "Board Member, Member Secretary(i/c)",
     "category": "IIT Advisory Panel",
     "image": "/images/leadership/advisory_panel_murali-krishnan.jpg",
-    "organization": "Indian Institute of Technology Madras"
+    "organization": "Indian Institute of Technology Madras",
+    "department": "Department Of Civil Engineering"
   },
   {
     "name": "Murty B.S.",
     "role": "Professor, Environmental and Water Resources Engineering",
     "category": "IIT Advisory Panel",
     "image": "/images/leadership/advisory_panel_murty-bs.jpg",
-    "organization": "Indian Institute of Technology Madras"
+    "organization": "Indian Institute of Technology Madras",
+    "department": "Department Of Civil Engineering"
   },
   {
     "name": "Radhakrishna G. Pillai",
     "role": "Professor, Building Technology and Construction Management",
     "category": "IIT Advisory Panel",
     "image": "/images/leadership/advisory_panel_radhakrishnan-pillai.jpg",
-    "organization": "Indian Institute of Technology Madras"
+    "organization": "Indian Institute of Technology Madras",
+    "department": "Department Of Civil Engineering"
   },
   {
     "name": "Ramamurthy K",
     "role": "HOD Department of Civil Engineering",
     "category": "IIT Advisory Panel",
     "image": "/images/leadership/advisory_panel_ramamurthy-k.jpg",
-    "organization": "Indian Institute of Technology Madras"
+    "organization": "Indian Institute of Technology Madras",
+    "department": "Department Of Civil Engineering"
   },
   {
     "name": "Rupen Goswami",
     "role": "Associate Professor, Structural Engineering",
     "category": "IIT Advisory Panel",
     "image": "/images/leadership/advisory_panel_rupen-goswami.jpg",
-    "organization": "Indian Institute of Technology Madras"
+    "organization": "Indian Institute of Technology Madras",
+    "department": "Department Of Civil Engineering"
   },
   {
     "name": "S. Mohan",
     "role": "Professor, Environmental and Water Resources Engineering",
     "category": "IIT Advisory Panel",
     "image": "/images/leadership/advisory_panel_s-mohan.jpg",
-    "organization": "Indian Institute of Technology Madras"
+    "organization": "Indian Institute of Technology Madras",
+    "department": "Department Of Civil Engineering"
   },
   {
     "name": "S.M.Shiva Nagendra",
     "role": "Professor, Environmental and Water Resources Engineering",
     "category": "IIT Advisory Panel",
     "image": "/images/leadership/advisory_panel_shiva-nagendra.jpg",
-    "organization": "Indian Institute of Technology Madras"
+    "organization": "Indian Institute of Technology Madras",
+    "department": "Department Of Civil Engineering"
   },
   {
     "name": "Saravanan U",
     "role": "Professor, Structural Engineering",
     "category": "IIT Advisory Panel",
     "image": "/images/leadership/advisory_panel_sarvanan.jpg",
-    "organization": "Indian Institute of Technology Madras"
+    "organization": "Indian Institute of Technology Madras",
+    "department": "Department Of Civil Engineering"
   },
   {
     "name": "Sivakumar Palaniappan K",
     "role": "Assistant Professor, Building Technology and Construction Management",
     "category": "IIT Advisory Panel",
     "image": "/images/leadership/advisory_panel_sivakumar-palaniappan.jpg",
-    "organization": "Indian Institute of Technology Madras"
+    "organization": "Indian Institute of Technology Madras",
+    "department": "Department Of Civil Engineering"
   },
   {
     "name": "Subhadeep Banerjee",
     "role": "Associate Professor, Geotechnical Engineering",
     "category": "IIT Advisory Panel",
     "image": "/images/leadership/advisory_panel_subhadeep.jpg",
-    "organization": "Indian Institute of Technology Madras"
+    "organization": "Indian Institute of Technology Madras",
+    "department": "Department Of Civil Engineering"
   },
   {
     "name": "A Mani",
     "role": "Professor",
     "category": "IIT Advisory Panel",
     "image": "/images/leadership/advisory_panel_a-mani.jpg",
-    "organization": "Indian Institute of Technology Madras"
+    "organization": "Indian Institute of Technology Madras",
+    "department": "Mechanical Engineering Department"
   },
   {
     "name": "S R Chakravarthy",
     "role": "Professor",
     "category": "IIT Advisory Panel",
     "image": "/images/leadership/advisory_panel_chakravarthy.jpg",
-    "organization": "Indian Institute of Technology Madras"
+    "organization": "Indian Institute of Technology Madras",
+    "department": "Department Of Aerospace Engineering"
   },
   {
     "name": "R Raghunathan",
     "role": "Professor",
     "category": "IIT Advisory Panel",
     "image": "/images/leadership/advisory_panel_ragunathan.jpg",
-    "organization": "Indian Institute of Technology Madras"
+    "organization": "Indian Institute of Technology Madras",
+    "department": "Department Of Chemical Engineering"
   },
   {
     "name": "R Ravikrishna",
     "role": "Professor",
     "category": "IIT Advisory Panel",
     "image": "/images/leadership/advisory_panel_ravikrishna.jpg",
-    "organization": "Indian Institute of Technology Madras"
+    "organization": "Indian Institute of Technology Madras",
+    "department": "Department Of Chemical Engineering"
   }
 ];
 
@@ -280,7 +305,7 @@ export const executiveLeadership: Leader[] = [
     category: 'Executive',
     organization: 'Indian Institute of Technology Madras',
     image: '/images/leadership/board_member_kamakoti.jpg',
-    bio: 'Prof. V. Kamakoti is the Director of IIT Madras and Chairman of CUBE. A Centre of Excellence was conceived by IIT Madras to work towards an ideal habitat in our cities, keeping the core values of the historical development of our cities in mind and bringing to bear the rapid technological changes of these times. The Centre takes a holistic and multidisciplinary approach to resolving the many complex and diverse environmental, social and technological problems that human settlements face.'
+    bio: 'Keeping this in mind, a Center for Excellence was conceived by IIT Madras to work towards achieving an ideal habitat in our cities, keeping the core values of the historical development of our cities in mind and bringing to bear the rapid technological changes that are taking place in these times. The Centre takes a holistic and multidisciplinary approach to resolving the many complex and diverse problems that human settlements face, be they environmental, social or technological.'
   },
   {
     name: 'L. Padmanaban',
@@ -288,6 +313,6 @@ export const executiveLeadership: Leader[] = [
     category: 'Executive',
     organization: 'Centre for Urbanization, Buildings & Environment',
     image: '/images/leadership/ceo_padmanaban.jpg',
-    bio: 'L. Padmanaban (Major General, Retired) is the Chief Executive Officer of CUBE. CUBE was incorporated in May 2017 as a joint initiative of the Government of Tamil Nadu (GoTN) and IIT Madras, and GoTN has declared CUBE as one of its Centres of Excellence. He leads CUBE\'s aim to develop quality and viable tailor-made solutions for industry, government and civil society in the domain of sustainable urban development through collaborative partnerships between academia, government and the private sector.'
+    bio: 'CUBE was incorporated in May 2017 as a joint initiative of Government of Tamil Nadu [GoTN] and IIT Madras. GoTN has declared CUBE as one of its Centers of Excellence. This places a significant responsibility on CUBE to strive to achieve excellence in everything that it shoulders.'
   }
 ];

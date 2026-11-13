@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { useLiveList } from '@/lib/live';
 import PageHeader from '@/components/common/PageHeader';
 import ProjectCard from '@/components/cards/ProjectCard';
@@ -13,11 +13,17 @@ export default function ProjectsPage() {
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const [searchQuery, setSearchQuery] = useState<string>('');
 
+  // "View More Projects" links from the vertical pages open a pre-filtered list.
+  useEffect(() => {
+    const cat = new URLSearchParams(window.location.search).get('category');
+    if (cat && categories.includes(cat)) setSelectedCategory(cat);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const categories = [
     'All',
     'Building & Construction',
     'Environment & Sustainability',
-    'Smart Cities',
     'Urban Planning & Transportation',
   ];
 
@@ -39,9 +45,9 @@ export default function ProjectsPage() {
   return (
     <div className="bg-[#FFFFFF] text-[#24272B] min-h-screen">
       <PageHeader
-        badge="Applied Execution"
-        title="Project Portfolio"
-        description="Explore over 40+ applied engineering consultancy, third-party quality assurance, and urban infrastructure projects delivered by CUBE."
+        badge="Projects"
+        title="Projects"
+        description="Building & Construction · Environment & Sustainability · Urban Planning & Transportation"
         breadcrumbs={[{ label: 'Projects' }]}
       />
 
@@ -49,7 +55,7 @@ export default function ProjectsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* Apple Liquid Glass Filter and Search Bar */}
-          <div className="p-4 sm:p-5 rounded-3xl bg-white/80 backdrop-blur-2xl border border-[#BDD7E8] shadow-[0_8px_24px_rgba(7,14,92,0.04)] flex flex-col md:flex-row md:items-center justify-between gap-5 mb-10">
+          <div className="p-4 sm:p-5 rounded-3xl bg-white/80 cube-glass backdrop-blur-2xl border border-[#BDD7E8] shadow-[0_8px_24px_rgba(7,14,92,0.04)] flex flex-col md:flex-row md:items-center justify-between gap-5 mb-10">
             {/* Glass Category Filter Chips */}
             <div className="flex flex-wrap gap-2">
               {categories.map((cat) => (
@@ -101,7 +107,7 @@ export default function ProjectsPage() {
 
           {/* Empty State */}
           {filteredProjects.length === 0 && (
-            <div className="text-center py-20 rounded-3xl bg-white border border-[#BDD7E8] p-8">
+            <div className="text-center py-20 rounded-3xl bg-white cube-glass border border-[#BDD7E8] p-8">
               <p className="text-sm font-semibold text-[#24272B]">No projects match your search criteria.</p>
               <p className="text-xs text-[#747B83] mt-1">Try resetting the category filter or searching with a different keyword.</p>
               <button

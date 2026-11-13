@@ -50,7 +50,7 @@ export async function submitEnquiryAction(payload: SubmitEnquiryPayload) {
   if (isPublishedSite()) {
     return {
       success: false,
-      error: 'Online enquiries are not available yet. Please email contact@cubeiitm.org or call +91 44 6646 9800.',
+      error: 'Online enquiries are not available yet. Please email office@cubeiitm.org or call 044 6121 0901.',
     };
   }
   const name = payload.name?.trim();

@@ -39,7 +39,7 @@ export default function ProjectsManagerClient({ initialProjects }: { initialProj
     setTitle('');
     setCategory('Building & Construction');
     setClient('');
-    setLocation('Chennai, Tamil Nadu');
+    setLocation('');
     setDescription('');
     setHeroImage('/images/hero/slides_iit-tirupathi.jpg');
     setFeatured(false);
@@ -51,7 +51,7 @@ export default function ProjectsManagerClient({ initialProjects }: { initialProj
     setTitle(proj.title || '');
     setCategory(proj.category || 'Building & Construction');
     setClient(proj.client || '');
-    setLocation(proj.location || 'Tamil Nadu');
+    setLocation(proj.location || '');
     setDescription(proj.description || '');
     setHeroImage(proj.heroImage || '/images/hero/slides_iit-tirupathi.jpg');
     setFeatured(!!proj.featured);
@@ -201,7 +201,7 @@ export default function ProjectsManagerClient({ initialProjects }: { initialProj
                       {proj.title}
                     </div>
                     <div className="text-[11px] text-slate-400 truncate mt-0.5">
-                      Client: {proj.client || 'Government Authority'}
+                      Client: {proj.client || '—'}
                     </div>
                   </td>
                   <td className="py-3 px-4">
@@ -209,7 +209,7 @@ export default function ProjectsManagerClient({ initialProjects }: { initialProj
                       {proj.category}
                     </span>
                   </td>
-                  <td className="py-3 px-4 text-slate-600">{proj.location || 'Tamil Nadu'}</td>
+                  <td className="py-3 px-4 text-slate-600">{proj.location || '—'}</td>
                   <td className="py-3 px-4">
                     {proj.featured ? (
                       <span className="px-2 py-0.5 rounded-full bg-amber-100 text-amber-800 text-[10px] font-bold">

@@ -33,14 +33,11 @@ export default function Interactive3DClients({ clients }: Interactive3DClientsPr
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 relative z-10 text-center">
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/90 border border-[#BDD7E8] text-[#070E5C] text-xs font-bold uppercase tracking-widest shadow-xs mb-3">
           <Sparkles className="w-3.5 h-3.5 text-[#D99A42]" />
-          <span>Trusted Institutional Ecosystem</span>
+          <span>Clients</span>
         </div>
         <h2 className="font-serif text-3xl sm:text-5xl font-light text-[#24272B] tracking-tight">
-          Government Departments &amp; Industry Partners
+          Our Clients
         </h2>
-        <p className="text-xs sm:text-sm text-[#747B83] mt-3 max-w-2xl mx-auto leading-relaxed">
-          Powering state infrastructure, third-party quality assurance, precast engineering, and environmental stewardship across India.
-        </p>
       </div>
 
       {/* Row 1: Leftward Infinite Marquee */}
@@ -115,7 +112,7 @@ export default function Interactive3DClients({ clients }: Interactive3DClientsPr
           href="/about#clients-partners"
           className="inline-flex items-center gap-2 px-7 py-3 rounded-full text-xs font-bold uppercase tracking-wider text-[#070E5C] bg-white border border-[#BDD7E8] hover:bg-[#EAF2F8] shadow-sm hover:shadow-md hover:scale-105 transition-all duration-300 active:scale-95"
         >
-          <span>View All Government &amp; Corporate Clients</span>
+          <span>View All Clients</span>
           <ArrowUpRight className="w-4 h-4 text-[#D99A42]" />
         </Link>
       </div>

@@ -47,6 +47,14 @@ export default function CELCard({ service }: CELCardProps) {
     setRotateY(rY);
   };
 
+  // The original CEL site lists testing areas by name only. Cards without any
+  // details stay compact: no empty body, no empty expand panel.
+  const hasDetails = Boolean(
+    service.description ||
+      (service.parameters && service.parameters.length > 0) ||
+      (service.equipment && service.equipment.length > 0)
+  );
+
   const handleMouseLeave = () => {
     setRotateX(0);
     setRotateY(0);
@@ -58,10 +66,10 @@ export default function CELCard({ service }: CELCardProps) {
       ref={cardRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      onPointerEnter={(e) => e.pointerType === 'mouse' && setIsExpanded(true)}
-      onClick={() => setIsExpanded(!isExpanded)}
+      onPointerEnter={(e) => hasDetails && e.pointerType === 'mouse' && setIsExpanded(true)}
+      onClick={() => hasDetails && setIsExpanded(!isExpanded)}
       style={{ perspective: 1000 }}
-      className="w-full h-[470px] select-none group relative cursor-pointer"
+      className={`w-full ${hasDetails ? 'h-[470px]' : 'h-auto'} select-none group relative ${hasDetails ? 'cursor-pointer' : ''}`}
       tabIndex={0}
       role="region"
       aria-label={`${service.title} CEL interactive 3D card`}
@@ -78,7 +86,7 @@ export default function CELCard({ service }: CELCardProps) {
           backfaceVisibility: 'hidden',
           WebkitBackfaceVisibility: 'hidden',
         }}
-        className="relative w-full h-full rounded-3xl overflow-hidden bg-white border border-[#BDD7E8] shadow-[0_12px_36px_rgba(7,14,92,0.06)] hover:border-[#5B9BD5] transition-colors duration-300 flex flex-col justify-between"
+        className="relative w-full h-full rounded-3xl overflow-hidden bg-white cube-glass border border-[#BDD7E8] shadow-[0_12px_36px_rgba(7,14,92,0.06)] hover:border-[#5B9BD5] transition-colors duration-300 flex flex-col justify-between"
       >
         {/* TOP CINEMATIC IMAGE WITH 3D ZOOM DEPTH */}
         <div className="relative h-60 w-full overflow-hidden bg-slate-100 shrink-0">
@@ -103,16 +111,14 @@ export default function CELCard({ service }: CELCardProps) {
             <span className="text-[10px] font-bold tracking-wider uppercase px-3 py-1 bg-white/95 text-[#070E5C] rounded-full shadow-sm backdrop-blur-sm border border-[#BBD6EA]">
               {service.category}
             </span>
-            <span className="text-[10px] font-bold px-2.5 py-0.5 bg-[#D99A42] text-white rounded-full shadow-sm">
-              CEL Certified
-            </span>
           </div>
 
           {/* Dynamic 3D Drawer Pill */}
+          {hasDetails && (
           <div className="absolute bottom-3 right-3 z-10 flex items-center space-x-1.5 px-3 py-1 rounded-full bg-white/95 text-[#070E5C] text-[11px] shadow-sm backdrop-blur-sm border border-[#BBD6EA]">
             <Sparkles className="w-3 h-3 text-[#D99A42]" />
             <span className="text-[10px] font-semibold">
-              {isExpanded ? 'Testing Parameters' : (<><span className="hidden [@media(hover:hover)]:inline">Hover to Expand</span><span className="[@media(hover:hover)]:hidden">Tap to Expand</span></>)}
+              {isExpanded ? 'Details' : (<><span className="hidden [@media(hover:hover)]:inline">Hover to Expand</span><span className="[@media(hover:hover)]:hidden">Tap to Expand</span></>)}
             </span>
             {isExpanded ? (
               <ChevronDown className="w-3 h-3 text-[#D99A42]" />
@@ -120,6 +126,7 @@ export default function CELCard({ service }: CELCardProps) {
               <ChevronUp className="w-3 h-3 text-[#D99A42]" />
             )}
           </div>
+          )}
         </div>
 
         {/* CARD BODY CONTENT */}
@@ -131,20 +138,32 @@ export default function CELCard({ service }: CELCardProps) {
             <h3 className="font-serif text-lg font-bold text-[#070E5C] leading-snug line-clamp-2">
               {service.title}
             </h3>
-            <p className="text-xs text-[#24272B]/85 mt-2 line-clamp-3 leading-relaxed font-sans font-normal">
-              {service.description}
-            </p>
+            {service.description && (
+              <p className="text-xs text-[#24272B]/85 mt-2 line-clamp-3 leading-relaxed font-sans font-normal">
+                {service.description}
+              </p>
+            )}
           </div>
 
-          <div className="pt-3 border-t border-[#E5E7EB] flex items-center justify-between text-xs font-semibold text-[#070E5C]">
-            <span>View protocols &amp; equipment</span>
-            <ArrowUpRight className="w-4 h-4 text-[#D99A42] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-          </div>
+          {hasDetails ? (
+            <div className="pt-3 border-t border-[#E5E7EB] flex items-center justify-between text-xs font-semibold text-[#070E5C]">
+              <span>View details</span>
+              <ArrowUpRight className="w-4 h-4 text-[#D99A42] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+            </div>
+          ) : (
+            <Link
+              href="/cel#enquiry"
+              className="pt-3 border-t border-[#E5E7EB] flex items-center justify-between text-xs font-semibold text-[#070E5C] hover:text-[#D99A42] transition-colors"
+            >
+              <span>Book A Test Now</span>
+              <ArrowUpRight className="w-4 h-4 text-[#D99A42] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+            </Link>
+          )}
         </div>
 
         {/* 3D ELEVATING SLIDE-UP SPECIFICATIONS DRAWER OVERLAY */}
         <AnimatePresence>
-          {isExpanded && (
+          {hasDetails && isExpanded && (
             <motion.div
               initial={{ y: '100%', opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -158,7 +177,7 @@ export default function CELCard({ service }: CELCardProps) {
                   <div className="flex items-center space-x-1.5">
                     <FlaskConical className="w-3.5 h-3.5 text-[#070E5C]" />
                     <span className="text-[10px] font-bold uppercase tracking-wider text-[#070E5C]">
-                      CEL Analytical Specifications
+                      CEL Services
                     </span>
                   </div>
                   <span className="h-2 w-2 rounded-full bg-[#D99A42] animate-pulse" />
@@ -168,9 +187,11 @@ export default function CELCard({ service }: CELCardProps) {
                   {service.title}
                 </h4>
 
-                <p className="text-xs text-[#747B83] mt-1.5 leading-relaxed line-clamp-2">
-                  Rigorous laboratory testing in accordance with Bureau of Indian Standards (BIS) and CPCB protocols.
-                </p>
+                {service.description && (
+                  <p className="text-xs text-[#747B83] mt-1.5 leading-relaxed line-clamp-2">
+                    {service.description}
+                  </p>
+                )}
 
                 {service.parameters && service.parameters.length > 0 && (
                   <div className="mt-3.5 space-y-2">

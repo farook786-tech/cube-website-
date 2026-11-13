@@ -95,7 +95,7 @@ export default function UniversalAnnouncementPopup() {
                 dismiss(ann.id, ann.frequency);
               }
             }}
-            className="pointer-events-auto rounded-3xl bg-white backdrop-blur-2xl border border-[#BDD7E8] shadow-[0_20px_50px_rgba(7,14,92,0.18),0_4px_16px_rgba(36,39,43,0.08)] p-4 sm:p-5 relative select-none max-h-[70vh] overflow-y-auto"
+            className="pointer-events-auto rounded-3xl bg-white cube-glass backdrop-blur-2xl border border-[#BDD7E8] shadow-[0_20px_50px_rgba(7,14,92,0.18),0_4px_16px_rgba(36,39,43,0.08)] p-4 sm:p-5 relative select-none max-h-[70vh] overflow-y-auto"
           >
             {/* Specular highlight line */}
             <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#BDD7E8] to-transparent opacity-90" />

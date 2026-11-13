@@ -3,12 +3,13 @@ import PageHeader from '@/components/common/PageHeader';
 import { FileText, AlertCircle, Mail, Bell, ShieldCheck, Download, Calendar, ExternalLink } from 'lucide-react';
 import Link from 'next/link';
 import { getCMSStore } from '@/lib/db/store';
+import { contactInfo } from '@/data/contact';
 
 export const dynamic = 'force-dynamic';
 
 export const metadata = {
-  title: 'Tenders & Procurement | CUBE IIT Madras',
-  description: 'Official procurement and tender notices for Centre for Urbanization, Buildings & Environment (CUBE).',
+  title: 'Tenders | CUBE IIT Madras',
+  description: 'Tenders of the Centre for Urbanization, Buildings & Environment (CUBE).',
 };
 
 export default async function TendersPage() {
@@ -20,9 +21,9 @@ export default async function TendersPage() {
   return (
     <div>
       <PageHeader
-        badge="Official Procurement"
-        title="Tenders &amp; Expressions of Interest"
-        description="Public procurement notices, expressions of interest (EOI), and requests for proposals (RFP) for CUBE institutional operations."
+        badge="Tenders"
+        title="Tenders"
+        description="Tenders published by the Centre for Urbanization, Buildings & Environment (CUBE)."
         breadcrumbs={[{ label: 'Tenders' }]}
       />
 
@@ -33,51 +34,50 @@ export default async function TendersPage() {
               <div className="flex items-center justify-between pb-4 border-b border-slate-200">
                 <div>
                   <h2 className="text-xl font-bold font-display text-navy-950">
-                    Active Procurement Notices ({activeTenders.length})
+                    Tenders ({activeTenders.length})
                   </h2>
-                  <p className="text-xs text-slate-500 mt-0.5">
-                    IIT Madras &amp; Government of Tamil Nadu sanctioned EOIs and Tenders
-                  </p>
                 </div>
-                <span className="px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-bold border border-emerald-200 flex items-center gap-1.5">
-                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                  Live Sync
-                </span>
               </div>
 
               <div className="grid grid-cols-1 gap-5">
                 {activeTenders.map((tender: any) => (
                   <div
                     key={tender.id}
-                    className="p-6 rounded-2xl bg-[#F7F7F4] border border-[#E5E7EB] hover:shadow-md transition space-y-4"
+                    className="p-6 rounded-2xl bg-[#F7F7F4] cube-glass border border-[#E5E7EB] hover:shadow-md transition space-y-4"
                   >
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                       <div className="flex items-center gap-2">
                         <span className="font-mono text-xs font-bold px-2.5 py-1 rounded-lg bg-[#EAF2F8] text-[#070E5C] border border-[#BBD6EA]">
-                          REF: {tender.referenceNumber}
+                          Tender ID: {tender.referenceNumber}
                         </span>
-                        <span className="text-xs px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-semibold">
-                          {tender.status || 'Active'}
-                        </span>
+                        {tender.status && (
+                          <span className="text-xs px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-semibold">
+                            {tender.status}
+                          </span>
+                        )}
                       </div>
-                      <div className="flex items-center gap-2 text-xs text-slate-500">
-                        <Calendar className="w-3.5 h-3.5 text-[#070E5C]" />
-                        <span>Closing: <strong className="text-slate-800">{tender.closingDate}</strong></span>
-                      </div>
+                      {tender.closingDate && (
+                        <div className="flex items-center gap-2 text-xs text-slate-500">
+                          <Calendar className="w-3.5 h-3.5 text-[#070E5C]" />
+                          <span>Closing: <strong className="text-slate-800">{tender.closingDate}</strong></span>
+                        </div>
+                      )}
                     </div>
 
                     <div>
                       <h3 className="text-lg font-bold text-[#24272B] font-display">
                         {tender.title}
                       </h3>
-                      <p className="text-xs text-slate-600 mt-1 leading-relaxed">
-                        {tender.description}
-                      </p>
+                      {tender.description && (
+                        <p className="text-xs text-slate-600 mt-1 leading-relaxed">
+                          {tender.description}
+                        </p>
+                      )}
                     </div>
 
                     <div className="pt-3 border-t border-slate-200/60 flex items-center justify-between">
                       <span className="text-[11px] text-slate-400">
-                        Published: {tender.publishedDate || tender.createdAt?.split('T')[0] || 'Official CUBE Portal'}
+                        {(tender.publishedDate || tender.createdAt?.split('T')[0]) ? `Published: ${tender.publishedDate || tender.createdAt?.split('T')[0]}` : ''}
                       </span>
                       {tender.documentUrl && tender.documentUrl !== '#' ? (
                         <a
@@ -87,11 +87,11 @@ export default async function TendersPage() {
                           className="px-4 py-1.5 rounded-full bg-[#EAF2F8] hover:bg-[#D99A42] text-[#070E5C] hover:text-white border border-[#BDD7E8] text-xs font-semibold flex items-center gap-1.5 transition"
                         >
                           <Download className="w-3.5 h-3.5" />
-                          <span>Download Tender Document</span>
+                          <span>Download</span>
                         </a>
                       ) : (
                         <a
-                          href="mailto:contact@cubeiitm.org"
+                          href={`mailto:${contactInfo.email}`}
                           className="px-4 py-1.5 rounded-full bg-[#EAF2F8] hover:bg-[#D99A42] text-[#070E5C] hover:text-white border border-[#BBD6EA] text-xs font-semibold flex items-center gap-1.5 transition"
                         >
                           <Mail className="w-3.5 h-3.5" />
@@ -111,26 +111,23 @@ export default async function TendersPage() {
               </div>
 
               <span className="text-xs font-bold uppercase tracking-wider text-slate-400">
-                Procurement Notice
+                Tenders
               </span>
 
               <h2 className="text-2xl font-bold font-display text-navy-950 mt-2">
-                No Active Tenders Currently Published
+                No tenders at present
               </h2>
 
-              <p className="mt-3 text-xs sm:sm text-slate-600 max-w-lg mx-auto leading-relaxed">
-                There are currently no active public tenders or Expressions of Interest (EOI) open for submission. All future procurement notifications, equipment acquisition tenders, and consulting invitations will be published here in compliance with official Government of Tamil Nadu and IIT Madras procurement guidelines.
-              </p>
 
               <div className="mt-8 pt-8 border-t border-slate-200 max-w-md mx-auto text-xs text-slate-500 space-y-3">
                 <div className="flex items-center justify-center space-x-2 text-teal-700 font-semibold">
                   <Bell className="w-4 h-4" />
-                  <span>Procurement Notifications:</span>
+                  <span>Tender Queries:</span>
                 </div>
                 <p>
-                  Vendors and suppliers may direct procurement queries to{' '}
-                  <a href="mailto:contact@cubeiitm.org" className="text-teal-700 font-semibold hover:underline">
-                    contact@cubeiitm.org
+                  Email{' '}
+                  <a href={`mailto:${contactInfo.email}`} className="text-teal-700 font-semibold hover:underline">
+                    {contactInfo.email}
                   </a>
                 </p>
               </div>

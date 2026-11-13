@@ -29,7 +29,7 @@ export async function POST(req: NextRequest) {
   // The live website is read-only (applications are kept on the local admin).
   if (isPublishedSite()) {
     return NextResponse.json(
-      { error: 'Online applications are not available yet. Please email your CV to careers@cubeiitm.org.' },
+      { error: 'Online applications are not available yet. Please email your CV to office@cubeiitm.org.' },
       { status: 503 }
     );
   }

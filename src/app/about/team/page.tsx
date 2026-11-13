@@ -39,7 +39,7 @@ const DEPARTMENTS: DepartmentSection[] = [
   },
   {
     id: 'Admin',
-    title: 'Admin & Operations',
+    title: 'Admin',
     icon: Briefcase,
     defaultOpen: false,
     accent: 'border-l-4 border-l-slate-600',
@@ -86,8 +86,11 @@ export default function TeamPage() {
       'Admin': [],
     };
 
-    // Filter out any archived records strictly
-    const activeMembers = teamList.filter((m) => m.status !== 'archived');
+    // Filter out any archived records strictly, and keep board / advisory /
+    // leadership entries (served by the same feed) off the staff list.
+    const activeMembers = teamList.filter(
+      (m) => m.status !== 'archived' && !['leadership', 'board', 'advisory'].includes(m.category),
+    );
 
     activeMembers.forEach((member) => {
       // If search query active, check match
@@ -113,9 +116,9 @@ export default function TeamPage() {
   return (
     <div className="bg-[#FAF9F5] min-h-screen">
       <PageHeader
-        badge="Multidisciplinary Talent"
+        badge="About CUBE"
         title="Our Team"
-        description="Over 80+ dedicated engineers, researchers, hydrologists, urban planners and technicians delivering marquee infrastructure from IIT Madras Research Park."
+        description="Centre for Urbanization, Buildings & Environment (CUBE)"
         breadcrumbs={[
           { label: 'About CUBE', href: '/about' },
           { label: 'Our Team' },
@@ -149,7 +152,7 @@ export default function TeamPage() {
 
             <div className="flex items-center justify-between sm:justify-end gap-3 text-xs text-slate-500">
               <span>
-                Showing <b>{totalMatches}</b> active professionals
+                Showing <b>{totalMatches}</b> members
               </span>
               <div className="flex items-center space-x-1 border-l border-slate-200 pl-3">
                 <button
@@ -196,7 +199,7 @@ export default function TeamPage() {
                           {dept.title}
                         </h2>
                         <p className="text-xs text-slate-400 font-medium">
-                          {membersInDept.length} Specialized Staff Member{membersInDept.length === 1 ? '' : 's'}
+                          {membersInDept.length} Member{membersInDept.length === 1 ? '' : 's'}
                         </p>
                       </div>
                     </div>

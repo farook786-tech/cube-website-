@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { createPortal } from 'react-dom';
 import PageHeader from '@/components/common/PageHeader';
 import { X, ChevronLeft, ChevronRight, Maximize2 } from 'lucide-react';
+import { mediaGalleryImages, lifeAtCubeImages } from '@/data/media';
 
 interface GalleryItem {
   id: number;
@@ -15,19 +16,23 @@ interface GalleryItem {
   description: string;
 }
 
+// Fallback photos: the uncaptioned images from the "Media" and "Life at CUBE"
+// sections of the original CUBE homepage (https://cubeiitm.org/).
 const GALLERY_ITEMS: GalleryItem[] = [
-  { id: 1, src: '/images/hero/slides_iit-tirupathi.jpg', title: 'IIT Tirupati Campus Development', category: 'Projects', description: 'Civil engineering consultancy and site supervision for permanent campus.' },
-  { id: 2, src: '/images/hero/slides_cpcl-arc.jpg', title: 'CPCL Industrial Housing', category: 'Projects', description: 'Structural quality audit and precast construction verification.' },
-  { id: 3, src: '/images/cel/about_cel.jpg', title: 'CUBE Environmental Laboratory (CEL)', category: 'Laboratory', description: 'Advanced instrumentation suite at IIT Madras Research Park.' },
-  { id: 4, src: '/images/cel/about_cel1.jpg', title: 'CEL Analytical Diagnostics', category: 'Laboratory', description: 'Water and wastewater characterization stations.' },
-  { id: 5, src: '/images/life-at-cube/about_life.jpg', title: 'Technical Collaboration Session', category: 'Workplace', description: 'Multidisciplinary project planning at CUBE headquarters.' },
-  { id: 6, src: '/images/life-at-cube/about_life1.jpg', title: 'IIT Madras Faculty Mentorship', category: 'Workplace', description: 'Faculty advisors mentoring project engineers.' },
-  { id: 7, src: '/images/life-at-cube/about_life2.jpg', title: 'Laboratory Diagnostics Review', category: 'Workplace', description: 'Analyzing non-destructive test results.' },
-  { id: 8, src: '/images/hero/slides_building-training-team.jpg', title: 'State Municipal Engineers Training', category: 'Events', description: 'Over 120 engineers at the modern concrete durability module.' },
-  { id: 9, src: '/images/hero/slides_ashiana.jpg', title: 'Ashiana Infrastructure Project', category: 'Projects', description: 'Third party quality assurance for sustainable building design.' },
-  { id: 10, src: '/images/hero/slides_mahindra.jpg', title: 'Mahindra World City Studies', category: 'Projects', description: 'Industrial urban infrastructure and stormwater assessment.' },
-  { id: 11, src: '/images/projects/environment-sustainability/about_environment.jpg', title: 'Hydrological Basin Assessment', category: 'Projects', description: 'Hydrodynamic flow modeling and flood risk analysis.' },
-  { id: 12, src: '/images/projects/smart-cities/about_smart-city.jpg', title: 'Smart Urban Technologies', category: 'Projects', description: 'Sensor grid and municipal telemetry supervision.' },
+  ...mediaGalleryImages.map((src, i) => ({
+    id: i + 1,
+    src,
+    title: 'Media',
+    category: 'Events' as const,
+    description: '',
+  })),
+  ...lifeAtCubeImages.map((src, i) => ({
+    id: mediaGalleryImages.length + i + 1,
+    src,
+    title: 'Life at CUBE',
+    category: 'Workplace' as const,
+    description: '',
+  })),
 ];
 
 function mapGalleryCategory(category: string): GalleryItem['category'] {
@@ -54,9 +59,9 @@ export default function GalleryPage() {
         data.map((item: any, index: number) => ({
           id: index + 1,
           src: item.imageUrl,
-          title: item.title || 'CUBE Gallery',
+          title: item.title || 'CUBE',
           category: mapGalleryCategory(item.category),
-          description: item.description || item.category || 'CUBE institutional gallery',
+          description: item.description || '',
         }))
       );
     } catch {
@@ -122,9 +127,9 @@ export default function GalleryPage() {
   return (
     <div>
       <PageHeader
-        badge="Photographic Archive"
-        title="Institutional Photo Gallery"
-        description="A visual collection documenting project sites, research laboratories, technical seminars, and professional life at CUBE."
+        badge="Media"
+        title="Gallery"
+        description="Photos from CUBE."
         breadcrumbs={[
           { label: 'Media', href: '/media' },
           { label: 'Gallery' },
@@ -183,7 +188,9 @@ export default function GalleryPage() {
 
                 <div className="absolute bottom-3 left-3 right-3 text-white">
                   <h4 className="text-sm font-bold line-clamp-1">{item.title}</h4>
-                  <p className="text-[11px] text-slate-300 line-clamp-1 mt-0.5">{item.description}</p>
+                  {item.description && (
+                    <p className="text-[11px] text-slate-300 line-clamp-1 mt-0.5">{item.description}</p>
+                  )}
                 </div>
 
                 <div className="absolute top-3 right-3 p-1.5 rounded-lg bg-white/90 text-[#070E5C] text-white opacity-0 group-hover:opacity-100 transition-opacity">
@@ -245,7 +252,9 @@ export default function GalleryPage() {
               </div>
               <div className="mt-4 px-10 text-center text-white">
                 <h3 className="text-lg font-bold font-display">{activeItem.title}</h3>
-                <p className="text-xs text-slate-300 mt-1">{activeItem.description}</p>
+                {activeItem.description && (
+                  <p className="text-xs text-slate-300 mt-1">{activeItem.description}</p>
+                )}
                 <span className="text-[11px] text-[#D99A42] mt-1 block">
                   {(lightboxIndex ?? 0) + 1} of {filteredItems.length}
                 </span>

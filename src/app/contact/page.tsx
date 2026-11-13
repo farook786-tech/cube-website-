@@ -43,7 +43,7 @@ export default function ContactPage() {
       setSubmitted(true);
       setLoading(false);
     } else {
-      setErrorMsg(res.error || 'Failed to submit enquiry.');
+      setErrorMsg(res.error || 'Failed to send your message.');
       setLoading(false);
     }
   };
@@ -51,9 +51,9 @@ export default function ContactPage() {
   return (
     <div className="bg-[#FFFFFF] text-[#24272B] min-h-screen">
       <PageHeader
-        badge="Direct Communications"
-        title="Contact & Technical Liaison"
-        description="Connect with CUBE engineering specialists, schedule project consultations, or submit scopes for third-party structural assurance and environmental diagnostics."
+        badge="Contact Us"
+        title="Contact Us"
+        description="Centre for Urbanization, Buildings & Environment (CUBE), IIT Madras Research Park, Taramani, Chennai."
         breadcrumbs={[{ label: 'Contact Us' }]}
       />
 
@@ -65,14 +65,11 @@ export default function ContactPage() {
             <div className="lg:col-span-5 space-y-8">
               <div>
                 <span className="text-[10px] font-bold uppercase tracking-wider text-[#070E5C] bg-[#EAF2F8] border border-[#BDD7E8] px-3 py-1 rounded-full shadow-2xs">
-                  Institutional Secretariat
+                  Contact Us
                 </span>
                 <h2 className="font-serif text-3xl font-light text-[#24272B] tracking-tight mt-3">
-                  Visit CUBE Headquarters
+                  Meet Us
                 </h2>
-                <p className="text-xs sm:text-sm text-[#747B83] mt-2 leading-relaxed">
-                  Located within the premier innovation ecosystem of IIT Madras Research Park in Chennai.
-                </p>
               </div>
 
               {/* Coordinates List in Glass Panel */}
@@ -80,8 +77,12 @@ export default function ContactPage() {
                 <div className="flex items-start">
                   <MapPin className="w-5 h-5 text-[#D99A42] mr-3 flex-shrink-0 mt-0.5" />
                   <div>
-                    <span className="font-bold text-[#24272B] block mb-0.5">Physical Address:</span>
-                    <p className="leading-relaxed">{contactInfo.address}</p>
+                    <span className="font-bold text-[#24272B] block mb-0.5">Meet Us:</span>
+                    <p className="leading-relaxed">
+                      {contactInfo.addressLines.map((line) => (
+                        <span key={line} className="block">{line}</span>
+                      ))}
+                    </p>
                     <a
                       href={contactInfo.googleMapsLiveUrl}
                       target="_blank"
@@ -97,7 +98,7 @@ export default function ContactPage() {
                 <div className="flex items-start pt-3 border-t border-[#E5E7EB]">
                   <Mail className="w-5 h-5 text-[#D99A42] mr-3 flex-shrink-0 mt-0.5" />
                   <div>
-                    <span className="font-bold text-[#24272B] block mb-0.5">Email Communications:</span>
+                    <span className="font-bold text-[#24272B] block mb-0.5">Drop a Mail:</span>
                     <a href={`mailto:${contactInfo.email}`} className="text-[#070E5C] hover:text-[#D99A42] font-semibold underline">
                       {contactInfo.email}
                     </a>
@@ -107,18 +108,10 @@ export default function ContactPage() {
                 <div className="flex items-start pt-3 border-t border-[#E5E7EB]">
                   <Phone className="w-5 h-5 text-[#D99A42] mr-3 flex-shrink-0 mt-0.5" />
                   <div>
-                    <span className="font-bold text-[#24272B] block mb-0.5">Telephone Enquiries:</span>
-                    <a href={`tel:${contactInfo.phone}`} className="text-[#070E5C] hover:text-[#D99A42] font-semibold underline">
+                    <span className="font-bold text-[#24272B] block mb-0.5">Let&apos;s Talk:</span>
+                    <a href={contactInfo.phoneHref} className="text-[#070E5C] hover:text-[#D99A42] font-semibold underline">
                       {contactInfo.phone}
                     </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start pt-3 border-t border-[#E5E7EB]">
-                  <Clock className="w-5 h-5 text-[#D99A42] mr-3 flex-shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-[#24272B] block mb-0.5">Working Hours:</span>
-                    <p>{contactInfo.workingHours}</p>
                   </div>
                 </div>
               </GlassPanel>
@@ -151,29 +144,27 @@ export default function ContactPage() {
             <div className="lg:col-span-7">
               <GlassPanel variant="panel" className="p-8 sm:p-10 border border-[#BDD7E8]">
                 <span className="text-[10px] font-bold uppercase tracking-wider text-[#070E5C] bg-[#EAF2F8] border border-[#BDD7E8] px-3 py-1 rounded-full shadow-2xs">
-                  Real-Time Enquiry Dispatch
+                  Contact Form
                 </span>
                 <h2 className="font-serif text-3xl font-light text-[#24272B] tracking-tight mt-3 mb-2">
-                  Send a Technical Enquiry
+                  Let&apos;s Get in Touch
                 </h2>
-                <p className="text-xs sm:text-sm text-[#747B83] mb-8 leading-relaxed">
-                  Submit project scopes for structural assurance, hydrological assessment, transit planning, or laboratory characterization. Real-time logging connects directly to the administrative console and institutional mailbox.
-                </p>
+                <div className="mb-8" />
 
                 {submitted ? (
-                  <div className="p-8 rounded-3xl bg-white border border-[#BDD7E8] text-center space-y-3">
+                  <div className="p-8 rounded-3xl bg-white cube-glass border border-[#BDD7E8] text-center space-y-3">
                     <CheckCircle2 className="w-12 h-12 text-teal-600 mx-auto" />
                     <h3 className="text-xl font-bold font-serif text-[#24272B]">
-                      Enquiry Successfully Transmitted
+                      Message Sent
                     </h3>
                     <p className="text-xs sm:text-sm text-[#747B83] leading-relaxed max-w-md mx-auto">
-                      Thank you. Your scope has been registered in the CUBE Technical Secretariat database. Our engineering division will reach out within 24-48 business hours.
+                      Thank you for contacting CUBE. We have received your message.
                     </p>
                     <button
                       onClick={() => setSubmitted(false)}
                       className="mt-4 px-6 py-2.5 rounded-full text-xs font-semibold bg-[#EAF2F8] text-[#070E5C] border border-[#BDD7E8]"
                     >
-                      Submit Another Enquiry
+                      Send Another Message
                     </button>
                   </div>
                 ) : (
@@ -187,7 +178,7 @@ export default function ContactPage() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                       <div>
                         <label className="block text-xs font-semibold text-[#24272B] mb-1.5">
-                          Full Name *
+                          Name *
                         </label>
                         <input
                           type="text"
@@ -195,13 +186,13 @@ export default function ContactPage() {
                           value={formData.name}
                           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                           className="w-full px-4 py-2.5 rounded-2xl bg-white border border-[#BDD7E8] text-xs text-[#24272B] focus:outline-none focus:border-[#070E5C] shadow-2xs"
-                          placeholder="Prof. / Er. / Mr. / Ms."
+                          placeholder="Name"
                         />
                       </div>
 
                       <div>
                         <label className="block text-xs font-semibold text-[#24272B] mb-1.5">
-                          Official Email *
+                          Email *
                         </label>
                         <input
                           type="email"
@@ -209,7 +200,7 @@ export default function ContactPage() {
                           value={formData.email}
                           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                           className="w-full px-4 py-2.5 rounded-2xl bg-white border border-[#BDD7E8] text-xs text-[#24272B] focus:outline-none focus:border-[#070E5C] shadow-2xs"
-                          placeholder="name@organization.gov.in"
+                          placeholder="Email"
                         />
                       </div>
                     </div>
@@ -217,7 +208,7 @@ export default function ContactPage() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                       <div>
                         <label className="block text-xs font-semibold text-[#24272B] mb-1.5">
-                          Phone / Mobile *
+                          Phone *
                         </label>
                         <input
                           type="tel"
@@ -225,27 +216,27 @@ export default function ContactPage() {
                           value={formData.phone}
                           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                           className="w-full px-4 py-2.5 rounded-2xl bg-white border border-[#BDD7E8] text-xs text-[#24272B] focus:outline-none focus:border-[#070E5C] shadow-2xs"
-                          placeholder="+91 98765 43210"
+                          placeholder="Phone"
                         />
                       </div>
 
                       <div>
                         <label className="block text-xs font-semibold text-[#24272B] mb-1.5">
-                          Organization / Department
+                          Organization
                         </label>
                         <input
                           type="text"
                           value={formData.organization}
                           onChange={(e) => setFormData({ ...formData, organization: e.target.value })}
                           className="w-full px-4 py-2.5 rounded-2xl bg-white border border-[#BDD7E8] text-xs text-[#24272B] focus:outline-none focus:border-[#070E5C] shadow-2xs"
-                          placeholder="e.g. TNUHDB, CMDA, CPCL, IITM"
+                          placeholder="Organization"
                         />
                       </div>
                     </div>
 
                     <div>
                       <label className="block text-xs font-semibold text-[#24272B] mb-1.5">
-                        Technical Discipline Category *
+                        Subject *
                       </label>
                       <input
                         type="text"
@@ -253,13 +244,13 @@ export default function ContactPage() {
                         value={formData.enquiryCategory}
                         onChange={(e) => setFormData({ ...formData, enquiryCategory: e.target.value })}
                         className="w-full px-4 py-2.5 rounded-2xl bg-white border border-[#BDD7E8] text-xs text-[#24272B] focus:outline-none focus:border-[#070E5C] shadow-2xs"
-                        placeholder="Type discipline manually (e.g. Building & Construction, Environment, Smart Cities, Testing...)"
+                        placeholder="Subject"
                       />
                     </div>
 
                     <div>
                       <label className="block text-xs font-semibold text-[#24272B] mb-1.5">
-                        Project Scope Description *
+                        Message *
                       </label>
                       <textarea
                         required
@@ -267,7 +258,7 @@ export default function ContactPage() {
                         value={formData.message}
                         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                         className="w-full px-4 py-2.5 rounded-2xl bg-white border border-[#BDD7E8] text-xs text-[#24272B] focus:outline-none focus:border-[#070E5C] shadow-2xs"
-                        placeholder="Detail site location, building footprint, sample volume, testing parameters, or desired consultancy engagement..."
+                        placeholder="Enter Your Message"
                       />
                     </div>
 
@@ -279,11 +270,11 @@ export default function ContactPage() {
                       {loading ? (
                         <>
                           <Loader2 className="w-4 h-4 animate-spin" />
-                          <span>Transmitting to CUBE Secretariat...</span>
+                          <span>Sending...</span>
                         </>
                       ) : (
                         <>
-                          <span>Transmit Technical Enquiry</span>
+                          <span>Submit</span>
                           <Send className="w-3.5 h-3.5" />
                         </>
                       )}

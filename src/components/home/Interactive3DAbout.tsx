@@ -8,7 +8,11 @@ import {
   ShieldCheck, FlaskConical, ArrowUpRight, Award, 
   Sparkles, CheckCircle2, ChevronRight, Layers, Building2
 } from 'lucide-react';
-import { aboutContent } from '@/data/about';
+import { contactInfo } from '@/data/contact';
+
+// "About Us" text from the original CUBE homepage (https://cubeiitm.org/).
+const ABOUT_US =
+  'Centre for Urbanization, Buildings & Environment (CUBE) has been raised by IIT Madras and the Government of Tamil Nadu as an Applied Technology, Consultancy, Advisory and Research Centre to leverage the research & technological strengths of academia, facilitation & support from the Government, practical & innovative approach of the private sector and act as an enabler to tackle any multifaceted challenges facing the built environment.';
 
 export default function Interactive3DAbout() {
   const cardRef = useRef<HTMLDivElement>(null);
@@ -83,7 +87,7 @@ export default function Interactive3DAbout() {
                       HQ &bull; Chennai
                     </span>
                     <div className="text-sm font-serif font-medium">
-                      First Floor, IIT Madras Research Park, Taramani
+                      {contactInfo.addressLines.slice(0, 3).join(' ').replace(/,$/, '')}
                     </div>
                   </div>
                 </div>
@@ -109,13 +113,13 @@ export default function Interactive3DAbout() {
                 <div className="absolute top-3 left-3">
                   <span className="px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-white/95 text-[#070E5C] shadow-sm backdrop-blur-sm flex items-center gap-1.5">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#D99A42] animate-pulse" />
-                    <span>Academic Nexus</span>
+                    <span>Building &amp; Construction</span>
                   </span>
                 </div>
 
                 <div className="absolute bottom-3 left-3 right-3 text-white">
                   <div className="text-xs font-serif font-medium line-clamp-1">
-                    IIT Madras Faculty &amp; Research Engineers
+                    Capacity Building Training Program in Best Construction Practices for High Rise Buildings for Engineers.
                   </div>
                 </div>
               </motion.div>
@@ -123,7 +127,7 @@ export default function Interactive3DAbout() {
               {/* FLOATING CORNER EMBLEM PILL (Z-depth 70) */}
               <motion.div
                 style={{ translateZ: 70 }}
-                className="absolute -top-5 -left-4 p-3 rounded-2xl bg-white/95 border border-[#E5E7EB] shadow-xl backdrop-blur-md flex items-center gap-3"
+                className="absolute -top-5 -left-4 p-3 rounded-2xl bg-white/95 cube-glass border border-[#E5E7EB] shadow-xl backdrop-blur-md flex items-center gap-3"
               >
                 <div className="relative h-10 w-10 shrink-0">
                   <Image
@@ -151,58 +155,16 @@ export default function Interactive3DAbout() {
             
             <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#D99A42]">
               <span className="w-2 h-2 rounded-full bg-[#D99A42]" />
-              <span>Foundational Mandate</span>
+              <span>About CUBE</span>
             </div>
 
             <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-light text-[#24272B] leading-[1.08] tracking-tight">
-              Research. Engineering. <br />
-              <span className="italic font-normal text-[#070E5C]">A Resilient Future.</span>
+              About <span className="italic font-normal text-[#070E5C]">Us</span>
             </h2>
 
             <p className="text-sm sm:text-base text-[#747B83] leading-relaxed font-sans">
-              {aboutContent.overview[0]} {aboutContent.overview[1]}
+              {ABOUT_US}
             </p>
-
-            {/* 3D Interactive Capability Cards with Micro-Lifting */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
-              
-              <motion.div
-                whileHover={{ y: -4, scale: 1.01 }}
-                transition={{ duration: 0.2 }}
-                className="p-5 rounded-2xl bg-[#F7F7F4] border border-[#E5E7EB] hover:border-[#BBD6EA] hover:bg-[#EAF2F8] transition-all shadow-sm group"
-              >
-                <div className="flex items-center space-x-2 text-[#070E5C] font-semibold text-sm">
-                  <ShieldCheck className="w-4 h-4 text-[#D99A42] transition-transform group-hover:scale-110" />
-                  <span>Independent TPQA &amp; Durability</span>
-                </div>
-                <p className="text-xs text-[#747B83] mt-2 leading-relaxed">
-                  Third-party audits, non-destructive testing (NDT), and concrete durability verification for mega public housing schemes.
-                </p>
-                <div className="mt-3 flex items-center text-[11px] font-semibold text-[#070E5C] opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span>Explore TPQA Standards</span>
-                  <ArrowUpRight className="w-3.5 h-3.5 ml-1" />
-                </div>
-              </motion.div>
-
-              <motion.div
-                whileHover={{ y: -4, scale: 1.01 }}
-                transition={{ duration: 0.2 }}
-                className="p-5 rounded-2xl bg-[#F7F7F4] border border-[#E5E7EB] hover:border-[#BBD6EA] hover:bg-[#EAF2F8] transition-all shadow-sm group"
-              >
-                <div className="flex items-center space-x-2 text-[#070E5C] font-semibold text-sm">
-                  <FlaskConical className="w-4 h-4 text-[#D99A42] transition-transform group-hover:scale-110" />
-                  <span>Applied Academic Translation</span>
-                </div>
-                <p className="text-xs text-[#747B83] mt-2 leading-relaxed">
-                  Direct access to IIT Madras civil engineering faculty, advanced computational tools, and state environmental laboratories.
-                </p>
-                <div className="mt-3 flex items-center text-[11px] font-semibold text-[#070E5C] opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span>Faculty Advisory Panel</span>
-                  <ArrowUpRight className="w-3.5 h-3.5 ml-1" />
-                </div>
-              </motion.div>
-
-            </div>
 
             {/* CTAs */}
             <div className="pt-4 flex flex-wrap items-center gap-4">
@@ -210,7 +172,7 @@ export default function Interactive3DAbout() {
                 href="/about"
                 className="px-7 py-3 rounded-full bg-[#EAF2F8] text-[#070E5C] hover:bg-[#D99A42] hover:text-white border border-[#BBD6EA] text-xs font-semibold tracking-wide transition-all shadow-sm hover:shadow-md flex items-center gap-2"
               >
-                <span>Explore Governance &amp; Objectives</span>
+                <span>About CUBE</span>
                 <ArrowUpRight className="w-3.5 h-3.5 text-[#D99A42]" />
               </Link>
 
@@ -218,7 +180,7 @@ export default function Interactive3DAbout() {
                 href="/about/team"
                 className="px-7 py-3 rounded-full bg-white text-[#24272B] hover:bg-[#F7F7F4] border border-[#E5E7EB] text-xs font-semibold tracking-wide transition-all shadow-sm"
               >
-                Our Specialists (80+)
+                Our Team
               </Link>
             </div>
 

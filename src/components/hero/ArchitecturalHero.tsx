@@ -23,54 +23,140 @@ interface HeroSlide {
   location: string;
 }
 
+// Slides from the original CUBE homepage project slider (https://cubeiitm.org/):
+// vertical, tagline and project title as published there.
 const HERO_SLIDES: HeroSlide[] = [
   {
     id: 1,
-    image: '/images/hero/slides_iit-tirupathi.jpg',
-    category: 'Institutional Campus PMC',
-    title: 'Engineering Ideas.',
-    italicWord: 'Shaping',
-    subtitle: 'Tomorrow.',
-    description: 'Translating advanced structural modeling, soil mechanics, and sustainable hydrology from IIT Madras into high-performance public infrastructure.',
-    projectHref: '/projects/iit-tirupathi',
-    projectName: 'IIT Tirupati Permanent Campus',
-    location: 'Andhra Pradesh & IIT Madras',
+    image: '/images/hero/slides_cpcl-arc.jpg',
+    category: "Building & Construction",
+    title: "Empowering Urban Housing, Enhancing Quality of",
+    italicWord: "Life",
+    subtitle: '',
+    description: "Project Management Consultancy for Construction of Affordable Rental (Urban) Housing Complex (ARHC), Manali, Chennai, Tamil Nadu.",
+    projectHref: '/projects',
+    projectName: "Project Management Consultancy for Construction of Affordable Rental (Urban) Housing Complex (ARHC), Manali, Chennai, Tamil Nadu.",
+    location: "Manali, Chennai, Tamil Nadu",
   },
   {
     id: 2,
-    image: '/images/hero/slides_cpcl-arc.jpg',
-    category: 'Third Party Quality Assurance',
-    title: 'Precision Quality.',
-    italicWord: 'Resilient',
-    subtitle: 'Housing.',
-    description: 'Independent Third Party Quality Assurance (TPQA), precast structural design verification, and concrete durability testing ensuring multi-generational safety.',
-    projectHref: '/projects/cpcl-arhc',
-    projectName: 'CPCL Industrial & ARHC Precast Housing',
-    location: 'Tamil Nadu & Chennai',
+    image: '/images/hero/slides_iit-tirupathi.jpg',
+    category: "Building & Construction",
+    title: "Empowering Excellence Through Third Party Quality",
+    italicWord: "Assurance",
+    subtitle: '',
+    description: "Third Party Quality Assurance (TPQA) Service for Construction of Permanent Campus for Indian Institute of Technology Tirupati, Andhra Pradesh.",
+    projectHref: '/projects',
+    projectName: "Third Party Quality Assurance (TPQA) Service for Construction of Permanent Campus for Indian Institute of Technology Tirupati, Andhra Pradesh.",
+    location: "Tirupati, Andhra Pradesh",
   },
   {
     id: 3,
-    image: '/images/hero/slides_ashiana.jpg',
-    category: 'Housing Proof Checking',
-    title: 'Structural Assurance.',
-    italicWord: 'Community',
-    subtitle: 'Impact.',
-    description: 'Providing comprehensive structural design, foundation analysis, and third-party engineering consultancy for affordable housing schemes across Tamil Nadu.',
+    image: '/images/hero/slides_design-engineering-consultancy.jpg',
+    category: "Building & Construction",
+    title: "Housing for All, Building a Brighter",
+    italicWord: "Future",
+    subtitle: '',
+    description: "Design, Engineering & Consultancy Services for Reconstruction of more than forty Housing for All schemes across Tamil Nadu under Pradhan Mantri Awas Yojana.",
     projectHref: '/projects',
-    projectName: 'Pradhan Mantri Awas Yojana (PMAY TN)',
-    location: 'Statewide Tamil Nadu',
+    projectName: "Design, Engineering & Consultancy Services for Reconstruction of more than forty Housing for All schemes across Tamil Nadu under Pradhan Mantri Awas Yojana.",
+    location: "Tamil Nadu",
   },
   {
     id: 4,
-    image: '/images/hero/slides_design-engineering-consultancy.jpg',
-    category: 'Applied Research Translation',
-    title: 'Academic Intellect.',
-    italicWord: 'Public',
-    subtitle: 'Governance.',
-    description: 'Bridging world-renowned civil engineering faculty with municipal field execution across smart cities, water resources, and transport networks.',
-    projectHref: '/about',
-    projectName: 'Government of Tamil Nadu & IIT Madras',
-    location: 'IIT Madras Research Park',
+    image: '/images/hero/slides_revaluation.jpg',
+    category: "Building & Construction",
+    title: "Mapping Stability, Charting Vulnerability, Unlocking",
+    italicWord: "Potential.",
+    subtitle: '',
+    description: "Re-evaluation of Structural Vulnerability, Destress Mapping & Residual Life Assessment of thirty-three dilapidated tenements across Chennai.",
+    projectHref: '/projects',
+    projectName: "Re-evaluation of Structural Vulnerability, Destress Mapping & Residual Life Assessment of thirty-three dilapidated tenements across Chennai.",
+    location: "Chennai",
+  },
+  {
+    id: 5,
+    image: '/images/hero/slides_building-training-team.jpg',
+    category: "Building & Construction",
+    title: "Advancing Construction Solutions and Engineering",
+    italicWord: "Excellence",
+    subtitle: '',
+    description: "Capacity Building Training Program in Best Construction Practices for High Rise Buildings for Engineers.",
+    projectHref: '/projects',
+    projectName: "Capacity Building Training Program in Best Construction Practices for High Rise Buildings for Engineers.",
+    location: "",
+  },
+  {
+    id: 6,
+    image: '/images/hero/slides_ashiana.jpg',
+    category: "Environment & Sustainability",
+    title: "Unlocking the Potential of Surface Water Management with Technological",
+    italicWord: "Ingenuity",
+    subtitle: '',
+    description: "Surface Water Management and Flood Inundation Study for the Ashiana Subham - Senior Living",
+    projectHref: '/projects',
+    projectName: "Surface Water Management and Flood Inundation Study for the Ashiana Subham - Senior Living",
+    location: "",
+  },
+  {
+    id: 7,
+    image: '/images/hero/slides_07-cat.jpg',
+    category: "Environment & Sustainability",
+    title: "Transforming Water Landscapes: Reshaping Hydrological",
+    italicWord: "Balance",
+    subtitle: '',
+    description: "Feasibility Study on Identification of Alternate Location for Parayan Kuttai Water Body & Surface Water Optimization Plan for Caterpillar India Private Limited, Thiruvallur",
+    projectHref: '/projects',
+    projectName: "Feasibility Study on Identification of Alternate Location for Parayan Kuttai Water Body & Surface Water Optimization Plan for Caterpillar India Private Limited, Thiruvallur",
+    location: "Thiruvallur",
+  },
+  {
+    id: 8,
+    image: '/images/hero/slides_mahindra.jpg',
+    category: "Environment & Sustainability",
+    title: "Nature's Engineering at Work: Conserving Water, Nurturing",
+    italicWord: "Life",
+    subtitle: '',
+    description: "Feasibility Study on the Relocation of Two Waterbodies within the Origins - Mahindra World City, Ponneri, Tamil Nadu",
+    projectHref: '/projects',
+    projectName: "Feasibility Study on the Relocation of Two Waterbodies within the Origins - Mahindra World City, Ponneri, Tamil Nadu",
+    location: "Ponneri, Tamil Nadu",
+  },
+  {
+    id: 9,
+    image: '/images/hero/slides_slide2.jpg',
+    category: "Environment & Sustainability",
+    title: "Charting a Sustainable Course: Integrating Inundation Studies into Ecological Campus",
+    italicWord: "Development",
+    subtitle: '',
+    description: "Surface Water Management Plan for IIT Jammu Campus",
+    projectHref: '/projects',
+    projectName: "Surface Water Management Plan for IIT Jammu Campus",
+    location: "IIT Jammu",
+  },
+  {
+    id: 10,
+    image: '/images/hero/slides_niche.jpg',
+    category: "Urban Planning & Transportation",
+    title: "Designing with Nature, Building for",
+    italicWord: "Sustainability",
+    subtitle: '',
+    description: "NICHE Industrial Park, SIPCOT Irungattukottai",
+    projectHref: '/projects',
+    projectName: "NICHE Industrial Park, SIPCOT Irungattukottai",
+    location: "SIPCOT Irungattukottai",
+  },
+  {
+    id: 11,
+    image: '/images/hero/slides_slide3.jpg',
+    category: "Urban Planning & Transportation",
+    title: "Honoring Legacy, Sustaining Cultural",
+    italicWord: "Treasures",
+    subtitle: '',
+    description: "Engineering, Structural Assessment and Mitigation Strategies for Protection and Development of Naida Caves, Diu",
+    projectHref: '/projects',
+    projectName: "Engineering, Structural Assessment and Mitigation Strategies for Protection and Development of Naida Caves, Diu",
+    location: "Diu",
   },
 ];
 
@@ -165,9 +251,9 @@ export default function ArchitecturalHero() {
         <div className="flex flex-wrap items-center justify-between gap-4 text-xs tracking-wider uppercase font-semibold text-white/80 border-b border-white/20 pb-3">
           <div className="flex items-center gap-2.5">
             <span className="w-2.5 h-2.5 rounded-full bg-[#38bdf8] shadow-[0_0_12px_#38bdf8] animate-pulse" />
-            <span className="text-white font-bold tracking-wider">Centre of Excellence</span>
+            <span className="text-white font-bold tracking-wider">Centre for Urbanization, Buildings &amp; Environment</span>
             <span>&bull;</span>
-            <span className="text-white/80">Govt of Tamil Nadu &amp; IIT Madras</span>
+            <span className="text-white/80">IIT Madras &amp; Govt of Tamil Nadu</span>
           </div>
 
           <div className="flex items-center gap-3">
@@ -175,7 +261,7 @@ export default function ArchitecturalHero() {
               href="/projects"
               className="px-4 py-1.5 rounded-full bg-white/15 hover:bg-white/25 text-white border border-white/30 text-[11px] font-semibold tracking-wider transition-all shadow-sm backdrop-blur-md flex items-center gap-1.5 active:scale-95"
             >
-              <span>View All 40+ Schemes</span>
+              <span>View All Projects</span>
               <ArrowUpRight className="w-3.5 h-3.5 text-[#38bdf8]" />
             </Link>
           </div>
@@ -199,9 +285,11 @@ export default function ArchitecturalHero() {
               <span>{slide.category}</span>
             </motion.div>
 
-            <span className="text-[11px] font-medium text-white/90 px-3 py-1 rounded-full bg-white/10 border border-white/25 backdrop-blur-md">
-              {slide.location}
-            </span>
+            {slide.location && (
+              <span className="text-[11px] font-medium text-white/90 px-3 py-1 rounded-full bg-white/10 border border-white/25 backdrop-blur-md">
+                {slide.location}
+              </span>
+            )}
           </div>
 
           {/* Split-Text Animated Editorial Headline (Cormorant Garamond) */}
@@ -215,8 +303,8 @@ export default function ArchitecturalHero() {
               {slide.title}{' '}
               <span className="italic font-normal text-[#7dd3fc] drop-shadow-[0_0_24px_rgba(56,189,248,0.4)] border-b-2 border-[#38bdf8] pb-0.5">
                 {slide.italicWord}
-              </span>{' '}
-              {slide.subtitle}
+              </span>
+              {slide.subtitle ? <>{' '}{slide.subtitle}</> : null}
             </h1>
           </motion.div>
 
@@ -254,7 +342,7 @@ export default function ArchitecturalHero() {
               ))}
             </div>
             <span className="text-xs font-semibold text-white/80 tracking-widest uppercase">
-              0{currentIdx + 1} / 0{HERO_SLIDES.length}
+              {String(currentIdx + 1).padStart(2, '0')} / {String(HERO_SLIDES.length).padStart(2, '0')}
             </span>
           </div>
 

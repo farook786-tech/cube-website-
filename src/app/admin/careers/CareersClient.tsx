@@ -52,7 +52,7 @@ export default function CareersManagerClient({
   const [location, setLocation] = useState('IIT Madras Research Park, Chennai');
   const [description, setDescription] = useState('');
   const [closingDate, setClosingDate] = useState('');
-  const [applicationEmail, setApplicationEmail] = useState('careers@cubeiitm.org');
+  const [applicationEmail, setApplicationEmail] = useState('office@cubeiitm.org');
   const [qualifications, setQualifications] = useState('');
   const [isPublished, setIsPublished] = useState(true);
   const [formError, setFormError] = useState<string | null>(null);
@@ -66,7 +66,7 @@ export default function CareersManagerClient({
     setLocation('IIT Madras Research Park, Chennai');
     setDescription('');
     setClosingDate('');
-    setApplicationEmail('careers@cubeiitm.org');
+    setApplicationEmail('office@cubeiitm.org');
     setQualifications('');
     setIsPublished(true);
     setFormError(null);
@@ -82,7 +82,7 @@ export default function CareersManagerClient({
     setLocation(job.location || 'IIT Madras Research Park, Chennai');
     setDescription(job.description || '');
     setClosingDate(job.closingDate || '');
-    setApplicationEmail(job.applicationEmail || 'careers@cubeiitm.org');
+    setApplicationEmail(job.applicationEmail || 'office@cubeiitm.org');
     setQualifications(
       Array.isArray(job.qualifications) ? job.qualifications.join('\n') : (job.qualifications || '')
     );
@@ -478,7 +478,7 @@ export default function CareersManagerClient({
                     type="email"
                     value={applicationEmail}
                     onChange={(e) => setApplicationEmail(e.target.value)}
-                    placeholder="careers@cubeiitm.org"
+                    placeholder="office@cubeiitm.org"
                     className="w-full p-2.5 text-xs rounded-xl border border-slate-300"
                   />
                 </div>

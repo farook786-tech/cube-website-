@@ -304,3 +304,104 @@ input, textarea, select, button {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(7, 14, 92, 0.4);
 }
+
+/* ------------------------------------------------------------------------
+   GLASS FINISH (frosted glass feel; CUBE colours unchanged)
+   Adds to the existing surfaces: translucency + backdrop blur, a bright
+   top edge, a soft corner glow and a thin diagonal light streak that
+   sweeps across on hover. Only white and the existing CUBE tints are used.
+   ------------------------------------------------------------------------ */
+:root {
+  /* thin bright line along the top inner edge */
+  --glass-edge: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0, rgba(255, 255, 255, 0) 2px);
+  /* soft light pooling in the top-left corner */
+  --glass-glow: radial-gradient(120% 70% at 0% 0%, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0) 55%);
+  /* the glossy diagonal light streak (moves on hover) */
+  --glass-streak: linear-gradient(115deg, rgba(255, 255, 255, 0) 38%, rgba(255, 255, 255, 0.55) 46%, rgba(255, 255, 255, 0.12) 50%, rgba(255, 255, 255, 0) 56%);
+}
+
+/* Soft ambient light inside page sections so frosted surfaces have depth
+   to blur (CUBE sky blue + a faint touch of CUBE gold). Painted behind the
+   section content; any section with its own positioning keeps it. */
+:where(main section) {
+  position: relative;
+  isolation: isolate;
+}
+main section:not(.sticky)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(620px 460px at 88% 12%, rgba(187, 214, 234, 0.42) 0%, rgba(187, 214, 234, 0) 70%),
+    radial-gradient(560px 420px at 6% 88%, rgba(217, 154, 66, 0.07) 0%, rgba(217, 154, 66, 0) 70%),
+    radial-gradient(520px 380px at 50% 55%, rgba(234, 242, 248, 0.55) 0%, rgba(234, 242, 248, 0) 70%);
+}
+
+/* Shared glass behaviour */
+.cube-glass,
+.apple-glass, .apple-glass-card, .apple-glass-pill,
+.apple-liquid-glass, .apple-liquid-glass-card,
+.cube-gradient-card, .cube-gradient-glass,
+.glass-panel, .glass-panel-elevated, .glass-panel-pill {
+  background-size: 100% 100%, 100% 100%, 260% 100%, 100% 100%;
+  background-position: 0 0, 0 0, 100% 0, 0 0;
+  background-repeat: no-repeat;
+  transition: background-position 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease, background-color 0.4s ease;
+}
+.cube-glass:hover,
+.apple-glass:hover, .apple-glass-card:hover,
+.apple-liquid-glass-card:hover,
+.cube-gradient-card:hover, .cube-gradient-glass:hover {
+  background-position: 0 0, 0 0, 0% 0, 0 0;
+}
+
+/* Existing glass classes: same tints as before, plus the glass layers */
+.apple-glass, .apple-glass-pill, .glass-panel, .glass-panel-pill,
+.glass-panel-elevated, .apple-liquid-glass {
+  background-image: var(--glass-edge), var(--glass-glow), var(--glass-streak), linear-gradient(transparent, transparent);
+}
+.apple-glass { background-color: rgba(255, 255, 255, 0.6); }
+.apple-glass:hover { background-color: rgba(255, 255, 255, 0.8); }
+.apple-glass-card, .apple-liquid-glass-card {
+  background-image: var(--glass-edge), var(--glass-glow), var(--glass-streak),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.78) 0%, rgba(246, 250, 253, 0.64) 50%, rgba(234, 242, 248, 0.72) 100%);
+}
+.apple-glass-card:hover, .apple-liquid-glass-card:hover {
+  background-image: var(--glass-edge), var(--glass-glow), var(--glass-streak),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.92) 0%, rgba(246, 250, 253, 0.82) 50%, rgba(234, 242, 248, 0.86) 100%);
+}
+.cube-gradient-card, .cube-gradient-glass {
+  background-image: var(--glass-edge), var(--glass-glow), var(--glass-streak),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.84) 0%, rgba(243, 248, 252, 0.7) 50%, rgba(234, 242, 248, 0.8) 100%);
+}
+
+/* Inline white cards (bg-white + light-blue border): keep their colour,
+   make the white frosted and add the glass layers on top of it. */
+.cube-glass {
+  --tw-bg-opacity: 0.72;
+  background-image: var(--glass-edge), var(--glass-glow), var(--glass-streak), linear-gradient(transparent, transparent);
+  backdrop-filter: blur(18px) saturate(170%);
+  -webkit-backdrop-filter: blur(18px) saturate(170%);
+}
+.cube-glass:hover {
+  --tw-bg-opacity: 0.86;
+}
+
+/* Phones/tablets: lighter blur keeps scrolling smooth on long pages */
+@media (max-width: 1023px), (hover: none) {
+  .cube-glass {
+    --tw-bg-opacity: 0.8;
+    backdrop-filter: blur(8px) saturate(150%);
+    -webkit-backdrop-filter: blur(8px) saturate(150%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cube-glass, .apple-glass, .apple-glass-card, .apple-liquid-glass-card,
+  .cube-gradient-card, .cube-gradient-glass {
+    transition: none;
+  }
+}

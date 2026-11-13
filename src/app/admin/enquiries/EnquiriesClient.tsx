@@ -122,7 +122,7 @@ export default function EnquiriesClient({ initialEnquiries }: EnquiriesClientPro
               </h1>
               <p className="text-xs text-[#6B7280] mt-0.5">
                 Live queries delivered from public portal forms directly to CUBE operations (
-                <span className="font-semibold text-[#070E5C]">contact@cubeiitm.org</span>)
+                <span className="font-semibold text-[#070E5C]">office@cubeiitm.org</span>)
               </p>
             </div>
           </div>
@@ -385,11 +385,11 @@ export default function EnquiriesClient({ initialEnquiries }: EnquiriesClientPro
               {/* Action Buttons: Reply directly to sender */}
               <div className="pt-2 flex flex-wrap items-center justify-between gap-3">
                 <a
-                  href={`mailto:${selectedEnquiry.email}?cc=contact@cubeiitm.org&subject=Response: ${encodeURIComponent(selectedEnquiry.subject || selectedEnquiry.category)}&body=Dear ${encodeURIComponent(selectedEnquiry.name)},%0D%0A%0D%0AReferring to your inquiry submitted via CUBE portal:%0D%0A%0D%0A`}
+                  href={`mailto:${selectedEnquiry.email}?cc=office@cubeiitm.org&subject=Response: ${encodeURIComponent(selectedEnquiry.subject || selectedEnquiry.category)}&body=Dear ${encodeURIComponent(selectedEnquiry.name)},%0D%0A%0D%0AReferring to your inquiry submitted via CUBE portal:%0D%0A%0D%0A`}
                   className="px-5 py-2.5 rounded-full bg-[#EAF2F8] hover:bg-[#D99A42] text-[#070E5C] hover:text-white border border-[#BBD6EA] font-semibold text-xs flex items-center gap-2 transition-all shadow-2xs"
                 >
                   <Send className="w-3.5 h-3.5" />
-                  Reply via Official CUBE Mail (contact@cubeiitm.org)
+                  Reply via Official CUBE Mail (office@cubeiitm.org)
                 </a>
 
                 <div className="text-[11px] text-slate-400">
