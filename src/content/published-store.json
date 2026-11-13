@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-11-12T06:17:09.519Z",
+ "publishedAt": "2026-11-13T06:12:16.023Z",
  "store": {
   "users": [],
   "auditLogs": [],
@@ -7,133 +7,64 @@
   "jobApplications": [],
   "news": [
    {
-    "id": "news-agm-7",
-    "title": "7th Annual General Meeting at CUBE",
-    "date": "",
-    "category": "Institutional",
-    "image": "/images/media/news/original/newsnew4.jpg",
+    "id": "news-1",
+    "title": "CUBE Entrusted to Formulate \"Sustainable Mining Policy\" for Tamil Nadu",
+    "date": "Recent Official Release",
+    "category": "Policy & Environment",
+    "summary": "CUBE has been entrusted to formulate the comprehensive \"Sustainable Mining Policy\" and scientific guidelines for the Government of Tamil Nadu.",
+    "image": "/images/projects/images_minin-policy.jpg",
     "content": [
-     "The 7th Annual General Meeting at CUBE marked a significant milestone, with board members recognizing the team’s exceptional dedication and impact. Over the years, CUBE has established itself as a trusted leader in the industry, reinforcing its commitment to excellence and innovation."
+     "The Centre for Urbanization, Buildings & Environment (CUBE) at IIT Madras Research Park has been officially entrusted with formulating the Sustainable Mining Policy.",
+     "The policy provides an objective scientific framework balancing mineral extraction, environmental conservation, and local community safeguards."
     ],
-    "summary": "The 7th Annual General Meeting at CUBE marked a significant milestone, with board members recognizing the team’s exceptional dedication and impact.",
-    "slug": "news-agm-7",
-    "excerpt": "The 7th Annual General Meeting at CUBE marked a significant milestone, with board members recognizing the team’s exceptional dedication and impact.",
     "status": "published",
-    "createdAt": "2026-11-12T05:32:26.414Z",
-    "updatedAt": "2026-11-12T05:32:26.414Z"
-   },
-   {
-    "id": "news-jigani-bhoomi-pooja",
-    "title": "Bhoomi Pooja for New Residential Complex at Jigani, Bangalore",
-    "date": "09/02/2025",
-    "category": "Building & Construction",
-    "image": "/images/media/news/original/newsnew3.jpg",
-    "content": [
-     "CUBE is delighted to announce the successful Bhoomi Pooja for a new residential complex in Jigani Village, Bangalore in association with UDPL. This ceremonial milestone marks the commencement of the project. As the project progresses, CUBE’s expert team will carry out design and engineering, oversee construction and provide supervision, ensuring the highest standards of quality, innovation, and sustainability. With a focus on creating a safe and future-ready living environment, this development reflects CUBE’s dedication to advancing modern residential infrastructure"
-    ],
-    "summary": "CUBE is delighted to announce the successful Bhoomi Pooja for a new residential complex in Jigani Village, Bangalore in association with UDPL.",
-    "slug": "news-jigani-bhoomi-pooja",
-    "excerpt": "CUBE is delighted to announce the successful Bhoomi Pooja for a new residential complex in Jigani Village, Bangalore in association with UDPL.",
-    "status": "published",
-    "createdAt": "2026-11-12T05:32:26.414Z",
-    "updatedAt": "2026-11-12T05:32:26.414Z"
-   },
-   {
-    "id": "news-udpl-mou",
-    "title": "MoU Signed with Uppuluri Developers Private Limited (UDPL)",
-    "date": "04/02/2025",
-    "category": "Institutional Collaboration",
-    "image": "/images/media/news/original/newsnew2.jpg",
-    "content": [
-     "CUBE is pleased to announce the signing of a Memorandum of Understanding (MoU) with Uppuluri Developers Private Limited (UDPL) on February 4, 2025, development of residential complex in Bangalore. This collaboration marks a significant milestone in advancing high-quality residential infrastructure. The MoU was formally signed by Major General Padmanaban Lakshmanan, CEO of CUBE, and Mr. Manilal Chalasani, Director of UDPL. Through this strategic engagement, CUBE and UDPL aim to set new benchmarks in residential development, aiming for innovative, sustainable, and high-quality living environments."
-    ],
-    "summary": "CUBE is pleased to announce the signing of a Memorandum of Understanding (MoU) with Uppuluri Developers Private Limited (UDPL) on February 4, 2025, development of residential complex in Bangalore.",
-    "slug": "news-udpl-mou",
-    "excerpt": "CUBE is pleased to announce the signing of a Memorandum of Understanding (MoU) with Uppuluri Developers Private Limited (UDPL) on February 4, 2025, development of residential complex in Bangalore.",
-    "status": "published",
-    "createdAt": "2026-11-12T05:32:26.414Z",
-    "updatedAt": "2026-11-12T05:32:26.414Z"
-   },
-   {
-    "id": "news-nsnop-report",
-    "title": "NSNOP Projects Report Presented to the Hon’ble Minister for School Education",
-    "date": "21/01/2025",
-    "category": "CSR",
-    "image": "/images/media/news/original/newsnew.jpg",
-    "content": [
-     "CUBE recently presented a report on the impactful projects completed under the Namma School Namma Ooru Palli (NSNOP) initiative of the Government of Tamil Nadu at the Regional Conclave of NSNOP. The report was formally presented to Thiru Anbil Mahesh Poyyamozhi, Hon'ble Minister for School Education, Government of Tamil Nadu, by Mr. John joseph, Senior Manager, CUBE.",
-     "The report highlights the successful implementation of classroom construction and furniture provisioning for government schools in Manojpatti and Poovathur, carried out under Corporate Social Responsibility (CSR) initiatives. Through its collaborative efforts with NSNOP, CUBE continues to contribute to the State's vision of empowering government schools and improving the quality of education for children across Tamil Nadu."
-    ],
-    "summary": "CUBE recently presented a report on the impactful projects completed under the Namma School Namma Ooru Palli (NSNOP) initiative of the Government of Tamil Nadu at the Regional Conclave of NSNOP.",
-    "slug": "news-nsnop-report",
-    "excerpt": "CUBE recently presented a report on the impactful projects completed under the Namma School Namma Ooru Palli (NSNOP) initiative of the Government of Tamil Nadu at the Regional Conclave of NSNOP.",
-    "status": "published",
-    "createdAt": "2026-11-12T05:32:26.414Z",
-    "updatedAt": "2026-11-12T05:32:26.414Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "id": "news-2",
-    "title": "CUBE Signs MoU with Engineering Projects India Limited",
-    "date": "12/05/2023",
+    "title": "CUBE Signs Strategic MOU with Engineering Projects India Limited (EPIL)",
+    "date": "Official Agreement",
     "category": "Institutional Collaboration",
-    "summary": "CUBE has signed the MOU with Engineering Projects India Limited for in view of executing many Design Engineering & PMC Landmark projects together in near future.",
-    "image": "/images/media/news/original/1.jpg",
+    "summary": "CUBE formalizes MoU with EPIL for joint execution of advanced engineering, infrastructure development, and quality assurance.",
+    "image": "/images/media/news/images_news.jpg",
     "content": [
-     "CUBE has signed the MOU with Engineering Projects India Limited for in view of executing many Design Engineering & PMC Landmark projects together in near future. CUBE is already executing Architectural, Structural, E&M and PHE design & detailing of several important Public Sector projects of TN State Govt. & came to the headline for the in the past. Now in lieu of the same, heading to do some prestigious mass housing projects for the same scope of work. This will enhance the experience / mastery of CUBE in Design Engineering arena, beyond the State boundary as well."
+     "CUBE signed an official Memorandum of Understanding with Engineering Projects India Limited (EPIL) to collaborate on high-stakes urban infrastructure and quality assurance.",
+     "The pact leverages IIT Madras faculty expertise to support national and state engineering consultancy assignments."
     ],
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.462Z",
-    "updatedAt": "2026-11-12T05:32:26.414Z",
-    "slug": "news-2",
-    "excerpt": "CUBE has signed the MOU with Engineering Projects India Limited for in view of executing many Design Engineering & PMC Landmark projects together in near future."
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "id": "news-3",
-    "title": "CUBE Expert Team Visits Villupuram Govt. Medical College Hospital",
-    "date": "12/05/2023",
-    "category": "Environment & Sustainability",
-    "summary": "CUBE's expert team visits Villupuram Govt.",
-    "image": "/images/media/news/original/2-.jpg",
+    "title": "CUBE Expert Team Visits Villupuram Government Medical College Hospital",
+    "date": "Site Inspection",
+    "category": "Structural Assessment",
+    "summary": "Senior structural specialists from CUBE conducted on-site structural condition assessment and non-destructive evaluation at Villupuram Govt Medical College.",
+    "image": "/images/media/news/images_news1.jpg",
     "content": [
-     "CUBE's expert team visits Villupuram Govt. Medical College Hospital to kickstart the prestigious project \"Conducting adequacy audit of existing liquid waste management facilities at 6 healthcare facilities in Tamil Nadu\" which was awarded by TNHSRP, a World Bank supported project implemented by Department of Health and Family Welfare of Tamil Nadu Government."
+     "A multidisciplinary expert team from CUBE visited the Villupuram Government Medical College Hospital for on-site structural health monitoring.",
+     "Using non-destructive testing (NDT), ultrasonic pulse velocity, and rebound hammer testing, the team evaluated building durability and submitted retrofit recommendations."
     ],
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.462Z",
-    "updatedAt": "2026-11-12T05:32:26.414Z",
-    "slug": "news-3",
-    "excerpt": "CUBE's expert team visits Villupuram Govt."
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
-    "id": "news-cmda-inception",
-    "title": "Inception Report Presented to CMDA Technical Committee",
-    "date": "05/05/2023",
+    "id": "news-4",
+    "title": "Preparation of DPR for Restoration & Refurbishment of Historic Gokhale Hall",
+    "date": "Heritage Conservation",
     "category": "Urban Planning",
-    "image": "/images/media/news/original/3.jpg",
+    "summary": "CUBE technical division prepared the Detailed Project Report (DPR) for the heritage conservation and structural refurbishment of Gokhale Hall, Chennai.",
+    "image": "/images/media/news/images_news7.jpg",
     "content": [
-     "CUBE has presented the Inception Report to the Technical Committee presided by Member Secretary CMDA for the Project titled \"Study on Impact of Urban Development on Coastal Aquifer and Measures for Protection in the Villages from Kottivakkam to Mahabalipuram between Bay of Bengal and Buckingham Canal\""
-    ],
-    "summary": "CUBE has presented the Inception Report to the Technical Committee presided by Member Secretary CMDA for the Project titled \"Study on Impact of Urban Development on Coastal Aquifer and Measures for Protection in the Villages from Kottivakkam to Mahabalipuram between Bay of Bengal and Buckingham Canal\"",
-    "slug": "news-cmda-inception",
-    "excerpt": "CUBE has presented the Inception Report to the Technical Committee presided by Member Secretary CMDA for the Project titled \"Study on Impact of Urban Development on Coastal Aquifer and Measures for Protection in the Villages from Kottivakkam to Mahabalipuram between Bay of Bengal and Buckingham Canal\"",
-    "status": "published",
-    "createdAt": "2026-11-12T05:32:26.414Z",
-    "updatedAt": "2026-11-12T05:32:26.414Z"
-   },
-   {
-    "id": "news-1",
-    "title": "CUBE Entrusted to Formulate the “Sustainable Mining Policy”",
-    "date": "03/07/2023",
-    "category": "Policy & Environment",
-    "summary": "CUBE has been entrusted to formulate the “Sustainable Mining Policy” and “Natural Resources Management Plan” by the Department of Geology and Mining, Government of Tamil Nadu.",
-    "image": "/images/media/news/original/news-1.jpg",
-    "content": [
-     "CUBE has been entrusted to formulate the “Sustainable Mining Policy” and “Natural Resources Management Plan” by the Department of Geology and Mining, Government of Tamil Nadu. The final draft of the Sustainable Mining Policy and Natural Resources Management Plan was presented to the Additional Chief Secretary to Government (FAC), Natural Resources Department, Government of Tamil Nadu in the presence of the Director of Geology and Mining, on 3rd July 2023. The Policy has been very well received and the department is now initiating the process of Government approval."
+     "CUBE's Urban Planning & Transportation team delivered the DPR for the comprehensive conservation and structural refurbishment of the historic Gokhale Hall in Chennai.",
+     "The project combines architectural heritage restoration with modern structural retrofitting."
     ],
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.462Z",
-    "updatedAt": "2026-11-12T05:32:26.414Z",
-    "slug": "news-1",
-    "excerpt": "CUBE has been entrusted to formulate the “Sustainable Mining Policy” and “Natural Resources Management Plan” by the Department of Geology and Mining, Government of Tamil Nadu."
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    }
   ],
   "projects": [
@@ -170,8 +101,8 @@
     ],
     "featured": true,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.462Z",
-    "updatedAt": "2026-11-05T05:22:18.469Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "caterpillar",
@@ -207,8 +138,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.462Z",
-    "updatedAt": "2026-11-03T10:20:20.462Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "cauvery",
@@ -244,8 +175,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.462Z",
-    "updatedAt": "2026-11-03T10:20:20.462Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "cmwssb",
@@ -281,8 +212,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.462Z",
-    "updatedAt": "2026-11-03T10:20:20.462Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "cpcl-arhc",
@@ -318,8 +249,8 @@
     ],
     "featured": true,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.462Z",
-    "updatedAt": "2026-11-03T10:20:20.462Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "cpcl-nagapattinam",
@@ -356,8 +287,8 @@
     ],
     "featured": true,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.462Z",
-    "updatedAt": "2026-11-03T10:20:20.462Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "hfapmay",
@@ -392,8 +323,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.462Z",
-    "updatedAt": "2026-11-03T10:20:20.462Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "hyundai",
@@ -428,8 +359,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.462Z",
-    "updatedAt": "2026-11-03T10:20:20.462Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "iiser-tirupathi",
@@ -464,8 +395,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.462Z",
-    "updatedAt": "2026-11-03T10:20:20.462Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "iit-jammu",
@@ -496,8 +427,8 @@
     ],
     "featured": true,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.462Z",
-    "updatedAt": "2026-11-03T10:20:20.462Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "iit-tirupathi",
@@ -532,8 +463,8 @@
     ],
     "featured": true,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.462Z",
-    "updatedAt": "2026-11-03T10:20:20.462Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "jipmer",
@@ -568,8 +499,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.462Z",
-    "updatedAt": "2026-11-03T10:20:20.462Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "kilambakkam",
@@ -602,8 +533,8 @@
     ],
     "featured": true,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.462Z",
-    "updatedAt": "2026-11-03T10:20:20.462Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "klipstp",
@@ -637,8 +568,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.462Z",
-    "updatedAt": "2026-11-03T10:20:20.462Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "kmrl-es",
@@ -672,8 +603,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.462Z",
-    "updatedAt": "2026-11-03T10:20:20.462Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "kmrl",
@@ -708,8 +639,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.462Z",
-    "updatedAt": "2026-11-03T10:20:20.462Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "koratur",
@@ -741,8 +672,8 @@
     ],
     "featured": true,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.462Z",
-    "updatedAt": "2026-11-03T10:20:20.462Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "kuthambakkam",
@@ -777,8 +708,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.462Z",
-    "updatedAt": "2026-11-03T10:20:20.462Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "lhp-chennai",
@@ -814,8 +745,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.462Z",
-    "updatedAt": "2026-11-03T10:20:20.462Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "lhp-indore",
@@ -851,8 +782,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.462Z",
-    "updatedAt": "2026-11-03T10:20:20.462Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "lhp-luknow",
@@ -888,8 +819,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.462Z",
-    "updatedAt": "2026-11-03T10:20:20.462Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "lhp-rajkot",
@@ -925,8 +856,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.462Z",
-    "updatedAt": "2026-11-03T10:20:20.462Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "lhp-ranchi",
@@ -962,8 +893,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.462Z",
-    "updatedAt": "2026-11-03T10:20:20.462Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "lhp",
@@ -999,8 +930,8 @@
     ],
     "featured": true,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.462Z",
-    "updatedAt": "2026-11-03T10:20:20.462Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "madhavaram",
@@ -1035,8 +966,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.462Z",
-    "updatedAt": "2026-11-03T10:20:20.463Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "mahindara",
@@ -1070,8 +1001,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.463Z",
-    "updatedAt": "2026-11-03T10:20:20.463Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "namakkal",
@@ -1102,8 +1033,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.463Z",
-    "updatedAt": "2026-11-03T10:20:20.463Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "rajapalayam",
@@ -1138,8 +1069,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.463Z",
-    "updatedAt": "2026-11-03T10:20:20.463Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "royal",
@@ -1172,8 +1103,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.463Z",
-    "updatedAt": "2026-11-03T10:20:20.463Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "sidco-amb",
@@ -1204,8 +1135,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.463Z",
-    "updatedAt": "2026-11-03T10:20:20.463Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "sidco",
@@ -1236,8 +1167,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.463Z",
-    "updatedAt": "2026-11-03T10:20:20.463Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "structual-design",
@@ -1267,8 +1198,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.463Z",
-    "updatedAt": "2026-11-03T10:20:20.463Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "tidel-park",
@@ -1302,8 +1233,8 @@
     ],
     "featured": true,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.463Z",
-    "updatedAt": "2026-11-03T10:20:20.463Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "upt",
@@ -1338,8 +1269,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.463Z",
-    "updatedAt": "2026-11-03T10:20:20.463Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "upt1",
@@ -1376,8 +1307,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.463Z",
-    "updatedAt": "2026-11-03T10:20:20.463Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "upt10",
@@ -1414,8 +1345,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.463Z",
-    "updatedAt": "2026-11-03T10:20:20.463Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "upt11",
@@ -1451,8 +1382,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.463Z",
-    "updatedAt": "2026-11-03T10:20:20.463Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "upt12",
@@ -1488,8 +1419,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.463Z",
-    "updatedAt": "2026-11-03T10:20:20.463Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "upt13",
@@ -1525,8 +1456,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.463Z",
-    "updatedAt": "2026-11-03T10:20:20.463Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "upt14",
@@ -1562,8 +1493,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.463Z",
-    "updatedAt": "2026-11-03T10:20:20.463Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "upt2",
@@ -1599,8 +1530,8 @@
     ],
     "featured": true,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.463Z",
-    "updatedAt": "2026-11-03T10:20:20.464Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "upt3",
@@ -1637,8 +1568,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.464Z",
-    "updatedAt": "2026-11-03T10:20:20.464Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "upt4",
@@ -1675,8 +1606,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.464Z",
-    "updatedAt": "2026-11-03T10:20:20.464Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "upt5",
@@ -1711,8 +1642,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.464Z",
-    "updatedAt": "2026-11-03T10:20:20.464Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "upt6",
@@ -1750,8 +1681,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.464Z",
-    "updatedAt": "2026-11-03T10:20:20.464Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "upt7",
@@ -1785,8 +1716,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.464Z",
-    "updatedAt": "2026-11-03T10:20:20.464Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "upt8",
@@ -1822,8 +1753,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.464Z",
-    "updatedAt": "2026-11-03T10:20:20.464Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "upt9",
@@ -1860,8 +1791,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.464Z",
-    "updatedAt": "2026-11-03T10:20:20.464Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "slug": "vellore",
@@ -1896,8 +1827,8 @@
     ],
     "featured": false,
     "status": "published",
-    "createdAt": "2026-11-03T10:20:20.464Z",
-    "updatedAt": "2026-11-03T10:20:20.464Z"
+    "createdAt": "2026-11-10T06:30:26.848Z",
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    }
   ],
   "verticals": [
@@ -1940,7 +1871,7 @@
      }
     ],
     "status": "published",
-    "updatedAt": "2026-11-03T10:20:20.464Z"
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "id": "environment-sustainability",
@@ -1981,7 +1912,7 @@
      }
     ],
     "status": "published",
-    "updatedAt": "2026-11-03T10:20:20.464Z"
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "id": "smart-cities",
@@ -2018,7 +1949,7 @@
      }
     ],
     "status": "published",
-    "updatedAt": "2026-11-03T10:20:20.464Z"
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    },
    {
     "id": "urban-planning-transportation",
@@ -2055,7 +1986,7 @@
      }
     ],
     "status": "published",
-    "updatedAt": "2026-11-03T10:20:20.464Z"
+    "updatedAt": "2026-11-10T06:30:26.848Z"
    }
   ],
   "announcements": [
@@ -2069,83 +2000,75 @@
     "ctaText": "View Open Positions",
     "ctaUrl": "/careers",
     "imageUrl": "/images/hero/slides_building-training-team.jpg",
-    "startDate": "2026-11-03T10:20:20.464Z",
-    "endDate": "2027-01-02T10:20:20.464Z",
+    "startDate": "2026-11-10T06:30:26.848Z",
+    "endDate": "2027-01-09T06:30:26.848Z",
     "priority": 1,
     "frequency": "once_per_session",
     "targetPages": [
      "/"
     ],
-    "isActive": false,
-    "createdAt": "2026-11-03T10:20:20.464Z",
-    "updatedAt": "2026-11-10T10:48:07.930Z"
+    "isActive": true,
+    "createdAt": "2026-11-10T06:30:26.848Z"
    }
   ],
   "careers": [
    {
-    "id": "job_structural_design_head",
-    "title": "Structural Design Head",
-    "department": "Building & Construction",
-    "employmentType": "Full-Time",
-    "experience": "15+ Years of experience in related discipline. Professional Engineer or Chartered Engineer preferable.",
-    "location": "Taramani, Chennai",
-    "description": "Qualification: M.E/M.Tech. Structures from a reputed institution. Lead structural design and analysis, project management, quality assurance and control, and client engagement for building and infrastructure projects. Mandatory software: STAAD, RCDE, ETABS, SAFE, AUTOCAD; preferable: TEKLA Structures.",
+    "id": "job_tpqa_sr_eng",
+    "title": "Senior Structural QA/QC Engineer (TPQA)",
+    "department": "Building & Construction Vertical",
+    "employmentType": "Full-Time Contract",
+    "experience": "5+ Years in High-Rise & Precast Engineering",
+    "location": "IIT Madras Research Park, Chennai",
+    "description": "Lead independent third-party structural inspection, concrete durability testing, and design verification for government affordable housing and institutional projects.",
     "qualifications": [
-     "Leadership and Team Management",
-     "Project Management",
-     "Quality Assurance and Control",
-     "Structural Design and Analysis",
-     "RCC & Steel Structures",
-     "Project Documentation",
-     "Client Engagement and Business Development",
-     "Knowledge of Codal Provisions (Mandatory: IS Codes; Preferable: American Codes)",
-     "Innovation & Research"
+     "M.Tech / B.Tech in Structural / Civil Engineering from reputed institute",
+     "Deep expertise in IS 456, IS 1893, IS 13920 and non-destructive testing (NDT)",
+     "Experience in proof checking and site quality monitoring"
     ],
     "applicationEmail": "careers@cubeiitm.org",
+    "closingDate": "2026-12-31",
+    "isActive": true,
+    "status": "published"
+   },
+   {
+    "id": "job_env_hydrologist",
+    "title": "Environmental Engineer & Hydrologist",
+    "department": "Environment & Sustainability Vertical",
+    "employmentType": "Full-Time",
+    "experience": "3-6 Years in Hydrodynamic Modeling & Water Quality",
+    "location": "IIT Madras Research Park, Chennai",
+    "description": "Conduct 2D flood simulations, STP/ETP design reviews, water balance audits, and lake rejuvenation feasibility studies across Tamil Nadu river basins.",
+    "qualifications": [
+     "Master’s degree in Environmental Engineering / Water Resources",
+     "Proficiency in HEC-RAS, GIS, and hydrodynamic software packages",
+     "Laboratory testing acquaintance with CEL protocols"
+    ],
+    "applicationEmail": "careers@cubeiitm.org",
+    "closingDate": "2026-12-31",
     "isActive": true,
     "status": "published"
    }
   ],
   "tenders": [
    {
-    "id": "tnd_classroom_poovathur",
-    "referenceNumber": "CUBE/ADM/TEND/B&C/014/2024-25",
-    "title": "Construction of Classroom Block for Government High School at Poovathur, Thanjavur, Tamil Nadu",
-    "description": "Construction of classroom block for Government High School at Poovathur, Thanjavur, Tamil Nadu.",
-    "documentUrl": "/tenders/NIT_CSR_Poovathur_Final.pdf",
-    "publishedDate": "2024-25",
-    "closingDate": "Refer document",
+    "id": "tnd_cel_equip_2026",
+    "referenceNumber": "CUBE/CEL/PROC/2026/04",
+    "title": "Procurement of Inductively Coupled Plasma Mass Spectrometer (ICP-MS) for CEL Laboratory",
+    "description": "Notice Inviting Tender for supply, installation, testing and commissioning of advanced elemental analysis instrument at CUBE Environmental Laboratory.",
+    "documentUrl": "#",
+    "publishedDate": "2026-10-15",
+    "closingDate": "2026-11-30",
     "status": "Active"
    },
    {
-    "id": "tnd_jigani_de",
-    "referenceNumber": "CUBE/ADM/RFP/B&C/023/2024-25",
-    "title": "Comprehensive Design & Engineering Services for a 500-Unit Residential Apartment Complex in Jigani, Bangalore",
-    "description": "Comprehensive design and engineering services for a 500-unit residential apartment complex in Jigani, Bangalore.",
-    "documentUrl": "/tenders/RFQ_JIGANI_DE_2_1_Revised.pdf",
-    "publishedDate": "2024-25",
-    "closingDate": "Refer document",
-    "status": "Active"
-   },
-   {
-    "id": "tnd_jigani_corrigendum_1",
-    "referenceNumber": "CUBEADMRFPB&C0232024-25",
-    "title": "Corrigendum",
-    "description": "Corrigendum for Tender ID CUBEADMRFPB&C0232024-25.",
-    "documentUrl": "/tenders/CORRIGENDUM_CUBEADMRFPBC0232024-25.pdf",
-    "publishedDate": "2024-25",
-    "closingDate": "Refer document",
-    "status": "Active"
-   },
-   {
-    "id": "tnd_jigani_corrigendum_eot",
-    "referenceNumber": "CUBE/ADM/RFP/B&C/023/2024-25",
-    "title": "Corrigendum - Comprehensive Design & Engineering Services for a 500-Unit Residential Apartment Complex in Jigani, Bangalore",
-    "description": "Corrigendum extension of time for the comprehensive design and engineering services tender for the 500-unit residential apartment complex in Jigani, Bangalore.",
-    "documentUrl": "/tenders/Corrigendum_Tender_EoT.pdf",
-    "publishedDate": "2024-25",
-    "closingDate": "Refer document",
-    "status": "Active"
+    "id": "tnd_ndt_ins_2026",
+    "referenceNumber": "CUBE/ENG/TPQA/2026/08",
+    "title": "Expression of Interest for Specialized Ultrasonic Pulse Velocity (UPV) Testing Services",
+    "description": "Empanelment of specialized testing agencies for statewide bridge structural health monitoring.",
+    "documentUrl": "#",
+    "publishedDate": "2026-09-20",
+    "closingDate": "2026-11-20",
+    "status": "Under Evaluation"
    }
   ],
   "celServices": [
@@ -2234,19 +2157,29 @@
     "category": "leadership",
     "organization": "Indian Institute of Technology Madras",
     "image": "/images/leadership/board_member_kamakoti.jpg",
-    "bio": "Prof. V. Kamakoti is the Director of IIT Madras and Chairman of CUBE. A Centre of Excellence was conceived by IIT Madras to work towards an ideal habitat in our cities, keeping the core values of the historical development of our cities in mind and bringing to bear the rapid technological changes of these times. The Centre takes a holistic and multidisciplinary approach to resolving the many complex and diverse environmental, social and technological problems that human settlements face.",
-    "status": "published",
-    "id": "leadership_prof-v-kamakoti"
+    "bio": "Prof. V. Kamakoti is the Director of IIT Madras and serves as the Chairman of CUBE. A renowned academician and leader in computer science and technology policy, he guides CUBE's strategic mission of delivering world-class engineering solutions for sustainable urbanization.",
+    "status": "published"
    },
    {
-    "name": "L. Padmanaban",
-    "role": "CEO, CUBE (Major General, Retired)",
+    "name": "L. PADMANABAN(Major General [Retired])",
+    "role": "CEO, CUBE",
     "category": "leadership",
     "organization": "Centre for Urbanization, Buildings & Environment",
-    "image": "/images/leadership/ceo_padmanaban.jpg",
-    "bio": "L. Padmanaban (Major General, Retired) is the Chief Executive Officer of CUBE. CUBE was incorporated in May 2017 as a joint initiative of the Government of Tamil Nadu (GoTN) and IIT Madras, and GoTN has declared CUBE as one of its Centres of Excellence. He leads CUBE's aim to develop quality and viable tailor-made solutions for industry, government and civil society in the domain of sustainable urban development through collaborative partnerships between academia, government and the private sector.",
+    "image": "",
+    "bio": "Leading CUBE's operational verticals, project management consultancy, and industrial partnerships, bridging public governance with cutting-edge academic expertise.",
     "status": "published",
-    "id": "leadership_l-padmanaban"
+    "designation": "Chief Executive Officer",
+    "department": "leadership",
+    "email": "",
+    "phone": "",
+    "age": "",
+    "qualification": "",
+    "experience": "",
+    "employeeId": "",
+    "joiningDate": "",
+    "bloodGroup": "",
+    "emergencyContact": "",
+    "updatedAt": "2026-11-10T10:42:38.572Z"
    },
    {
     "name": "Prof. V Kamakoti",
@@ -2254,8 +2187,7 @@
     "category": "board",
     "image": "/images/leadership/board_member_kamakoti.jpg",
     "organization": "IIT Madras / Govt of Tamil Nadu",
-    "status": "published",
-    "id": "board_prof-v-kamakoti"
+    "status": "published"
    },
    {
     "name": "Prof. U Saravanan",
@@ -2263,44 +2195,39 @@
     "category": "board",
     "image": "/images/leadership/board_member_Saravanan.jpg",
     "organization": "IIT Madras / Govt of Tamil Nadu",
-    "status": "published",
-    "id": "board_prof-u-saravanan"
+    "status": "published"
    },
    {
     "name": "Thiru R. Kirlosh Kumar, IAS",
     "role": "Board Member",
     "category": "board",
-    "image": "/images/leadership/board_member_Thiru_R_Kirlosh_Kumar_IAS.jpg",
+    "image": "/images/leadership/about_leader.jpg",
     "organization": "IIT Madras / Govt of Tamil Nadu",
-    "status": "published",
-    "id": "board_thiru-r-kirlosh-kumar-ias"
+    "status": "published"
    },
    {
     "name": "Thiru. M.A. Siddique IAS",
     "role": "Board Member",
     "category": "board",
-    "image": "/images/leadership/board_member_Thiru_MA_Siddique_IAS.jpg",
+    "image": "/images/leadership/about_leader.jpg",
     "organization": "IIT Madras / Govt of Tamil Nadu",
-    "status": "published",
-    "id": "board_thiru-m-a-siddique-ias"
+    "status": "published"
    },
    {
     "name": "Thiru Gagandeep Singh Bedi, IAS",
     "role": "Board Member",
     "category": "board",
-    "image": "/images/leadership/board_member_Thiru_Gagandeep_Singh_Bedi.jpg",
+    "image": "/images/leadership/about_leader.jpg",
     "organization": "IIT Madras / Govt of Tamil Nadu",
-    "status": "published",
-    "id": "board_thiru-gagandeep-singh-bedi-ias"
+    "status": "published"
    },
    {
     "name": "Dr. P Alarmelmangai IAS",
     "role": "Board Member",
     "category": "board",
-    "image": "/images/leadership/board_member_Dr_P_Alarmelmangai_IAS.jpg",
+    "image": "/images/leadership/about_leader.jpg",
     "organization": "IIT Madras / Govt of Tamil Nadu",
-    "status": "published",
-    "id": "board_dr-p-alarmelmangai-ias"
+    "status": "published"
    },
    {
     "name": "Prof. Ashwin Mahalingam",
@@ -2308,10 +2235,7 @@
     "category": "board",
     "image": "/images/leadership/board_member_ashwin.jpg",
     "organization": "IIT Madras / Govt of Tamil Nadu",
-    "status": "published",
-    "id": "board_prof-ashwin-mahalingam",
-    "bio": "Dr. Ashwin Mahalingam is an Associate Professor of the Building Technology and Construction Management Division in the Department of Civil Engineering at IIT Madras. He completed his B. Tech in Civil Engineering from IIT Madras in 1998 and went on to do a Masters and Ph.D in Civil Engineering from Stanford University. Following a stint as the Graduate Teaching and Research Assistant at Stanford University and Product Development Lead at GlobeRanger Corporation, Texas, he joined the faculty of IIT Madras, his alma mater, in 2006.\n\nHis interest areas include Infrastructure planning and management, risk assessment and allocation, mechanisms for shaping successful infrastructure projects and cross-cultural issues in global infrastructure projects. His consultancy work includes varied assignments converging many varied subjects like sustainable development, social entrepreneurship, Public Private Partnerships in Infrastructure projects, Project Management, Organizational Behaviour, Disaster Management, and using cutting edge information technology in construction management.\n\nHis recent research work includes improving performance of Tsunami Housing Projects and developing a Databook for benchmarking Indian Water Utilities for the ADB. He is also a member of Engineers for a Sustainable World and American Society of Civil Engineers. He was awarded the Young Faculty Recognition Award from IIT Madras, Distinguished Service Award and Best paper Award from Engineering Project Organizational Society.\n\nDr. Ashwin brings his intense passion and unique expertise in blending technology and sustainability in infrastructure development and urbanization to add value to CUBE’s various domains of work.",
-    "updatedAt": "2026-11-12T05:45:33.387Z"
+    "status": "published"
    },
    {
     "name": "Prof. Indumathi M Nambi",
@@ -2319,10 +2243,7 @@
     "category": "board",
     "image": "/images/leadership/board_member_indumathi.jpg",
     "organization": "IIT Madras / Govt of Tamil Nadu",
-    "status": "published",
-    "id": "board_prof-indumathi-m-nambi",
-    "bio": "Dr. Indumathi Nambi is Associate Professor and Head of the Environment and Water Resources Division in the Department of Civil Engineering at IIT Madras. Prior to joining IIT Madras, she worked as a consultant at M.S. Swaminathan Research Foundation. Between 1994-2000, she was a Research Assistant at Clarkson University, USA and served as a Design Engineer at Larsen and Toubro between 1993 to 1994.\n\nDr. Indumathi is a Ph.D. in Civil and Environmental Engineering from Clarkson University, Potsdam, New York, M.E. (Env.) from Centre for Environmental Studies, Anna University, Chennai and B.E. (Civil) from College of Engineering, Anna University, Chennai.\n\nHer research experience and interests include Ground water – state of contamination and transport, Remediation of contaminated soil and groundwater - Chromium, Petroleum compound pesticide & micro pollutants, Hazardous chemicals - Risk assessment and management, Water Treatment, Wastewater reuse, Solid waste management, Industrial Waste Water Treatment - Electro plating, tannery and textile, Environment Impact Assessment, Electro-chemical methods for contaminated water & Soil, Biogas from food waste, Micro-fuel cells coupled waste water treatment & Chromium recovery, Petro Chemical waste & waste water treatment and Removal of antibiotics & antimicrobial resistance in water system. She has published more than 25 journal publications and is constantly engaged in consultancy projects in Tamil Nadu and throughout the country as an Environmental Expert.",
-    "updatedAt": "2026-11-12T05:45:33.388Z"
+    "status": "published"
    },
    {
     "name": "Mr. K V Rangaswami",
@@ -2330,10 +2251,7 @@
     "category": "board",
     "image": "/images/leadership/board_member_rangaswami.jpg",
     "organization": "IIT Madras / Govt of Tamil Nadu",
-    "status": "published",
-    "id": "board_mr-k-v-rangaswami",
-    "bio": "Mr. Rangaswami retired as the Member of the Board and President - Larsen & Toubro Limited in June 2011 and was the Advisor to the Chairman, Larsen & Toubro Limited till June 2014. He headed the Operations of the ECC Division-L&T, the largest construction organization in India which operates in Middle East, Africa, SAARC and far-East countries apart from India. Post retirement, besides being the Advisor to Chairman, he is also the Chairman of the Board of two independent unlisted internal companies of L&T – Metallurgical Material Handling Independent Company & Infrastructure Independent Company. After completing B. Tech from IIT-Madras he joined ECC (A fully owned subsidiary of L&T at that time) in 1965 and since then he has been contributing immensely to the growth of L&T in various roles and capacities. He has been instrumental in designing innovative and cost-effective designs for many structures, some of them conceived and designed for the first time in India. He became Director in the year 2005.\n\nHe is also a member of the Board of Governors of National Institute of Construction Management & Research (NICMAR), Fellow of the Indian National Academy of Engineering (INAE), Fellow of the Institution of Civil Engineers-UK, Board Member - IIT RAM, Ahmedabad.\n\nHe has several awards attributed to him including “Economic Times ACETECH 2007” Award for professional ethics, achievements and rare contribution in the field of construction & environmental friendly architecture, Distinguished Alumnus Award-2002 - IIT Madras, “Outstanding Concrete Engineer of Tamil Nadu” for the year 2010 from Indian Concrete Institute, Tamil Nadu Chapter, “Life Time Achievement” – An Infrastructure & Construction Industry recognition, Awards from EPC World 2013.\n\nWhilst all these are the core of his activities, he makes it a point to dedicate time and support to contribute something to the society.",
-    "updatedAt": "2026-11-12T05:45:33.388Z"
+    "status": "published"
    },
    {
     "name": "Mr. B. Santhanam",
@@ -2341,10 +2259,7 @@
     "category": "board",
     "image": "/images/leadership/board_member_santhanam.jpg",
     "organization": "IIT Madras / Govt of Tamil Nadu",
-    "status": "published",
-    "id": "board_mr-b-santhanam",
-    "bio": "Mr. Santhanam has extensive experience in the Glass product development and manufacturing industry having worked with the leading glass manufacturing and products firm Saint Gobain for more than 15 years. He is B. Tech (Civil) from IIT Madras, a “Distinguished Aumunus” of IITM, and a Postgraduate from IIM Ahmedabad.\n\nHe was Chairman CII Southern Region between 2013-2014 and is a elected member of National Council - Confederation of Indian Industry (CII)- 2006-Present. He was appointed to the Anna University Syndicate by Govt Of TN representing Industry-2013-2016. He has held several positions of eminence in various organizations including, Chairman of the CII National Committee - HR, Skills 2006-10, Chairman of the Southern Regional Committee on Water, Environment, Energy & Climate Change at Confederation of Indian Industry (CII), President of Employers' Federation of India (EFI)-2009-10, One of the Founder Directors of IIT Madras Research Park and Chairman PAN IIT 2008 Event.\n\nWinner of several accolades and awards including “Champion of Humanity Award” by Hindustan Chamber of Commerce (2015) and V.C. Padmanaban Memorial Award” in the category of “Business Excellence leading to Development of Society at large” by Manappuram Finance Limited, he is deeply associated with developmental and humanitarian causes. Santhanam is very active in advocating diversity in work force and has been a champion of the newly created “Indian Women Network” (IWN) as part of the diversity agenda of CII. Currently, he is working as President and Managing Director of Flat Glass – South Asia, Malaysia & Egypt besides being a passionate guiding member of the Governing Body of CUBE. His areas of expertise include greenfield start up, business strategy, competitive analysis, HR, government relationships, macro-economic and social policies.",
-    "updatedAt": "2026-11-12T05:45:33.388Z"
+    "status": "published"
    },
    {
     "name": "Mr. Sivaraman Krishnamurthy",
@@ -2352,10 +2267,7 @@
     "category": "board",
     "image": "/images/leadership/board_member_sivaraman-krishnamurthi.jpg",
     "organization": "IIT Madras / Govt of Tamil Nadu",
-    "status": "published",
-    "id": "board_mr-sivaraman-krishnamurthy",
-    "bio": "Mr. Sivaraman is a B. Tech (Mech) from IIT Madras has over three decades of experience spanning engineering, maintenance, manufacturing and operations, projects, customer service, environment, health, safety and sustainability. He has worked in ITC Limited for more than twenty years in several roles and has played significant role in various Quality initiatives of ITC’s units and in interactions with regulatory bodies having also spearheaded various environment initiatives in ITC Ltd. He is an experienced professional having travelled widely abroad in connection with vendor appraisals, customer meetings and international exhibitions. He is also a CII certified Sustainability Assessor.\n\nHe currently works as an Advisor with various organisations as well as an Independent Consultant on Environment and Sustainability with organizations like Industrial Waste Management Association (IWMA) and IGCS (Indo German Centre for Sustainability, IIT Madras on environment projects for industry, society and Government of Tamil Nadu.",
-    "updatedAt": "2026-11-12T05:45:33.388Z"
+    "status": "published"
    },
    {
     "name": "Mr. Srinivasa Raghavan Venkatachari",
@@ -2363,10 +2275,7 @@
     "category": "board",
     "image": "/images/leadership/board_member_srinivasa-raghavan.jpg",
     "organization": "IIT Madras / Govt of Tamil Nadu",
-    "status": "published",
-    "id": "board_mr-srinivasa-raghavan-venkatachari",
-    "bio": "Mr. Raghavan works with Tata Consultancy Services as Head of Digital Citizen and Connected Social Systems Research and Innovation Program within the CTO R&D Organization. This program focuses on Smart Cities beyond a purely infrastructure-focused view, by building digital systems which help key stakeholders such as Citizens, Communities and Businesses to reimagine Quality of Life experiences in a Smart City. These solutions will become critical in the adoption of Smart Cities for the benefit of all. As a versatile technology professional with over two decades of IT experience, he has consulted with and built technology solutions for customers in various industries and geographies. In his previous role he was the Practice Head for Cloud Computing Incubation within CTO R&D. Raghavan holds a Bachelor’s degree in Computer Science and Engineering from the Indian Institute of Technology, Delhi and a Master’s degree in Aerospace Engineering from the Indian Institute of Technology, Madras.",
-    "updatedAt": "2026-11-12T05:45:33.388Z"
+    "status": "published"
    },
    {
     "name": "Meher A Prasad",
@@ -2374,8 +2283,7 @@
     "category": "advisory",
     "image": "/images/leadership/advisory_panel_meher-prasad.jpg",
     "organization": "Indian Institute of Technology Madras",
-    "status": "published",
-    "id": "advisory_meher-a-prasad"
+    "status": "published"
    },
    {
     "name": "Amlan Kumar Sengupta",
@@ -2383,8 +2291,7 @@
     "category": "advisory",
     "image": "/images/leadership/advisory_panel_amlan-kumar.jpg",
     "organization": "Indian Institute of Technology Madras",
-    "status": "published",
-    "id": "advisory_amlan-kumar-sengupta"
+    "status": "published"
    },
    {
     "name": "Arun Menon",
@@ -2392,8 +2299,7 @@
     "category": "advisory",
     "image": "/images/leadership/advisory_panel_arun-menon.jpg",
     "organization": "Indian Institute of Technology Madras",
-    "status": "published",
-    "id": "advisory_arun-menon"
+    "status": "published"
    },
    {
     "name": "Ashwin Mahalingam",
@@ -2401,10 +2307,7 @@
     "category": "advisory",
     "image": "/images/leadership/board_member_ashwin.jpg",
     "organization": "Indian Institute of Technology Madras",
-    "status": "published",
-    "id": "advisory_ashwin-mahalingam",
-    "bio": "Dr. Ashwin Mahalingam is an Associate Professor of the Building Technology and Construction Management Division in the Department of Civil Engineering at IIT Madras. He completed his B. Tech in Civil Engineering from IIT Madras in 1998 and went on to do a Masters and Ph.D in Civil Engineering from Stanford University. Following a stint as the Graduate Teaching and Research Assistant at Stanford University and Product Development Lead at GlobeRanger Corporation, Texas, he joined the faculty of IIT Madras, his alma mater, in 2006.\n\nHis interest areas include Infrastructure planning and management, risk assessment and allocation, mechanisms for shaping successful infrastructure projects and cross-cultural issues in global infrastructure projects. His consultancy work includes varied assignments converging many varied subjects like sustainable development, social entrepreneurship, Public Private Partnerships in Infrastructure projects, Project Management, Organizational Behaviour, Disaster Management, and using cutting edge information technology in construction management.\n\nHis recent research work includes improving performance of Tsunami Housing Projects and developing a Databook for benchmarking Indian Water Utilities for the ADB. He is also a member of Engineers for a Sustainable World and American Society of Civil Engineers. He was awarded the Young Faculty Recognition Award from IIT Madras, Distinguished Service Award and Best paper Award from Engineering Project Organizational Society.\n\nDr. Ashwin brings his intense passion and unique expertise in blending technology and sustainability in infrastructure development and urbanization to add value to CUBE’s various domains of work.",
-    "updatedAt": "2026-11-12T05:45:33.388Z"
+    "status": "published"
    },
    {
     "name": "Arul Narayan SP",
@@ -2412,8 +2315,7 @@
     "category": "advisory",
     "image": "/images/leadership/advisory_panel_arul-narayanan.jpg",
     "organization": "Indian Institute of Technology Madras",
-    "status": "published",
-    "id": "advisory_arul-narayan-sp"
+    "status": "published"
    },
    {
     "name": "Balaji Narasimhan",
@@ -2421,8 +2323,7 @@
     "category": "advisory",
     "image": "/images/leadership/advisory_panel_balaji-narasiman.jpg",
     "organization": "Indian Institute of Technology Madras",
-    "status": "published",
-    "id": "advisory_balaji-narasimhan"
+    "status": "published"
    },
    {
     "name": "Boominathan A",
@@ -2430,8 +2331,7 @@
     "category": "advisory",
     "image": "/images/leadership/advisory_panel_boominathan.jpg",
     "organization": "Indian Institute of Technology Madras",
-    "status": "published",
-    "id": "advisory_boominathan-a"
+    "status": "published"
    },
    {
     "name": "Devdas Menon",
@@ -2439,8 +2339,7 @@
     "category": "advisory",
     "image": "/images/leadership/advisory_panel_devdas-menon.jpg",
     "organization": "Indian Institute of Technology Madras",
-    "status": "published",
-    "id": "advisory_devdas-menon"
+    "status": "published"
    },
    {
     "name": "Gitakrishnan Ramadurai",
@@ -2448,8 +2347,7 @@
     "category": "advisory",
     "image": "/images/leadership/advisory_panel_gitakrishnan.jpg",
     "organization": "Indian Institute of Technology Madras",
-    "status": "published",
-    "id": "advisory_gitakrishnan-ramadurai"
+    "status": "published"
    },
    {
     "name": "Indumathi M Nambi",
@@ -2457,10 +2355,7 @@
     "category": "advisory",
     "image": "/images/leadership/board_member_indumathi.jpg",
     "organization": "Indian Institute of Technology Madras",
-    "status": "published",
-    "id": "advisory_indumathi-m-nambi",
-    "bio": "Dr. Indumathi Nambi is Associate Professor and Head of the Environment and Water Resources Division in the Department of Civil Engineering at IIT Madras. Prior to joining IIT Madras, she worked as a consultant at M.S. Swaminathan Research Foundation. Between 1994-2000, she was a Research Assistant at Clarkson University, USA and served as a Design Engineer at Larsen and Toubro between 1993 to 1994.\n\nDr. Indumathi is a Ph.D. in Civil and Environmental Engineering from Clarkson University, Potsdam, New York, M.E. (Env.) from Centre for Environmental Studies, Anna University, Chennai and B.E. (Civil) from College of Engineering, Anna University, Chennai.\n\nHer research experience and interests include Ground water – state of contamination and transport, Remediation of contaminated soil and groundwater - Chromium, Petroleum compound pesticide & micro pollutants, Hazardous chemicals - Risk assessment and management, Water Treatment, Wastewater reuse, Solid waste management, Industrial Waste Water Treatment - Electro plating, tannery and textile, Environment Impact Assessment, Electro-chemical methods for contaminated water & Soil, Biogas from food waste, Micro-fuel cells coupled waste water treatment & Chromium recovery, Petro Chemical waste & waste water treatment and Removal of antibiotics & antimicrobial resistance in water system. She has published more than 25 journal publications and is constantly engaged in consultancy projects in Tamil Nadu and throughout the country as an Environmental Expert.",
-    "updatedAt": "2026-11-12T05:45:33.388Z"
+    "status": "published"
    },
    {
     "name": "Ligy Philip",
@@ -2468,8 +2363,7 @@
     "category": "advisory",
     "image": "/images/leadership/advisory_panel_ligy-philip.jpg",
     "organization": "Indian Institute of Technology Madras",
-    "status": "published",
-    "id": "advisory_ligy-philip"
+    "status": "published"
    },
    {
     "name": "Murali Krishnan J",
@@ -2477,8 +2371,7 @@
     "category": "advisory",
     "image": "/images/leadership/advisory_panel_murali-krishnan.jpg",
     "organization": "Indian Institute of Technology Madras",
-    "status": "published",
-    "id": "advisory_murali-krishnan-j"
+    "status": "published"
    },
    {
     "name": "Murty B.S.",
@@ -2486,8 +2379,7 @@
     "category": "advisory",
     "image": "/images/leadership/advisory_panel_murty-bs.jpg",
     "organization": "Indian Institute of Technology Madras",
-    "status": "published",
-    "id": "advisory_murty-b-s"
+    "status": "published"
    },
    {
     "name": "Radhakrishna G. Pillai",
@@ -2495,8 +2387,7 @@
     "category": "advisory",
     "image": "/images/leadership/advisory_panel_radhakrishnan-pillai.jpg",
     "organization": "Indian Institute of Technology Madras",
-    "status": "published",
-    "id": "advisory_radhakrishna-g-pillai"
+    "status": "published"
    },
    {
     "name": "Ramamurthy K",
@@ -2504,8 +2395,7 @@
     "category": "advisory",
     "image": "/images/leadership/advisory_panel_ramamurthy-k.jpg",
     "organization": "Indian Institute of Technology Madras",
-    "status": "published",
-    "id": "advisory_ramamurthy-k"
+    "status": "published"
    },
    {
     "name": "Rupen Goswami",
@@ -2513,8 +2403,7 @@
     "category": "advisory",
     "image": "/images/leadership/advisory_panel_rupen-goswami.jpg",
     "organization": "Indian Institute of Technology Madras",
-    "status": "published",
-    "id": "advisory_rupen-goswami"
+    "status": "published"
    },
    {
     "name": "S. Mohan",
@@ -2522,8 +2411,7 @@
     "category": "advisory",
     "image": "/images/leadership/advisory_panel_s-mohan.jpg",
     "organization": "Indian Institute of Technology Madras",
-    "status": "published",
-    "id": "advisory_s-mohan"
+    "status": "published"
    },
    {
     "name": "S.M.Shiva Nagendra",
@@ -2531,8 +2419,7 @@
     "category": "advisory",
     "image": "/images/leadership/advisory_panel_shiva-nagendra.jpg",
     "organization": "Indian Institute of Technology Madras",
-    "status": "published",
-    "id": "advisory_s-m-shiva-nagendra"
+    "status": "published"
    },
    {
     "name": "Saravanan U",
@@ -2540,8 +2427,7 @@
     "category": "advisory",
     "image": "/images/leadership/advisory_panel_sarvanan.jpg",
     "organization": "Indian Institute of Technology Madras",
-    "status": "published",
-    "id": "advisory_saravanan-u"
+    "status": "published"
    },
    {
     "name": "Sivakumar Palaniappan K",
@@ -2549,8 +2435,7 @@
     "category": "advisory",
     "image": "/images/leadership/advisory_panel_sivakumar-palaniappan.jpg",
     "organization": "Indian Institute of Technology Madras",
-    "status": "published",
-    "id": "advisory_sivakumar-palaniappan-k"
+    "status": "published"
    },
    {
     "name": "Subhadeep Banerjee",
@@ -2558,8 +2443,7 @@
     "category": "advisory",
     "image": "/images/leadership/advisory_panel_subhadeep.jpg",
     "organization": "Indian Institute of Technology Madras",
-    "status": "published",
-    "id": "advisory_subhadeep-banerjee"
+    "status": "published"
    },
    {
     "name": "A Mani",
@@ -2567,8 +2451,7 @@
     "category": "advisory",
     "image": "/images/leadership/advisory_panel_a-mani.jpg",
     "organization": "Indian Institute of Technology Madras",
-    "status": "published",
-    "id": "advisory_a-mani"
+    "status": "published"
    },
    {
     "name": "S R Chakravarthy",
@@ -2576,8 +2459,7 @@
     "category": "advisory",
     "image": "/images/leadership/advisory_panel_chakravarthy.jpg",
     "organization": "Indian Institute of Technology Madras",
-    "status": "published",
-    "id": "advisory_s-r-chakravarthy"
+    "status": "published"
    },
    {
     "name": "R Raghunathan",
@@ -2585,8 +2467,7 @@
     "category": "advisory",
     "image": "/images/leadership/advisory_panel_ragunathan.jpg",
     "organization": "Indian Institute of Technology Madras",
-    "status": "published",
-    "id": "advisory_r-raghunathan"
+    "status": "published"
    },
    {
     "name": "R Ravikrishna",
@@ -2594,1068 +2475,7 @@
     "category": "advisory",
     "image": "/images/leadership/advisory_panel_ravikrishna.jpg",
     "organization": "Indian Institute of Technology Madras",
-    "status": "published",
-    "id": "advisory_r-ravikrishna"
-   },
-   {
-    "id": "staff_602876",
-    "name": "John Joseph",
-    "designation": "Senior Manager",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_john-Joseph.jpg",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_611626",
-    "name": "Unmesh Dhanushkodi",
-    "designation": "Manager",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unmesh-dhanushkodi.jpg",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_569132",
-    "name": "Ramkumar K S",
-    "designation": "Manager",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_868875",
-    "name": "Srikanth A",
-    "designation": "Manager",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_259296",
-    "name": "M.A.Jesu Raja Rajan",
-    "designation": "Deputy General Manager",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_452741",
-    "name": "Baskar Das A",
-    "designation": "Deputy Manager",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_592104",
-    "name": "K Jyothi Raju",
-    "designation": "Regional Head",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_314380",
-    "name": "R. Ravi Chandran",
-    "designation": "Regional Head",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_225922",
-    "name": "R Pal Pandi",
-    "designation": "Senior Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_pal-pandi.jpg",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_71711",
-    "name": "Patel Dinesh Kumar",
-    "designation": "Senior Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_181492",
-    "name": "Kanwal Jeet Singh",
-    "designation": "Senior Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_134703",
-    "name": "K Kakendar Singh",
-    "designation": "Senior Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_289761",
-    "name": "T Prakash",
-    "designation": "Senior Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_853215",
-    "name": "H Karthikeyan",
-    "designation": "Senior Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_584142",
-    "name": "Kiran Prasad",
-    "designation": "Senior Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_470981",
-    "name": "Karthick Inbasekaran",
-    "designation": "Senior Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_187764",
-    "name": "Sonaimuthu M",
-    "designation": "Senior Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_846229",
-    "name": "Kaliraj T",
-    "designation": "Senior Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_399127",
-    "name": "Pavithresh Kumar M",
-    "designation": "Senior Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_990093",
-    "name": "S Ravichandran",
-    "designation": "Senior Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_936311",
-    "name": "Niraj Kumar Mishra",
-    "designation": "Senior Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_697711",
-    "name": "Nayeem Ahmad Malik",
-    "designation": "Senior Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_354693",
-    "name": "Balakrishnan N",
-    "designation": "Senior Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_424880",
-    "name": "Sundarrajan S",
-    "designation": "Senior Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_187664",
-    "name": "M Suresh",
-    "designation": "Senior Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_904023",
-    "name": "Abishek S",
-    "designation": "Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_345412",
-    "name": "Sathish Kumar S",
-    "designation": "Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_245666",
-    "name": "Anjaly M",
-    "designation": "Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_983721",
-    "name": "Anbu Arasu M",
-    "designation": "Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_605954",
-    "name": "Vijay Singh Manhas",
-    "designation": "Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_901768",
-    "name": "K.Gurumoorthy",
-    "designation": "Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_95947",
-    "name": "T Sathiyaseelan",
-    "designation": "Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_35417",
-    "name": "Kaviarasan V",
-    "designation": "Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_317156",
-    "name": "P Ragunathan",
-    "designation": "Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_487193",
-    "name": "Dafni",
-    "designation": "Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_806622",
-    "name": "Gurjeet Singh",
-    "designation": "Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_822203",
-    "name": "M Bharathmangalam",
-    "designation": "Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_883917",
-    "name": "C Anbarasan",
-    "designation": "Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_288357",
-    "name": "Pradeep Singh",
-    "designation": "Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_841671",
-    "name": "Thanveer Ahmed",
-    "designation": "Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_665802",
-    "name": "P Kumarasamy",
-    "designation": "Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_923420",
-    "name": "Aman Chargotra",
-    "designation": "Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_106517",
-    "name": "Amit Singh",
-    "designation": "Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_15898",
-    "name": "Abishek I",
-    "designation": "Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_861441",
-    "name": "Rieffel George V Padayatty",
-    "designation": "Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_652746",
-    "name": "Akkshy T A",
-    "designation": "Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_478671",
-    "name": "Praveen V",
-    "designation": "Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_758266",
-    "name": "Sasikumar S",
-    "designation": "Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_716630",
-    "name": "Keerthiharan",
-    "designation": "Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_263272",
-    "name": "Palanivel A",
-    "designation": "Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_996267",
-    "name": "Aravind R",
-    "designation": "Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_818095",
-    "name": "B Suriya Prakash",
-    "designation": "Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_886608",
-    "name": "Sudip Kumar Sarkar",
-    "designation": "Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_243838",
-    "name": "Gajendiran R",
-    "designation": "Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_529150",
-    "name": "E Naveena",
-    "designation": "Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_354252",
-    "name": "N Gokul Prasadh",
-    "designation": "Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_726411",
-    "name": "M Ruckshana",
-    "designation": "Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_577825",
-    "name": "Suriyakumar M",
-    "designation": "Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_911166",
-    "name": "Bala Murugan A",
-    "designation": "Junior Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_789035",
-    "name": "Hariprasath M",
-    "designation": "Junior Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_659688",
-    "name": "Anushka G P",
-    "designation": "Junior Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_169244",
-    "name": "Atish Kumar",
-    "designation": "Junior Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_883013",
-    "name": "Gopika V",
-    "designation": "Junior Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_217588",
-    "name": "Aravind Mani S",
-    "designation": "Junior Executive",
-    "department": "Building & Construction",
-    "category": "Building & Construction",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_33711",
-    "name": "Amita Gupta",
-    "designation": "Senior Consultant (E&S, UPT & CEL)",
-    "department": "Environment & Sustainability",
-    "category": "Environment & Sustainability",
-    "image": "/images/team/team_amitha.jpg",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_61737",
-    "name": "Vivekanandan",
-    "designation": "Senior Consultant",
-    "department": "Environment & Sustainability",
-    "category": "Environment & Sustainability",
-    "image": "/images/team/team_vivekanandan.jpg",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_850797",
-    "name": "Dr. M. Madhan Kumar",
-    "designation": "Senior Executive",
-    "department": "Environment & Sustainability",
-    "category": "Environment & Sustainability",
-    "image": "/images/team/team_madhankumar.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_118838",
-    "name": "Anis Rathnam M",
-    "designation": "Senior Executive",
-    "department": "Urban Planning & Transportation",
-    "category": "Urban Planning & Transportation",
-    "image": "/images/team/team_anis.jpg",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_382387",
-    "name": "Bhanumathi V.V",
-    "designation": "Executive",
-    "department": "Urban Planning & Transportation",
-    "category": "Urban Planning & Transportation",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_852556",
-    "name": "B G Soundhariya Lakshmi",
-    "designation": "Executive",
-    "department": "Urban Planning & Transportation",
-    "category": "Urban Planning & Transportation",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_636727",
-    "name": "Kavya K",
-    "designation": "Executive",
-    "department": "Urban Planning & Transportation",
-    "category": "Urban Planning & Transportation",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_432319",
-    "name": "Dhinesh K S",
-    "designation": "Executive",
-    "department": "Urban Planning & Transportation",
-    "category": "Urban Planning & Transportation",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_578946",
-    "name": "M. Gayathri Hasitha",
-    "designation": "Junior Executive",
-    "department": "Urban Planning & Transportation",
-    "category": "Urban Planning & Transportation",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_573684",
-    "name": "Barath S",
-    "designation": "Junior Executive",
-    "department": "Urban Planning & Transportation",
-    "category": "Urban Planning & Transportation",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_6261",
-    "name": "Elakkiya Sakthivel",
-    "designation": "Senior Executive - Admin",
-    "department": "Admin",
-    "category": "Admin",
-    "image": "/images/team/team_elakkiya-sakthivel.jpg",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_828339",
-    "name": "Thanesh Raja L",
-    "designation": "Senior Executive - IT & Operations",
-    "department": "Admin",
-    "category": "Admin",
-    "image": "/images/team/team_Thanesh_Raja.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_217205",
-    "name": "Yashwanthi Devadoss",
-    "designation": "Executive",
-    "department": "Admin",
-    "category": "Admin",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_186937",
-    "name": "Parvathavalli.R",
-    "designation": "Senior Assistant",
-    "department": "Admin",
-    "category": "Admin",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_393118",
-    "name": "Gothandaraman",
-    "designation": "Admin\\u00a0Assistant",
-    "department": "Admin",
-    "category": "Admin",
-    "image": "/images/team/team_gothandaramam.jpg",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_915897",
-    "name": "Marudhu",
-    "designation": "Admin\\u00a0Assistant",
-    "department": "Admin",
-    "category": "Admin",
-    "image": "/images/team/team_marudhu.jpg",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_0b90da",
-    "name": "Dr. P Bakkiyalakshmi",
-    "designation": "Manager",
-    "department": "Environment & Sustainability",
-    "category": "Environment & Sustainability",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_cf4f72",
-    "name": "Abishek S",
-    "designation": "Executive",
-    "department": "Environment & Sustainability",
-    "category": "Environment & Sustainability",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_6564b0",
-    "name": "Aravindan",
-    "designation": "Executive Projects",
-    "department": "Environment & Sustainability",
-    "category": "Environment & Sustainability",
-    "image": "/images/team/team_aravindan.jpg",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_30977b",
-    "name": "Divya",
-    "designation": "Executive Projects",
-    "department": "Environment & Sustainability",
-    "category": "Environment & Sustainability",
-    "image": "/images/team/team_divya.jpg",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_90e8e1",
-    "name": "P Divakar",
-    "designation": "Executive Projects",
-    "department": "Environment & Sustainability",
-    "category": "Environment & Sustainability",
-    "image": "/images/team/team_p-divakar.jpg",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_cdf33d",
-    "name": "Ilakkiya S",
-    "designation": "Executive Projects",
-    "department": "Environment & Sustainability",
-    "category": "Environment & Sustainability",
-    "image": "/images/team/team_llakkiya.s.jpg",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_f72942",
-    "name": "Kishore Kumar",
-    "designation": "Executive Projects",
-    "department": "Environment & Sustainability",
-    "category": "Environment & Sustainability",
-    "image": "/images/team/team_kishore-kumar.jpg",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_52aad6",
-    "name": "Dr. Manivannan V",
-    "designation": "Executive Projects",
-    "department": "Environment & Sustainability",
-    "category": "Environment & Sustainability",
-    "image": "/images/team/team_dr.manivannan-v.jpg",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_afef31",
-    "name": "Pushparaj",
-    "designation": "Executive Projects",
-    "department": "Environment & Sustainability",
-    "category": "Environment & Sustainability",
-    "image": "/images/team/team_pushparaj.jpg",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_e823bc",
-    "name": "Vignesh Rathinam",
-    "designation": "Executive Projects",
-    "department": "Environment & Sustainability",
-    "category": "Environment & Sustainability",
-    "image": "/images/team/team_vigneshrathinam.jpg",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_4dc7ba",
-    "name": "Amita Gupta",
-    "designation": "Senior Consultant (E&S, UPT & CEL)",
-    "department": "Urban Planning & Transportation",
-    "category": "Urban Planning & Transportation",
-    "image": "/images/team/team_amitha.jpg",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_33866f",
-    "name": "B.S Hari Saravan",
-    "designation": "Executive Projects",
-    "department": "Urban Planning & Transportation",
-    "category": "Urban Planning & Transportation",
-    "image": "/images/team/team_b.s-hari-saravan.jpg",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_bd631d",
-    "name": "Pratiksha Baruah",
-    "designation": "Executive Projects",
-    "department": "Urban Planning & Transportation",
-    "category": "Urban Planning & Transportation",
-    "image": "/images/team/team_pratiksha-baruah.jpg",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_f017a5",
-    "name": "Sruthi Rao",
-    "designation": "Executive Projects",
-    "department": "Urban Planning & Transportation",
-    "category": "Urban Planning & Transportation",
-    "image": "/images/team/team_sruthi-rao.jpg",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_4c126f",
-    "name": "Sudharsanan",
-    "designation": "Executive Projects",
-    "department": "Urban Planning & Transportation",
-    "category": "Urban Planning & Transportation",
-    "image": "/images/team/team_sudharsanan.jpg",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_a06847",
-    "name": "Santhanakrishnan",
-    "designation": "Executive Projects",
-    "department": "Urban Planning & Transportation",
-    "category": "Urban Planning & Transportation",
-    "image": "/images/team/team_Santhanakrishnan.jpg",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_9df94a",
-    "name": "R K Nivedhitha",
-    "designation": "Executive Projects",
-    "department": "Urban Planning & Transportation",
-    "category": "Urban Planning & Transportation",
-    "image": "/images/team/team_nivedhitha.jpg",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_0de5fe",
-    "name": "J Niruruthi Abirami",
-    "designation": "Senior Executive",
-    "department": "Urban Planning & Transportation",
-    "category": "Urban Planning & Transportation",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_8e8a5c",
-    "name": "Reshma M Georgi",
-    "designation": "Executive",
-    "department": "Urban Planning & Transportation",
-    "category": "Urban Planning & Transportation",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_f3d0cc",
-    "name": "Yogashri I",
-    "designation": "Junior Executive",
-    "department": "Urban Planning & Transportation",
-    "category": "Urban Planning & Transportation",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_677336",
-    "name": "Hema Harshini",
-    "designation": "Senior Assistant",
-    "department": "Urban Planning & Transportation",
-    "category": "Urban Planning & Transportation",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_5eeca8",
-    "name": "Mary Alex",
-    "designation": "Senior Assistant",
-    "department": "Urban Planning & Transportation",
-    "category": "Urban Planning & Transportation",
-    "image": "/images/team/team_unknown.png",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_f70d78",
-    "name": "Supraja Ravi",
-    "designation": "Executive Projects",
-    "department": "Urban Planning & Transportation",
-    "category": "Urban Planning & Transportation",
-    "image": "/images/team/team_supraja-ravi.jpg",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_989f2e",
-    "name": "Lakshminarasimhan V",
-    "designation": "Executive",
-    "department": "Admin",
-    "category": "Admin",
-    "image": "/images/team/team_lakshminarasimhal.jpg",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_b34ee7",
-    "name": "Thilagavathy",
-    "designation": "Assistant",
-    "department": "Admin",
-    "category": "Admin",
-    "image": "/images/team/team_thilagavathy.jpg",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
-   },
-   {
-    "id": "staff_5ce0cf",
-    "name": "R Yuvaraj",
-    "designation": "Assistant Administration",
-    "department": "Admin",
-    "category": "Admin",
-    "image": "/images/team/team_r.yuvaraj.jpg",
-    "status": "published",
-    "createdAt": "2026-11-04T12:00:00.000Z"
+    "status": "published"
    }
   ],
   "clients": [
@@ -4256,419 +3076,6 @@
     "title": "Site Inspection of Marquee Precast Infrastructure",
     "category": "Projects",
     "imageUrl": "/images/hero/slides_cpcl-arc.jpg",
-    "status": "published"
-   },
-   {
-    "id": "asset_hero_1",
-    "title": "IIT Tirupati Permanent Campus Engineering & PMC",
-    "category": "Hero & Showcase",
-    "imageUrl": "/images/hero/slides_iit-tirupathi.jpg",
-    "status": "published"
-   },
-   {
-    "id": "asset_hero_2",
-    "title": "Pradhan Mantri Awas Yojana (PMAY) Structural Assurance",
-    "category": "Hero & Showcase",
-    "imageUrl": "/images/hero/slides_design-engineering-consultancy.jpg",
-    "status": "published"
-   },
-   {
-    "id": "asset_hero_3",
-    "title": "NICHE Industrial Park & Environmental Stormwater Engineering",
-    "category": "Hero & Showcase",
-    "imageUrl": "/images/hero/slides_niche.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_7",
-    "title": "Slides 07 Cat",
-    "category": "Showcase & Hero",
-    "imageUrl": "/images/hero/slides_07-cat.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_8",
-    "title": "Slides Ashiana",
-    "category": "Showcase & Hero",
-    "imageUrl": "/images/hero/slides_ashiana.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_9",
-    "title": "Slides Mahindra",
-    "category": "Showcase & Hero",
-    "imageUrl": "/images/hero/slides_mahindra.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_10",
-    "title": "Slides Revaluation",
-    "category": "Showcase & Hero",
-    "imageUrl": "/images/hero/slides_revaluation.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_11",
-    "title": "Slides Slide2",
-    "category": "Showcase & Hero",
-    "imageUrl": "/images/hero/slides_slide2.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_12",
-    "title": "Slides Slide3",
-    "category": "Showcase & Hero",
-    "imageUrl": "/images/hero/slides_slide3.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_13",
-    "title": "About Cel1",
-    "category": "Laboratory & CEL",
-    "imageUrl": "/images/cel/about_cel1.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_14",
-    "title": "About Cel2",
-    "category": "Laboratory & CEL",
-    "imageUrl": "/images/cel/about_cel2.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_15",
-    "title": "Images Excellence",
-    "category": "Laboratory & CEL",
-    "imageUrl": "/images/cel/images_excellence.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_16",
-    "title": "Vertical2 Lab",
-    "category": "Laboratory & CEL",
-    "imageUrl": "/images/cel/vertical2_lab.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_17",
-    "title": "About About",
-    "category": "Institutional & About",
-    "imageUrl": "/images/about/about_about.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_18",
-    "title": "Images About Bg",
-    "category": "Institutional & About",
-    "imageUrl": "/images/about/images_about-bg.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_19",
-    "title": "About Leader",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/about_leader.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_20",
-    "title": "Advisory Panel A Mani",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/advisory_panel_a-mani.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_21",
-    "title": "Advisory Panel Amlan Kumar",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/advisory_panel_amlan-kumar.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_22",
-    "title": "Advisory Panel Arul Narayanan",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/advisory_panel_arul-narayanan.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_23",
-    "title": "Advisory Panel Arun Menon",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/advisory_panel_arun-menon.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_24",
-    "title": "Advisory Panel Balaji Narasiman",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/advisory_panel_balaji-narasiman.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_25",
-    "title": "Advisory Panel Boominathan",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/advisory_panel_boominathan.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_26",
-    "title": "Advisory Panel Chakravarthy",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/advisory_panel_chakravarthy.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_27",
-    "title": "Advisory Panel Devdas Menon",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/advisory_panel_devdas-menon.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_28",
-    "title": "Advisory Panel Gitakrishnan",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/advisory_panel_gitakrishnan.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_29",
-    "title": "Advisory Panel Ligy Philip",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/advisory_panel_ligy-philip.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_30",
-    "title": "Advisory Panel Meher Prasad",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/advisory_panel_meher-prasad.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_31",
-    "title": "Advisory Panel Murali Krishnan",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/advisory_panel_murali-krishnan.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_32",
-    "title": "Advisory Panel Murty Bs",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/advisory_panel_murty-bs.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_33",
-    "title": "Advisory Panel Radhakrishnan Pillai",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/advisory_panel_radhakrishnan-pillai.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_34",
-    "title": "Advisory Panel Ragunathan",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/advisory_panel_ragunathan.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_35",
-    "title": "Advisory Panel Ramamurthy K",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/advisory_panel_ramamurthy-k.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_36",
-    "title": "Advisory Panel Ravikrishna",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/advisory_panel_ravikrishna.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_37",
-    "title": "Advisory Panel Rupen Goswami",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/advisory_panel_rupen-goswami.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_38",
-    "title": "Advisory Panel S Mohan",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/advisory_panel_s-mohan.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_39",
-    "title": "Advisory Panel Sarvanan",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/advisory_panel_sarvanan.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_40",
-    "title": "Advisory Panel Shiva Nagendra",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/advisory_panel_shiva-nagendra.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_41",
-    "title": "Advisory Panel Sivakumar Palaniappan",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/advisory_panel_sivakumar-palaniappan.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_42",
-    "title": "Advisory Panel Subhadeep",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/advisory_panel_subhadeep.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_43",
-    "title": "Board Member Ashwin",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/board_member_ashwin.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_44",
-    "title": "Board Member Benny",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/board_member_benny.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_45",
-    "title": "Board Member Dr P Alarmelmangai Ias",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/board_member_Dr_P_Alarmelmangai_IAS.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_46",
-    "title": "Board Member Indumathi",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/board_member_indumathi.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_47",
-    "title": "Board Member Kakarla",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/board_member_kakarla.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_48",
-    "title": "Board Member Kamakoti",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/board_member_kamakoti.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_49",
-    "title": "Board Member Kartikeyan",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/board_member_kartikeyan.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_50",
-    "title": "Board Member Muruganandam",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/board_member_muruganandam.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_51",
-    "title": "Board Member Rangaswami",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/board_member_rangaswami.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_52",
-    "title": "Board Member Santhanam",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/board_member_santhanam.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_53",
-    "title": "Board Member Saravanan",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/board_member_Saravanan.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_54",
-    "title": "Board Member Sathyamoorthy",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/board_member_sathyamoorthy.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_55",
-    "title": "Board Member Shiv Das",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/board_member_shiv-das.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_56",
-    "title": "Board Member Sivaraman Krishnamurthi",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/board_member_sivaraman-krishnamurthi.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_57",
-    "title": "Board Member Srinivasa Raghavan",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/board_member_srinivasa-raghavan.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_58",
-    "title": "Board Member Thiru Gagandeep Singh Bedi",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/board_member_Thiru_Gagandeep_Singh_Bedi.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_59",
-    "title": "Board Member Thiru Ma Siddique Ias",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/board_member_Thiru_MA_Siddique_IAS.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_60",
-    "title": "Board Member Thiru R Kirlosh Kumar Ias",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/board_member_Thiru_R_Kirlosh_Kumar_IAS.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_61",
-    "title": "Board Member Udaya",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/board_member_udaya.jpg",
-    "status": "published"
-   },
-   {
-    "id": "photo_62",
-    "title": "Images Leadership",
-    "category": "Leadership & Team",
-    "imageUrl": "/images/leadership/images_leadership.jpg",
     "status": "published"
    }
   ],
