@@ -7,11 +7,12 @@ import Link from 'next/link';
 import PageHeader from '@/components/common/PageHeader';
 import { 
   Newspaper, Calendar, Image as ImageIcon, BookOpen, 
-  ArrowRight, Sparkles, MapPin, ExternalLink, Download
+  ArrowRight, ArrowUpRight, Sparkles, MapPin, ExternalLink, Download
 } from 'lucide-react';
 import { newsItems as fallbackNewsItems } from '@/data/news';
 import { useLiveList } from '@/lib/live';
-import { cubeEvents, mediaGalleryImages, lifeAtCubeImages } from '@/data/media';
+import { cubeEvents, lifeAtCubeImages } from '@/data/media';
+import GalleryGrid from '@/components/media/GalleryGrid';
 
 export default function CompleteMediaExperience() {
   // Live CMS news: published items only, updates instantly on admin changes.
@@ -39,7 +40,6 @@ export default function CompleteMediaExperience() {
   const sampleEvents = cubeEvents;
 
   // Photos from the original homepage's Media section (they carry no captions).
-  const galleryImages = mediaGalleryImages.map((src) => ({ src, title: '' }));
 
   return (
     <div className="bg-[#FFFFFF] text-[#24272B] min-h-screen">
@@ -171,24 +171,16 @@ export default function CompleteMediaExperience() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {galleryImages.map((img, i) => (
-              <div key={i} className="group rounded-3xl overflow-hidden border border-[#BDD7E8] bg-white cube-glass shadow-2xs hover:shadow-md transition-all">
-                <div className="relative h-60 w-full overflow-hidden">
-                  <Image
-                    src={img.src}
-                    alt={img.title || 'CUBE media photo'}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  {img.title && (
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-5">
-                      <p className="text-white text-xs font-semibold leading-snug">{img.title}</p>
-                    </div>
-                  )}
-                </div>
-              </div>
-            ))}
+          <GalleryGrid limit={6} />
+
+          <div className="mt-12 text-center">
+            <Link
+              href="/media/gallery"
+              className="inline-flex items-center px-8 py-3.5 rounded-full text-xs font-semibold text-[#070E5C] bg-white border border-[#BBD6EA] hover:bg-[#D99A42] hover:text-[#24272B] shadow-sm transition-all"
+            >
+              <span>View Full Gallery</span>
+              <ArrowUpRight className="w-4 h-4 ml-2" />
+            </Link>
           </div>
         </div>
       </section>

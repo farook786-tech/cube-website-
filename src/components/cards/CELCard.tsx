@@ -7,6 +7,15 @@ import { ArrowUpRight, CheckCircle2, FlaskConical, Sparkles, ChevronUp, ChevronD
 import { motion, AnimatePresence } from 'framer-motion';
 import { CELService } from '@/types';
 
+// The five service categories listed on the original CEL website (cube-el.org).
+const CEL_SERVICE_CATEGORIES = [
+  'Analysis & Testing',
+  'Inspection & Audit',
+  'Consultancy & Advisory',
+  'Research & Development',
+  'Capacity Building & Training',
+];
+
 interface CELCardProps {
   service: CELService;
 }
@@ -47,8 +56,9 @@ export default function CELCard({ service }: CELCardProps) {
     setRotateY(rY);
   };
 
-  // The original CEL site lists testing areas by name only. Cards without any
-  // details stay compact: no empty body, no empty expand panel.
+  // Service-specific details (if an admin adds them). The original CEL site
+  // lists the testing areas by name only, so cards without their own details
+  // show the CEL site's general service text in the slide-up panel instead.
   const hasDetails = Boolean(
     service.description ||
       (service.parameters && service.parameters.length > 0) ||
@@ -66,10 +76,10 @@ export default function CELCard({ service }: CELCardProps) {
       ref={cardRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      onPointerEnter={(e) => hasDetails && e.pointerType === 'mouse' && setIsExpanded(true)}
-      onClick={() => hasDetails && setIsExpanded(!isExpanded)}
+      onPointerEnter={(e) => e.pointerType === 'mouse' && setIsExpanded(true)}
+      onClick={() => setIsExpanded(!isExpanded)}
       style={{ perspective: 1000 }}
-      className={`w-full ${hasDetails ? 'h-[470px]' : 'h-auto'} select-none group relative ${hasDetails ? 'cursor-pointer' : ''}`}
+      className={`w-full ${hasDetails ? 'h-[470px]' : 'h-[420px]'} select-none group relative cursor-pointer`}
       tabIndex={0}
       role="region"
       aria-label={`${service.title} CEL interactive 3D card`}
@@ -114,7 +124,6 @@ export default function CELCard({ service }: CELCardProps) {
           </div>
 
           {/* Dynamic 3D Drawer Pill */}
-          {hasDetails && (
           <div className="absolute bottom-3 right-3 z-10 flex items-center space-x-1.5 px-3 py-1 rounded-full bg-white/95 text-[#070E5C] text-[11px] shadow-sm backdrop-blur-sm border border-[#BBD6EA]">
             <Sparkles className="w-3 h-3 text-[#D99A42]" />
             <span className="text-[10px] font-semibold">
@@ -126,7 +135,6 @@ export default function CELCard({ service }: CELCardProps) {
               <ChevronUp className="w-3 h-3 text-[#D99A42]" />
             )}
           </div>
-          )}
         </div>
 
         {/* CARD BODY CONTENT */}
@@ -145,25 +153,15 @@ export default function CELCard({ service }: CELCardProps) {
             )}
           </div>
 
-          {hasDetails ? (
-            <div className="pt-3 border-t border-[#E5E7EB] flex items-center justify-between text-xs font-semibold text-[#070E5C]">
-              <span>View details</span>
-              <ArrowUpRight className="w-4 h-4 text-[#D99A42] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-            </div>
-          ) : (
-            <Link
-              href="/cel#enquiry"
-              className="pt-3 border-t border-[#E5E7EB] flex items-center justify-between text-xs font-semibold text-[#070E5C] hover:text-[#D99A42] transition-colors"
-            >
-              <span>Book A Test Now</span>
-              <ArrowUpRight className="w-4 h-4 text-[#D99A42] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-            </Link>
-          )}
+          <div className="pt-3 border-t border-[#E5E7EB] flex items-center justify-between text-xs font-semibold text-[#070E5C]">
+            <span>View details</span>
+            <ArrowUpRight className="w-4 h-4 text-[#D99A42] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+          </div>
         </div>
 
         {/* 3D ELEVATING SLIDE-UP SPECIFICATIONS DRAWER OVERLAY */}
         <AnimatePresence>
-          {hasDetails && isExpanded && (
+          {isExpanded && (
             <motion.div
               initial={{ y: '100%', opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -215,6 +213,26 @@ export default function CELCard({ service }: CELCardProps) {
                     <span>{service.equipment.slice(0, 2).join(', ')}</span>
                   </div>
                 )}
+
+                {!hasDetails && (
+                  <>
+                    {/* Wording from the original CEL website (cube-el.org) */}
+                    <p className="text-[11px] text-[#747B83] mt-1.5 leading-snug">
+                      CEL&rsquo;s exhaustive line up of Analysis and Testing services range from basic parameters like pH, turbidity to advanced parameters like COD &amp; trace heavy metals.
+                    </p>
+                    <div className="mt-2.5 space-y-1">
+                      <div className="text-[10px] font-bold text-[#24272B] uppercase tracking-wider">
+                        Our Services:
+                      </div>
+                      {CEL_SERVICE_CATEGORIES.map((item) => (
+                        <div key={item} className="flex items-start text-[11px] text-[#24272B]">
+                          <CheckCircle2 className="w-3.5 h-3.5 text-[#070E5C] mr-2 shrink-0 mt-px" />
+                          <span className="font-medium">{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </>
+                )}
               </div>
 
               <div className="pt-3 border-t border-[#E5E7EB]">
@@ -222,7 +240,7 @@ export default function CELCard({ service }: CELCardProps) {
                   href="/cel#enquiry"
                   className="w-full flex items-center justify-center py-2.5 px-4 rounded-full text-xs font-semibold text-[#070E5C] bg-[#EAF2F8] border border-[#BBD6EA] hover:bg-[#D99A42] hover:text-white transition-all shadow-sm group/btn"
                 >
-                  <span>Book Laboratory Testing</span>
+                  <span>Book A Test Now</span>
                   <ArrowUpRight className="w-4 h-4 ml-1.5 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
                 </Link>
               </div>
